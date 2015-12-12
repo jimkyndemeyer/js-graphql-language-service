@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bin\server.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="bin/server.js" application-parameters="one --port=3000" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="DEBUG" value="js-graphql-language-service:*" />
+    </envs>
+    <browser url="http://localhost:3000/" />
+    <method />
+  </configuration>
+</component>

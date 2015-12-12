@@ -1,0 +1,42 @@
+{
+  "hints": [
+    {
+      "text": "types",
+      "type": "[__Type!]!",
+      "description": "A list of all types supported by this server.",
+      "relay": false
+    },
+    {
+      "text": "queryType",
+      "type": "__Type!",
+      "description": "The type that query operations will be rooted at.",
+      "relay": false
+    },
+    {
+      "text": "mutationType",
+      "type": "__Type",
+      "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+      "relay": false
+    },
+    {
+      "text": "subscriptionType",
+      "type": "__Type",
+      "description": "If this server support subscription, the type that subscription operations will be rooted at.",
+      "relay": false
+    },
+    {
+      "text": "directives",
+      "type": "[__Directive!]!",
+      "description": "A list of all directives supported by this server.",
+      "relay": false
+    }
+  ],
+  "from": {
+    "line": 0,
+    "ch": 25
+  },
+  "to": {
+    "line": 0,
+    "ch": 25
+  }
+}

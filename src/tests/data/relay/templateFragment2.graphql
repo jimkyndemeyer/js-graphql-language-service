@@ -1,0 +1,5 @@
+    fragment on User {
+        totalCount,
+        ${..},
+        ${foo
+    }

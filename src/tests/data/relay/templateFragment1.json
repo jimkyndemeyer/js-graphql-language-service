@@ -1,0 +1,196 @@
+{
+  "tokens": [
+    {
+      "text": "    ",
+      "type": "ws",
+      "start": 0,
+      "end": 4,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "fragment",
+      "type": "keyword",
+      "start": 4,
+      "end": 12,
+      "scope": 0,
+      "kind": "FragmentDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 12,
+      "end": 13,
+      "scope": 0,
+      "kind": "FragmentDefinition"
+    },
+    {
+      "text": "on",
+      "type": "keyword",
+      "start": 13,
+      "end": 15,
+      "scope": 0,
+      "kind": "TypeCondition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 15,
+      "end": 16,
+      "scope": 0,
+      "kind": "TypeCondition"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 16,
+      "end": 20,
+      "scope": 0,
+      "kind": "TypeCondition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 20,
+      "end": 21,
+      "scope": 0,
+      "kind": "FragmentDefinition"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 21,
+      "end": 22,
+      "scope": 1,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 22,
+      "end": 23
+    },
+    {
+      "text": "        ",
+      "type": "ws",
+      "start": 23,
+      "end": 31,
+      "scope": 1,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "totalCount",
+      "type": "property",
+      "start": 31,
+      "end": 41,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": ",",
+      "type": "punctuation",
+      "start": 41,
+      "end": 42,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 42,
+      "end": 43
+    },
+    {
+      "text": "        ",
+      "type": "ws",
+      "start": 43,
+      "end": 51,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "__typename",
+      "type": "property",
+      "start": 51,
+      "end": 61,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "                              ",
+      "type": "ws",
+      "start": 61,
+      "end": 91,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": ",",
+      "type": "punctuation",
+      "start": 91,
+      "end": 92,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 92,
+      "end": 93
+    },
+    {
+      "text": "        ",
+      "type": "ws",
+      "start": 93,
+      "end": 101,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "__typename",
+      "type": "property",
+      "start": 101,
+      "end": 111,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "                             ",
+      "type": "ws",
+      "start": 111,
+      "end": 140,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": ",",
+      "type": "punctuation",
+      "start": 140,
+      "end": 141,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 141,
+      "end": 142
+    },
+    {
+      "text": "    ",
+      "type": "ws",
+      "start": 142,
+      "end": 146,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 146,
+      "end": 147,
+      "scope": 0,
+      "kind": "Document"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "annotations": [
+    {
+      "message": "Unknown argument \"option\" on field \"node\" of type \"Query\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 96,
+        "ch": 38
+      },
+      "to": {
+        "line": 96,
+        "ch": 44
+      }
+    },
+    {
+      "message": "There can only be one fragment named \"FullType\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 25,
+        "ch": 3
+      },
+      "to": {
+        "line": 26,
+        "ch": 2
+      }
+    },
+    {
+      "message": "There can only be one fragment named \"FullType\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 100,
+        "ch": 11
+      },
+      "to": {
+        "line": 100,
+        "ch": 19
+      }
+    },
+    {
+      "message": "Unknown type \"MyInput\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 107,
+        "ch": 26
+      },
+      "to": {
+        "line": 107,
+        "ch": 33
+      }
+    },
+    {
+      "message": "Cannot query field \"foo\" on \"Mutation\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 107,
+        "ch": 43
+      },
+      "to": {
+        "line": 107,
+        "ch": 46
+      }
+    },
+    {
+      "message": "Variable \"$input\" is never used.",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 107,
+        "ch": 18
+      },
+      "to": {
+        "line": 107,
+        "ch": 24
+      }
+    },
+    {
+      "message": "Unknown type \"TestInput\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 110,
+        "ch": 8
+      },
+      "to": {
+        "line": 111,
+        "ch": 0
+      }
+    },
+    {
+      "message": "Unknown type \"TestEnum\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 111,
+        "ch": 9
+      },
+      "to": {
+        "line": 111,
+        "ch": 17
+      }
+    },
+    {
+      "message": "Cannot query field \"hasArgs\" on \"Query\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 112,
+        "ch": 6
+      },
+      "to": {
+        "line": 112,
+        "ch": 13
+      }
+    },
+    {
+      "message": "Unknown type \"Test\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 113,
+        "ch": 33
+      },
+      "to": {
+        "line": 113,
+        "ch": 37
+      }
+    },
+    {
+      "message": "Cannot query field \"test\" on \"Query\".",
+      "severity": "error",
+      "type": "validation",
+      "from": {
+        "line": 125,
+        "ch": 1
+      },
+      "to": {
+        "line": 125,
+        "ch": 1
+      }
+    }
+  ]
+}

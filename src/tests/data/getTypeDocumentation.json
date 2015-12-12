@@ -1,0 +1,38 @@
+{
+  "type": "__Schema",
+  "description": "A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.",
+  "interfaces": [],
+  "implementations": [],
+  "fields": [
+    {
+      "name": "types",
+      "args": [],
+      "type": "[__Type!]!",
+      "description": "A list of all types supported by this server."
+    },
+    {
+      "name": "queryType",
+      "args": [],
+      "type": "__Type!",
+      "description": "The type that query operations will be rooted at."
+    },
+    {
+      "name": "mutationType",
+      "args": [],
+      "type": "__Type",
+      "description": "If this server supports mutation, the type that mutation operations will be rooted at."
+    },
+    {
+      "name": "subscriptionType",
+      "args": [],
+      "type": "__Type",
+      "description": "If this server support subscription, the type that subscription operations will be rooted at."
+    },
+    {
+      "name": "directives",
+      "args": [],
+      "type": "[__Directive!]!",
+      "description": "A list of all directives supported by this server."
+    }
+  ]
+}
