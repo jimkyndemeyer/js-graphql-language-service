@@ -1,3 +1,5 @@
+![](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin/raw/master/docs/js-graphql-logo.png)
+
 # JS GraphQL Language Service
 
 A Node.js powered language service that provides a GraphQL language API on top of [codemirror-graphql](https://github.com/graphql/codemirror-graphql) and [graphql-js](https://github.com/graphql/graphql-js).
