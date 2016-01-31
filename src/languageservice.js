@@ -56,6 +56,8 @@ let cmCurrentDocValue = null;
 const graphqlLanguage = require('graphql/language');
 const buildClientSchema = require('graphql/utilities/buildClientSchema').buildClientSchema;
 
+// Schema commands
+const getSchemaTokensAndAST = require('./schema').getSchemaTokensAndAST;
 
 // prepare schema
 const printSchema = require('graphql/utilities/schemaPrinter').printSchema;
@@ -63,6 +65,8 @@ const exampleSchemaJson = require('../schemas/builtin-schema.json');
 const exampleSchema = buildClientSchema(exampleSchemaJson.data);
 
 let schema = exampleSchema;
+let schemaVersion = 0;
+let schemaUrl = '';
 
 // project
 const project = require('./project');
@@ -71,6 +75,8 @@ project.onSchemaChanged({
         if(newSchema && newSchema.data) {
             try {
                 schema = buildClientSchema(newSchema.data);
+                schemaVersion++;
+                schemaUrl = url;
                 let schemaJson = JSON.stringify(newSchema);
                 if(schemaJson.length > 500) {
                     schemaJson = schemaJson.substr(0, 500) + " ...";
@@ -81,6 +87,7 @@ project.onSchemaChanged({
             }
         } else {
             schema = exampleSchema;
+            schemaVersion++;
         }
     }
 });
@@ -113,6 +120,13 @@ app.all('/js-graphql-language-service', function (req, res) {
         res.header('Content-Type', 'application/json');
         res.send(JSON.stringify(typeDoc));
         return;
+    } else if(requestData.command == 'getFieldDocumentation') {
+        let typeName = req.body.type || req.query.type;
+        let fieldName = req.body.field || req.query.field;
+        let fieldDoc = getFieldDocumentation(typeName, fieldName);
+        res.header('Content-Type', 'application/json');
+        res.send(JSON.stringify(fieldDoc));
+        return;
     } else if(requestData.command == 'setProjectDir') {
         console.log("Setting Project Dir '"+requestData.projectDir+"'");
         project.setProjectDir(requestData.projectDir);
@@ -122,6 +136,17 @@ app.all('/js-graphql-language-service', function (req, res) {
     } else if(requestData.command == 'getSchema') {
         res.header('Content-Type', 'text/plain');
         res.send(printSchema(schema));
+        return;
+    } else if(requestData.command == 'getSchemaWithVersion') {
+        res.header('Content-Type', 'application/json');
+        res.send(JSON.stringify({
+            schema: printSchema(schema),
+            queryType: (schema.getQueryType() || '').toString(),
+            mutationType: (schema.getMutationType() || '').toString(),
+            subscriptionType: (schema.getSubscriptionType() || '').toString(),
+            url: schemaUrl,
+            version: schemaVersion
+        }));
         return;
     }
 
@@ -162,7 +187,9 @@ app.all('/js-graphql-language-service', function (req, res) {
     } else if(requestData.command == 'getAnnotations') {
         responseData = getAnnotations(cm, textToParse);
     } else if(requestData.command == 'getAST') {
-        responseData = getAST(cm, textToParse);
+        responseData = getAST(textToParse);
+    } else if(requestData.command == 'getSchemaTokensAndAST') {
+        responseData = getSchemaTokensAndAST(textToParse);
     } else {
         responseData.error = 'Unknown command "'+requestData.command+'"';
     }
@@ -323,8 +350,7 @@ function getHints(cm, line, ch, fullType, tokenName) {
 
 // ---- 'getTypeDocumentation' command ----
 
-function getTypeDocumentation(typeName) {
-    let ret = {};
+function _getSchemaType(typeName) {
     let type = schema.getTypeMap()[typeName];
     if(!type) {
         if(typeName == 'Query') {
@@ -335,6 +361,12 @@ function getTypeDocumentation(typeName) {
             type = schema.getSubscriptionType();
         }
     }
+    return type;
+}
+
+function getTypeDocumentation(typeName) {
+    let ret = {};
+    let type = _getSchemaType(typeName);
     if(type) {
         let interfaces = type.getInterfaces ? type.getInterfaces() : [];
         let fields = type.getFields ? type.getFields() : {};
@@ -370,6 +402,23 @@ function getTypeDocumentation(typeName) {
         }
     }
     return ret;
+}
+
+
+// ---- 'getFieldDocumentation' command ----
+
+function getFieldDocumentation(typeName, fieldName) {
+    let doc = {};
+    let type = _getSchemaType(typeName);
+    if(type) {
+        let fields = type.getFields ? type.getFields() : {};
+        let field = fields[fieldName];
+        if(field) {
+            doc.type = field.type.toString();
+            doc.description = field.description;
+        }
+    }
+    return doc;
 }
 
 
@@ -434,41 +483,9 @@ function getAnnotations(cm, text) {
 
 // ---- 'getAST' command ----
 
-function stripSource(node) {
-    for(let prop in node) {
-        if(prop == 'source') {
-            node[prop] = undefined
-        } else {
-            let val = node[prop];
-            if(val instanceof Array) {
-                for(let i = 0; i < val.length; i++) {
-                    stripSource(val[i]);
-                }
-            } else if(typeof(val) == 'object') {
-                stripSource(val);
-            }
-        }
-    }
-}
-
-function getAST(cm, text) {
+function getAST(text) {
     try {
-
-        let stream = new CodeMirror.StringStream(text, cm.options.tabSize)
-        let mode = cm.getMode('graphql');
-        let state = mode.startState();
-        let states = [];
-        while(!stream.eol()) {
-            let token = mode.token(stream, state);
-            if(token) {
-                states.push({token: token, state: state.prevState || state});
-            }
-        }
-        for(let i = 0; i < states.length; i++) {
-            states[i].state.prevState = undefined;
-        }
-        let ast = graphqlLanguage.parse(text);
-        stripSource(ast);
+        let ast = graphqlLanguage.parse(text, {noSource: true});
         return ast;
     } catch (e) {
         return {error: e, locations: e.locations, nodes: e.nodes};
