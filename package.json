@@ -1,6 +1,6 @@
 {
   "name": "js-graphql-language-service",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "contributors": [
     "Jim Kynde Meyer <jimkyndemeyer@gmail.com>"
@@ -16,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./bin/server.js",
-    "test" : "mocha -R spec src/tests/spec.js",
+    "test": "mocha -R spec src/tests/spec.js",
     "bundle-to-dist": "browserify --node --ignore-missing --entry bin/server.js --outfile dist/js-graphql-language-service.dist.js",
     "bundle-to-intellij-plugin": "browserify --node --ignore-missing --entry bin/server.js --outfile ./../js-graphql-intellij-plugin/resources/META-INF/dist/js-graphql-language-service.dist.js"
   },
@@ -29,6 +29,7 @@
     "graphql": "^0.4.14",
     "hashmap": "^2.0.4",
     "mock-browser": "^0.91.34",
+    "stackjs": "^0.1.0",
     "then-request": "^2.1.1"
   },
   "devDependencies": {

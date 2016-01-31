@@ -1,0 +1,6153 @@
+{
+  "tokens": [
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 0,
+      "end": 5
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 5,
+      "end": 6
+    },
+    {
+      "text": "AddTodoInput",
+      "type": "def",
+      "start": 6,
+      "end": 18,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 18,
+      "end": 19
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 19,
+      "end": 20
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 20,
+      "end": 23
+    },
+    {
+      "text": "text",
+      "type": "property",
+      "start": 23,
+      "end": 27,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 27,
+      "end": 28
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 28,
+      "end": 29
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 29,
+      "end": 35,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 35,
+      "end": 36
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 36,
+      "end": 39
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 39,
+      "end": 55,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 55,
+      "end": 56
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 56,
+      "end": 57
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 57,
+      "end": 63,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 63,
+      "end": 64
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 64,
+      "end": 65
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 65,
+      "end": 66
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 66,
+      "end": 68
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 68,
+      "end": 72
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 72,
+      "end": 73
+    },
+    {
+      "text": "AddTodoPayload",
+      "type": "def",
+      "start": 73,
+      "end": 87,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 87,
+      "end": 88
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 88,
+      "end": 89
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 89,
+      "end": 92
+    },
+    {
+      "text": "todoEdge",
+      "type": "property",
+      "start": 92,
+      "end": 100,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 100,
+      "end": 101
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 101,
+      "end": 102
+    },
+    {
+      "text": "TodoEdge",
+      "type": "atom",
+      "start": 102,
+      "end": 110,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 110,
+      "end": 113
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 113,
+      "end": 119,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 119,
+      "end": 120
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 120,
+      "end": 121
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 121,
+      "end": 125,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 125,
+      "end": 128
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 128,
+      "end": 144,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 144,
+      "end": 145
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 145,
+      "end": 146
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 146,
+      "end": 152,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 152,
+      "end": 153
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 153,
+      "end": 154
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 154,
+      "end": 155
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 155,
+      "end": 157
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 157,
+      "end": 162
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 162,
+      "end": 163
+    },
+    {
+      "text": "ChangeTodoStatusInput",
+      "type": "def",
+      "start": 163,
+      "end": 184,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 184,
+      "end": 185
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 185,
+      "end": 186
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 186,
+      "end": 189
+    },
+    {
+      "text": "complete",
+      "type": "property",
+      "start": 189,
+      "end": 197,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 197,
+      "end": 198
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 198,
+      "end": 199
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 199,
+      "end": 206,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 206,
+      "end": 207
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 207,
+      "end": 210
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 210,
+      "end": 212,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 212,
+      "end": 213
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 213,
+      "end": 214
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 214,
+      "end": 216,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 216,
+      "end": 217
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 217,
+      "end": 220
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 220,
+      "end": 236,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 236,
+      "end": 237
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 237,
+      "end": 238
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 238,
+      "end": 244,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 244,
+      "end": 245
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 245,
+      "end": 246
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 246,
+      "end": 247
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 247,
+      "end": 249
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 249,
+      "end": 253
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 253,
+      "end": 254
+    },
+    {
+      "text": "ChangeTodoStatusPayload",
+      "type": "def",
+      "start": 254,
+      "end": 277,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 277,
+      "end": 278
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 278,
+      "end": 279
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 279,
+      "end": 282
+    },
+    {
+      "text": "todo",
+      "type": "property",
+      "start": 282,
+      "end": 286,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 286,
+      "end": 287
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 287,
+      "end": 288
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 288,
+      "end": 292,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 292,
+      "end": 295
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 295,
+      "end": 301,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 301,
+      "end": 302
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 302,
+      "end": 303
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 303,
+      "end": 307,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 307,
+      "end": 310
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 310,
+      "end": 326,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 326,
+      "end": 327
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 327,
+      "end": 328
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 328,
+      "end": 334,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 334,
+      "end": 335
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 335,
+      "end": 336
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 336,
+      "end": 337
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 337,
+      "end": 339
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 339,
+      "end": 344
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 344,
+      "end": 345
+    },
+    {
+      "text": "MarkAllTodosInput",
+      "type": "def",
+      "start": 345,
+      "end": 362,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 362,
+      "end": 363
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 363,
+      "end": 364
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 364,
+      "end": 367
+    },
+    {
+      "text": "complete",
+      "type": "property",
+      "start": 367,
+      "end": 375,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 375,
+      "end": 376
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 376,
+      "end": 377
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 377,
+      "end": 384,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 384,
+      "end": 385
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 385,
+      "end": 388
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 388,
+      "end": 404,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 404,
+      "end": 405
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 405,
+      "end": 406
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 406,
+      "end": 412,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 412,
+      "end": 413
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 413,
+      "end": 414
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 414,
+      "end": 415
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 415,
+      "end": 417
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 417,
+      "end": 421
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 421,
+      "end": 422
+    },
+    {
+      "text": "MarkAllTodosPayload",
+      "type": "def",
+      "start": 422,
+      "end": 441,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 441,
+      "end": 442
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 442,
+      "end": 443
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 443,
+      "end": 446
+    },
+    {
+      "text": "changedTodos",
+      "type": "property",
+      "start": 446,
+      "end": 458,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 458,
+      "end": 459
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 459,
+      "end": 460
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 460,
+      "end": 461
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 461,
+      "end": 465,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 465,
+      "end": 466
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 466,
+      "end": 469
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 469,
+      "end": 475,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 475,
+      "end": 476
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 476,
+      "end": 477
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 477,
+      "end": 481,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 481,
+      "end": 484
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 484,
+      "end": 500,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 500,
+      "end": 501
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 501,
+      "end": 502
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 502,
+      "end": 508,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 508,
+      "end": 509
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 509,
+      "end": 510
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 510,
+      "end": 511
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 511,
+      "end": 513
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 513,
+      "end": 517
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 517,
+      "end": 518
+    },
+    {
+      "text": "Mutation",
+      "type": "def",
+      "start": 518,
+      "end": 526,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 526,
+      "end": 527
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 527,
+      "end": 528
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 528,
+      "end": 531
+    },
+    {
+      "text": "addTodo",
+      "type": "property",
+      "start": 531,
+      "end": 538,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 538,
+      "end": 539
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 539,
+      "end": 544
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 544,
+      "end": 545
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 545,
+      "end": 546
+    },
+    {
+      "text": "AddTodoInput",
+      "type": "atom",
+      "start": 546,
+      "end": 558,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 558,
+      "end": 559
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 559,
+      "end": 560
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 560,
+      "end": 561
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 561,
+      "end": 562
+    },
+    {
+      "text": "AddTodoPayload",
+      "type": "atom",
+      "start": 562,
+      "end": 576,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 576,
+      "end": 579
+    },
+    {
+      "text": "changeTodoStatus",
+      "type": "property",
+      "start": 579,
+      "end": 595,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 595,
+      "end": 596
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 596,
+      "end": 601
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 601,
+      "end": 602
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 602,
+      "end": 603
+    },
+    {
+      "text": "ChangeTodoStatusInput",
+      "type": "atom",
+      "start": 603,
+      "end": 624,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 624,
+      "end": 625
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 625,
+      "end": 626
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 626,
+      "end": 627
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 627,
+      "end": 628
+    },
+    {
+      "text": "ChangeTodoStatusPayload",
+      "type": "atom",
+      "start": 628,
+      "end": 651,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 651,
+      "end": 654
+    },
+    {
+      "text": "markAllTodos",
+      "type": "property",
+      "start": 654,
+      "end": 666,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 666,
+      "end": 667
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 667,
+      "end": 672
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 672,
+      "end": 673
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 673,
+      "end": 674
+    },
+    {
+      "text": "MarkAllTodosInput",
+      "type": "atom",
+      "start": 674,
+      "end": 691,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 691,
+      "end": 692
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 692,
+      "end": 693
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 693,
+      "end": 694
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 694,
+      "end": 695
+    },
+    {
+      "text": "MarkAllTodosPayload",
+      "type": "atom",
+      "start": 695,
+      "end": 714,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 714,
+      "end": 717
+    },
+    {
+      "text": "removeCompletedTodos",
+      "type": "property",
+      "start": 717,
+      "end": 737,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 737,
+      "end": 738
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 738,
+      "end": 743
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 743,
+      "end": 744
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 744,
+      "end": 745
+    },
+    {
+      "text": "RemoveCompletedTodosInput",
+      "type": "atom",
+      "start": 745,
+      "end": 770,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 770,
+      "end": 771
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 771,
+      "end": 772
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 772,
+      "end": 773
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 773,
+      "end": 774
+    },
+    {
+      "text": "RemoveCompletedTodosPayload",
+      "type": "atom",
+      "start": 774,
+      "end": 801,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 801,
+      "end": 804
+    },
+    {
+      "text": "removeTodo",
+      "type": "property",
+      "start": 804,
+      "end": 814,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 814,
+      "end": 815
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 815,
+      "end": 820
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 820,
+      "end": 821
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 821,
+      "end": 822
+    },
+    {
+      "text": "RemoveTodoInput",
+      "type": "atom",
+      "start": 822,
+      "end": 837,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 837,
+      "end": 838
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 838,
+      "end": 839
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 839,
+      "end": 840
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 840,
+      "end": 841
+    },
+    {
+      "text": "RemoveTodoPayload",
+      "type": "atom",
+      "start": 841,
+      "end": 858,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 858,
+      "end": 861
+    },
+    {
+      "text": "renameTodo",
+      "type": "property",
+      "start": 861,
+      "end": 871,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 871,
+      "end": 872
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 872,
+      "end": 877
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 877,
+      "end": 878
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 878,
+      "end": 879
+    },
+    {
+      "text": "RenameTodoInput",
+      "type": "atom",
+      "start": 879,
+      "end": 894,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 894,
+      "end": 895
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 895,
+      "end": 896
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 896,
+      "end": 897
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 897,
+      "end": 898
+    },
+    {
+      "text": "RenameTodoPayload",
+      "type": "atom",
+      "start": 898,
+      "end": 915,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 915,
+      "end": 916
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 916,
+      "end": 917
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 917,
+      "end": 919
+    },
+    {
+      "text": "interface",
+      "type": "keyword",
+      "start": 919,
+      "end": 928
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 928,
+      "end": 929
+    },
+    {
+      "text": "Node",
+      "type": "def",
+      "start": 929,
+      "end": 933,
+      "kind": "InterfaceTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 933,
+      "end": 934
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 934,
+      "end": 935
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 935,
+      "end": 938
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 938,
+      "end": 940,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 940,
+      "end": 941
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 941,
+      "end": 942
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 942,
+      "end": 944,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 944,
+      "end": 945
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 945,
+      "end": 946
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 946,
+      "end": 947
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 947,
+      "end": 949
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 949,
+      "end": 953
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 953,
+      "end": 954
+    },
+    {
+      "text": "PageInfo",
+      "type": "def",
+      "start": 954,
+      "end": 962,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 962,
+      "end": 963
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 963,
+      "end": 964
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 964,
+      "end": 967
+    },
+    {
+      "text": "hasNextPage",
+      "type": "property",
+      "start": 967,
+      "end": 978,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 978,
+      "end": 979
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 979,
+      "end": 980
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 980,
+      "end": 987,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 987,
+      "end": 988
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 988,
+      "end": 991
+    },
+    {
+      "text": "hasPreviousPage",
+      "type": "property",
+      "start": 991,
+      "end": 1006,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1006,
+      "end": 1007
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1007,
+      "end": 1008
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 1008,
+      "end": 1015,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1015,
+      "end": 1016
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1016,
+      "end": 1019
+    },
+    {
+      "text": "startCursor",
+      "type": "property",
+      "start": 1019,
+      "end": 1030,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1030,
+      "end": 1031
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1031,
+      "end": 1032
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1032,
+      "end": 1038,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1038,
+      "end": 1041
+    },
+    {
+      "text": "endCursor",
+      "type": "property",
+      "start": 1041,
+      "end": 1050,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1050,
+      "end": 1051
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1051,
+      "end": 1052
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1052,
+      "end": 1058,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1058,
+      "end": 1059
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1059,
+      "end": 1060
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1060,
+      "end": 1062
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1062,
+      "end": 1067
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1067,
+      "end": 1068
+    },
+    {
+      "text": "RemoveCompletedTodosInput",
+      "type": "def",
+      "start": 1068,
+      "end": 1093,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1093,
+      "end": 1094
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1094,
+      "end": 1095
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1095,
+      "end": 1098
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1098,
+      "end": 1114,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1114,
+      "end": 1115
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1115,
+      "end": 1116
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1116,
+      "end": 1122,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1122,
+      "end": 1123
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1123,
+      "end": 1124
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1124,
+      "end": 1125
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1125,
+      "end": 1127
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1127,
+      "end": 1131
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1131,
+      "end": 1132
+    },
+    {
+      "text": "RemoveCompletedTodosPayload",
+      "type": "def",
+      "start": 1132,
+      "end": 1159,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1159,
+      "end": 1160
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1160,
+      "end": 1161
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1161,
+      "end": 1164
+    },
+    {
+      "text": "deletedTodoIds",
+      "type": "property",
+      "start": 1164,
+      "end": 1178,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1178,
+      "end": 1179
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1179,
+      "end": 1180
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 1180,
+      "end": 1181
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1181,
+      "end": 1187,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 1187,
+      "end": 1188
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1188,
+      "end": 1191
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1191,
+      "end": 1197,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1197,
+      "end": 1198
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1198,
+      "end": 1199
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1199,
+      "end": 1203,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1203,
+      "end": 1206
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1206,
+      "end": 1222,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1222,
+      "end": 1223
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1223,
+      "end": 1224
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1224,
+      "end": 1230,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1230,
+      "end": 1231
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1231,
+      "end": 1232
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1232,
+      "end": 1233
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1233,
+      "end": 1235
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1235,
+      "end": 1240
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1240,
+      "end": 1241
+    },
+    {
+      "text": "RemoveTodoInput",
+      "type": "def",
+      "start": 1241,
+      "end": 1256,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1256,
+      "end": 1257
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1257,
+      "end": 1258
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1258,
+      "end": 1261
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 1261,
+      "end": 1263,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1263,
+      "end": 1264
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1264,
+      "end": 1265
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1265,
+      "end": 1267,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1267,
+      "end": 1268
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1268,
+      "end": 1271
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1271,
+      "end": 1287,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1287,
+      "end": 1288
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1288,
+      "end": 1289
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1289,
+      "end": 1295,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1295,
+      "end": 1296
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1296,
+      "end": 1297
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1297,
+      "end": 1298
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1298,
+      "end": 1300
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1300,
+      "end": 1304
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1304,
+      "end": 1305
+    },
+    {
+      "text": "RemoveTodoPayload",
+      "type": "def",
+      "start": 1305,
+      "end": 1322,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1322,
+      "end": 1323
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1323,
+      "end": 1324
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1324,
+      "end": 1327
+    },
+    {
+      "text": "deletedTodoId",
+      "type": "property",
+      "start": 1327,
+      "end": 1340,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1340,
+      "end": 1341
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1341,
+      "end": 1342
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1342,
+      "end": 1344,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1344,
+      "end": 1347
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1347,
+      "end": 1353,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1353,
+      "end": 1354
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1354,
+      "end": 1355
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1355,
+      "end": 1359,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1359,
+      "end": 1362
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1362,
+      "end": 1378,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1378,
+      "end": 1379
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1379,
+      "end": 1380
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1380,
+      "end": 1386,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1386,
+      "end": 1387
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1387,
+      "end": 1388
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1388,
+      "end": 1389
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1389,
+      "end": 1391
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1391,
+      "end": 1396
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1396,
+      "end": 1397
+    },
+    {
+      "text": "RenameTodoInput",
+      "type": "def",
+      "start": 1397,
+      "end": 1412,
+      "kind": "InputObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1412,
+      "end": 1413
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1413,
+      "end": 1414
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1414,
+      "end": 1417
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 1417,
+      "end": 1419,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1419,
+      "end": 1420
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1420,
+      "end": 1421
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1421,
+      "end": 1423,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1423,
+      "end": 1424
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1424,
+      "end": 1427
+    },
+    {
+      "text": "text",
+      "type": "property",
+      "start": 1427,
+      "end": 1431,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1431,
+      "end": 1432
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1432,
+      "end": 1433
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1433,
+      "end": 1439,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1439,
+      "end": 1440
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1440,
+      "end": 1443
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1443,
+      "end": 1459,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1459,
+      "end": 1460
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1460,
+      "end": 1461
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1461,
+      "end": 1467,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1467,
+      "end": 1468
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1468,
+      "end": 1469
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1469,
+      "end": 1470
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1470,
+      "end": 1472
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1472,
+      "end": 1476
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1476,
+      "end": 1477
+    },
+    {
+      "text": "RenameTodoPayload",
+      "type": "def",
+      "start": 1477,
+      "end": 1494,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1494,
+      "end": 1495
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1495,
+      "end": 1496
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1496,
+      "end": 1499
+    },
+    {
+      "text": "todo",
+      "type": "property",
+      "start": 1499,
+      "end": 1503,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1503,
+      "end": 1504
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1504,
+      "end": 1505
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 1505,
+      "end": 1509,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1509,
+      "end": 1512
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1512,
+      "end": 1528,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1528,
+      "end": 1529
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1529,
+      "end": 1530
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1530,
+      "end": 1536,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1536,
+      "end": 1537
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1537,
+      "end": 1538
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1538,
+      "end": 1539
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1539,
+      "end": 1541
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1541,
+      "end": 1545
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1545,
+      "end": 1546
+    },
+    {
+      "text": "Root",
+      "type": "def",
+      "start": 1546,
+      "end": 1550,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1550,
+      "end": 1551
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1551,
+      "end": 1552
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1552,
+      "end": 1555
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1555,
+      "end": 1561,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1561,
+      "end": 1562
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1562,
+      "end": 1563
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1563,
+      "end": 1567,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1567,
+      "end": 1570
+    },
+    {
+      "text": "node",
+      "type": "property",
+      "start": 1570,
+      "end": 1574,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 1574,
+      "end": 1575
+    },
+    {
+      "text": "id",
+      "type": "attribute",
+      "start": 1575,
+      "end": 1577,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1577,
+      "end": 1578
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1578,
+      "end": 1579
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1579,
+      "end": 1581,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1581,
+      "end": 1582
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 1582,
+      "end": 1583
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1583,
+      "end": 1584
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1584,
+      "end": 1585
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 1585,
+      "end": 1589,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1589,
+      "end": 1590
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1590,
+      "end": 1591
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1591,
+      "end": 1593
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1593,
+      "end": 1597
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1597,
+      "end": 1598
+    },
+    {
+      "text": "Todo",
+      "type": "def",
+      "start": 1598,
+      "end": 1602,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1602,
+      "end": 1603
+    },
+    {
+      "text": "implements",
+      "type": "keyword",
+      "start": 1603,
+      "end": 1613
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1613,
+      "end": 1614
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 1614,
+      "end": 1618,
+      "kind": "NamedType"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1618,
+      "end": 1619
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1619,
+      "end": 1620
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1620,
+      "end": 1623
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 1623,
+      "end": 1625,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1625,
+      "end": 1626
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1626,
+      "end": 1627
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1627,
+      "end": 1629,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1629,
+      "end": 1630
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1630,
+      "end": 1633
+    },
+    {
+      "text": "text",
+      "type": "property",
+      "start": 1633,
+      "end": 1637,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1637,
+      "end": 1638
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1638,
+      "end": 1639
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1639,
+      "end": 1645,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1645,
+      "end": 1648
+    },
+    {
+      "text": "complete",
+      "type": "property",
+      "start": 1648,
+      "end": 1656,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1656,
+      "end": 1657
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1657,
+      "end": 1658
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 1658,
+      "end": 1665,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1665,
+      "end": 1666
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1666,
+      "end": 1667
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1667,
+      "end": 1669
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1669,
+      "end": 1673
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1673,
+      "end": 1674
+    },
+    {
+      "text": "TodoConnection",
+      "type": "def",
+      "start": 1674,
+      "end": 1688,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1688,
+      "end": 1689
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1689,
+      "end": 1690
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1690,
+      "end": 1693
+    },
+    {
+      "text": "pageInfo",
+      "type": "property",
+      "start": 1693,
+      "end": 1701,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1701,
+      "end": 1702
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1702,
+      "end": 1703
+    },
+    {
+      "text": "PageInfo",
+      "type": "atom",
+      "start": 1703,
+      "end": 1711,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1711,
+      "end": 1712
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1712,
+      "end": 1715
+    },
+    {
+      "text": "edges",
+      "type": "property",
+      "start": 1715,
+      "end": 1720,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1720,
+      "end": 1721
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1721,
+      "end": 1722
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 1722,
+      "end": 1723
+    },
+    {
+      "text": "TodoEdge",
+      "type": "atom",
+      "start": 1723,
+      "end": 1731,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 1731,
+      "end": 1732
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1732,
+      "end": 1733
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1733,
+      "end": 1734
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1734,
+      "end": 1736
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1736,
+      "end": 1740
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1740,
+      "end": 1741
+    },
+    {
+      "text": "TodoEdge",
+      "type": "def",
+      "start": 1741,
+      "end": 1749,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1749,
+      "end": 1750
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1750,
+      "end": 1751
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1751,
+      "end": 1754
+    },
+    {
+      "text": "node",
+      "type": "property",
+      "start": 1754,
+      "end": 1758,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1758,
+      "end": 1759
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1759,
+      "end": 1760
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 1760,
+      "end": 1764,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1764,
+      "end": 1767
+    },
+    {
+      "text": "cursor",
+      "type": "property",
+      "start": 1767,
+      "end": 1773,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1773,
+      "end": 1774
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1774,
+      "end": 1775
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1775,
+      "end": 1781,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1781,
+      "end": 1782
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1782,
+      "end": 1783
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1783,
+      "end": 1784
+    },
+    {
+      "text": "\n\n",
+      "type": "ws",
+      "start": 1784,
+      "end": 1786
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1786,
+      "end": 1790
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1790,
+      "end": 1791
+    },
+    {
+      "text": "User",
+      "type": "def",
+      "start": 1791,
+      "end": 1795,
+      "kind": "ObjectTypeDefinition"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1795,
+      "end": 1796
+    },
+    {
+      "text": "implements",
+      "type": "keyword",
+      "start": 1796,
+      "end": 1806
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1806,
+      "end": 1807
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 1807,
+      "end": 1811,
+      "kind": "NamedType"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1811,
+      "end": 1812
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1812,
+      "end": 1813
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1813,
+      "end": 1816
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 1816,
+      "end": 1818,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1818,
+      "end": 1819
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1819,
+      "end": 1820
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1820,
+      "end": 1822,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1822,
+      "end": 1823
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1823,
+      "end": 1826
+    },
+    {
+      "text": "todos",
+      "type": "property",
+      "start": 1826,
+      "end": 1831,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 1831,
+      "end": 1832
+    },
+    {
+      "text": "status",
+      "type": "attribute",
+      "start": 1832,
+      "end": 1838,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1838,
+      "end": 1839
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1839,
+      "end": 1840
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1840,
+      "end": 1846,
+      "kind": "NamedType"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1846,
+      "end": 1847
+    },
+    {
+      "text": "=",
+      "type": "punctuation",
+      "start": 1847,
+      "end": 1848
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1848,
+      "end": 1849
+    },
+    {
+      "text": "\"any\"",
+      "type": "string",
+      "start": 1849,
+      "end": 1854
+    },
+    {
+      "text": ", ",
+      "type": "ws",
+      "start": 1854,
+      "end": 1856
+    },
+    {
+      "text": "before",
+      "type": "attribute",
+      "start": 1856,
+      "end": 1862,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1862,
+      "end": 1863
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1863,
+      "end": 1864
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1864,
+      "end": 1870,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "ws",
+      "start": 1870,
+      "end": 1872
+    },
+    {
+      "text": "after",
+      "type": "attribute",
+      "start": 1872,
+      "end": 1877,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1877,
+      "end": 1878
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1878,
+      "end": 1879
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1879,
+      "end": 1885,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "ws",
+      "start": 1885,
+      "end": 1887
+    },
+    {
+      "text": "first",
+      "type": "attribute",
+      "start": 1887,
+      "end": 1892,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1892,
+      "end": 1893
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1893,
+      "end": 1894
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 1894,
+      "end": 1897,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "ws",
+      "start": 1897,
+      "end": 1899
+    },
+    {
+      "text": "last",
+      "type": "attribute",
+      "start": 1899,
+      "end": 1903,
+      "kind": "InputValueDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1903,
+      "end": 1904
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1904,
+      "end": 1905
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 1905,
+      "end": 1908,
+      "kind": "NamedType"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 1908,
+      "end": 1909
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1909,
+      "end": 1910
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1910,
+      "end": 1911
+    },
+    {
+      "text": "TodoConnection",
+      "type": "atom",
+      "start": 1911,
+      "end": 1925,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1925,
+      "end": 1928
+    },
+    {
+      "text": "totalCount",
+      "type": "property",
+      "start": 1928,
+      "end": 1938,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1938,
+      "end": 1939
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1939,
+      "end": 1940
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 1940,
+      "end": 1943,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n  ",
+      "type": "ws",
+      "start": 1943,
+      "end": 1946
+    },
+    {
+      "text": "completedCount",
+      "type": "property",
+      "start": 1946,
+      "end": 1960,
+      "kind": "FieldDefinition"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1960,
+      "end": 1961
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1961,
+      "end": 1962
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 1962,
+      "end": 1965,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1965,
+      "end": 1966
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1966,
+      "end": 1967
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1967,
+      "end": 1968
+    }
+  ],
+  "ast": {
+    "kind": "Document",
+    "definitions": [
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "AddTodoInput",
+          "loc": {
+            "start": 6,
+            "end": 18
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "text",
+              "loc": {
+                "start": 23,
+                "end": 27
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 29,
+                    "end": 35
+                  }
+                },
+                "loc": {
+                  "start": 29,
+                  "end": 35
+                }
+              },
+              "loc": {
+                "start": 29,
+                "end": 36
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 23,
+              "end": 36
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 39,
+                "end": 55
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 57,
+                    "end": 63
+                  }
+                },
+                "loc": {
+                  "start": 57,
+                  "end": 63
+                }
+              },
+              "loc": {
+                "start": 57,
+                "end": 64
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 39,
+              "end": 64
+            }
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 66
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "AddTodoPayload",
+          "loc": {
+            "start": 73,
+            "end": 87
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "todoEdge",
+              "loc": {
+                "start": 92,
+                "end": 100
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "TodoEdge",
+                "loc": {
+                  "start": 102,
+                  "end": 110
+                }
+              },
+              "loc": {
+                "start": 102,
+                "end": 110
+              }
+            },
+            "loc": {
+              "start": 92,
+              "end": 110
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 113,
+                "end": 119
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 121,
+                  "end": 125
+                }
+              },
+              "loc": {
+                "start": 121,
+                "end": 125
+              }
+            },
+            "loc": {
+              "start": 113,
+              "end": 125
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 128,
+                "end": 144
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 146,
+                    "end": 152
+                  }
+                },
+                "loc": {
+                  "start": 146,
+                  "end": 152
+                }
+              },
+              "loc": {
+                "start": 146,
+                "end": 153
+              }
+            },
+            "loc": {
+              "start": 128,
+              "end": 153
+            }
+          }
+        ],
+        "loc": {
+          "start": 68,
+          "end": 155
+        }
+      },
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "ChangeTodoStatusInput",
+          "loc": {
+            "start": 163,
+            "end": 184
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "complete",
+              "loc": {
+                "start": 189,
+                "end": 197
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "Boolean",
+                  "loc": {
+                    "start": 199,
+                    "end": 206
+                  }
+                },
+                "loc": {
+                  "start": 199,
+                  "end": 206
+                }
+              },
+              "loc": {
+                "start": 199,
+                "end": 207
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 189,
+              "end": 207
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 210,
+                "end": 212
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 214,
+                    "end": 216
+                  }
+                },
+                "loc": {
+                  "start": 214,
+                  "end": 216
+                }
+              },
+              "loc": {
+                "start": 214,
+                "end": 217
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 210,
+              "end": 217
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 220,
+                "end": 236
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 238,
+                    "end": 244
+                  }
+                },
+                "loc": {
+                  "start": 238,
+                  "end": 244
+                }
+              },
+              "loc": {
+                "start": 238,
+                "end": 245
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 220,
+              "end": 245
+            }
+          }
+        ],
+        "loc": {
+          "start": 157,
+          "end": 247
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "ChangeTodoStatusPayload",
+          "loc": {
+            "start": 254,
+            "end": 277
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "todo",
+              "loc": {
+                "start": 282,
+                "end": 286
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Todo",
+                "loc": {
+                  "start": 288,
+                  "end": 292
+                }
+              },
+              "loc": {
+                "start": 288,
+                "end": 292
+              }
+            },
+            "loc": {
+              "start": 282,
+              "end": 292
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 295,
+                "end": 301
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 303,
+                  "end": 307
+                }
+              },
+              "loc": {
+                "start": 303,
+                "end": 307
+              }
+            },
+            "loc": {
+              "start": 295,
+              "end": 307
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 310,
+                "end": 326
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 328,
+                    "end": 334
+                  }
+                },
+                "loc": {
+                  "start": 328,
+                  "end": 334
+                }
+              },
+              "loc": {
+                "start": 328,
+                "end": 335
+              }
+            },
+            "loc": {
+              "start": 310,
+              "end": 335
+            }
+          }
+        ],
+        "loc": {
+          "start": 249,
+          "end": 337
+        }
+      },
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "MarkAllTodosInput",
+          "loc": {
+            "start": 345,
+            "end": 362
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "complete",
+              "loc": {
+                "start": 367,
+                "end": 375
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "Boolean",
+                  "loc": {
+                    "start": 377,
+                    "end": 384
+                  }
+                },
+                "loc": {
+                  "start": 377,
+                  "end": 384
+                }
+              },
+              "loc": {
+                "start": 377,
+                "end": 385
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 367,
+              "end": 385
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 388,
+                "end": 404
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 406,
+                    "end": 412
+                  }
+                },
+                "loc": {
+                  "start": 406,
+                  "end": 412
+                }
+              },
+              "loc": {
+                "start": 406,
+                "end": 413
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 388,
+              "end": 413
+            }
+          }
+        ],
+        "loc": {
+          "start": 339,
+          "end": 415
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "MarkAllTodosPayload",
+          "loc": {
+            "start": 422,
+            "end": 441
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "changedTodos",
+              "loc": {
+                "start": 446,
+                "end": 458
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "ListType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "Todo",
+                  "loc": {
+                    "start": 461,
+                    "end": 465
+                  }
+                },
+                "loc": {
+                  "start": 461,
+                  "end": 465
+                }
+              },
+              "loc": {
+                "start": 460,
+                "end": 466
+              }
+            },
+            "loc": {
+              "start": 446,
+              "end": 466
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 469,
+                "end": 475
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 477,
+                  "end": 481
+                }
+              },
+              "loc": {
+                "start": 477,
+                "end": 481
+              }
+            },
+            "loc": {
+              "start": 469,
+              "end": 481
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 484,
+                "end": 500
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 502,
+                    "end": 508
+                  }
+                },
+                "loc": {
+                  "start": 502,
+                  "end": 508
+                }
+              },
+              "loc": {
+                "start": 502,
+                "end": 509
+              }
+            },
+            "loc": {
+              "start": 484,
+              "end": 509
+            }
+          }
+        ],
+        "loc": {
+          "start": 417,
+          "end": 511
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "Mutation",
+          "loc": {
+            "start": 518,
+            "end": 526
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "addTodo",
+              "loc": {
+                "start": 531,
+                "end": 538
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 539,
+                    "end": 544
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "AddTodoInput",
+                      "loc": {
+                        "start": 546,
+                        "end": 558
+                      }
+                    },
+                    "loc": {
+                      "start": 546,
+                      "end": 558
+                    }
+                  },
+                  "loc": {
+                    "start": 546,
+                    "end": 559
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 539,
+                  "end": 559
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "AddTodoPayload",
+                "loc": {
+                  "start": 562,
+                  "end": 576
+                }
+              },
+              "loc": {
+                "start": 562,
+                "end": 576
+              }
+            },
+            "loc": {
+              "start": 531,
+              "end": 576
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "changeTodoStatus",
+              "loc": {
+                "start": 579,
+                "end": 595
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 596,
+                    "end": 601
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "ChangeTodoStatusInput",
+                      "loc": {
+                        "start": 603,
+                        "end": 624
+                      }
+                    },
+                    "loc": {
+                      "start": 603,
+                      "end": 624
+                    }
+                  },
+                  "loc": {
+                    "start": 603,
+                    "end": 625
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 596,
+                  "end": 625
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "ChangeTodoStatusPayload",
+                "loc": {
+                  "start": 628,
+                  "end": 651
+                }
+              },
+              "loc": {
+                "start": 628,
+                "end": 651
+              }
+            },
+            "loc": {
+              "start": 579,
+              "end": 651
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "markAllTodos",
+              "loc": {
+                "start": 654,
+                "end": 666
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 667,
+                    "end": 672
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "MarkAllTodosInput",
+                      "loc": {
+                        "start": 674,
+                        "end": 691
+                      }
+                    },
+                    "loc": {
+                      "start": 674,
+                      "end": 691
+                    }
+                  },
+                  "loc": {
+                    "start": 674,
+                    "end": 692
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 667,
+                  "end": 692
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "MarkAllTodosPayload",
+                "loc": {
+                  "start": 695,
+                  "end": 714
+                }
+              },
+              "loc": {
+                "start": 695,
+                "end": 714
+              }
+            },
+            "loc": {
+              "start": 654,
+              "end": 714
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "removeCompletedTodos",
+              "loc": {
+                "start": 717,
+                "end": 737
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 738,
+                    "end": 743
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "RemoveCompletedTodosInput",
+                      "loc": {
+                        "start": 745,
+                        "end": 770
+                      }
+                    },
+                    "loc": {
+                      "start": 745,
+                      "end": 770
+                    }
+                  },
+                  "loc": {
+                    "start": 745,
+                    "end": 771
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 738,
+                  "end": 771
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "RemoveCompletedTodosPayload",
+                "loc": {
+                  "start": 774,
+                  "end": 801
+                }
+              },
+              "loc": {
+                "start": 774,
+                "end": 801
+              }
+            },
+            "loc": {
+              "start": 717,
+              "end": 801
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "removeTodo",
+              "loc": {
+                "start": 804,
+                "end": 814
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 815,
+                    "end": 820
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "RemoveTodoInput",
+                      "loc": {
+                        "start": 822,
+                        "end": 837
+                      }
+                    },
+                    "loc": {
+                      "start": 822,
+                      "end": 837
+                    }
+                  },
+                  "loc": {
+                    "start": 822,
+                    "end": 838
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 815,
+                  "end": 838
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "RemoveTodoPayload",
+                "loc": {
+                  "start": 841,
+                  "end": 858
+                }
+              },
+              "loc": {
+                "start": 841,
+                "end": 858
+              }
+            },
+            "loc": {
+              "start": 804,
+              "end": 858
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "renameTodo",
+              "loc": {
+                "start": 861,
+                "end": 871
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "input",
+                  "loc": {
+                    "start": 872,
+                    "end": 877
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "RenameTodoInput",
+                      "loc": {
+                        "start": 879,
+                        "end": 894
+                      }
+                    },
+                    "loc": {
+                      "start": 879,
+                      "end": 894
+                    }
+                  },
+                  "loc": {
+                    "start": 879,
+                    "end": 895
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 872,
+                  "end": 895
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "RenameTodoPayload",
+                "loc": {
+                  "start": 898,
+                  "end": 915
+                }
+              },
+              "loc": {
+                "start": 898,
+                "end": 915
+              }
+            },
+            "loc": {
+              "start": 861,
+              "end": 915
+            }
+          }
+        ],
+        "loc": {
+          "start": 513,
+          "end": 917
+        }
+      },
+      {
+        "kind": "InterfaceTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "Node",
+          "loc": {
+            "start": 929,
+            "end": 933
+          }
+        },
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 938,
+                "end": 940
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 942,
+                    "end": 944
+                  }
+                },
+                "loc": {
+                  "start": 942,
+                  "end": 944
+                }
+              },
+              "loc": {
+                "start": 942,
+                "end": 945
+              }
+            },
+            "loc": {
+              "start": 938,
+              "end": 945
+            }
+          }
+        ],
+        "loc": {
+          "start": 919,
+          "end": 947
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "PageInfo",
+          "loc": {
+            "start": 954,
+            "end": 962
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "hasNextPage",
+              "loc": {
+                "start": 967,
+                "end": 978
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "Boolean",
+                  "loc": {
+                    "start": 980,
+                    "end": 987
+                  }
+                },
+                "loc": {
+                  "start": 980,
+                  "end": 987
+                }
+              },
+              "loc": {
+                "start": 980,
+                "end": 988
+              }
+            },
+            "loc": {
+              "start": 967,
+              "end": 988
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "hasPreviousPage",
+              "loc": {
+                "start": 991,
+                "end": 1006
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "Boolean",
+                  "loc": {
+                    "start": 1008,
+                    "end": 1015
+                  }
+                },
+                "loc": {
+                  "start": 1008,
+                  "end": 1015
+                }
+              },
+              "loc": {
+                "start": 1008,
+                "end": 1016
+              }
+            },
+            "loc": {
+              "start": 991,
+              "end": 1016
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "startCursor",
+              "loc": {
+                "start": 1019,
+                "end": 1030
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "String",
+                "loc": {
+                  "start": 1032,
+                  "end": 1038
+                }
+              },
+              "loc": {
+                "start": 1032,
+                "end": 1038
+              }
+            },
+            "loc": {
+              "start": 1019,
+              "end": 1038
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "endCursor",
+              "loc": {
+                "start": 1041,
+                "end": 1050
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "String",
+                "loc": {
+                  "start": 1052,
+                  "end": 1058
+                }
+              },
+              "loc": {
+                "start": 1052,
+                "end": 1058
+              }
+            },
+            "loc": {
+              "start": 1041,
+              "end": 1058
+            }
+          }
+        ],
+        "loc": {
+          "start": 949,
+          "end": 1060
+        }
+      },
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RemoveCompletedTodosInput",
+          "loc": {
+            "start": 1068,
+            "end": 1093
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1098,
+                "end": 1114
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1116,
+                    "end": 1122
+                  }
+                },
+                "loc": {
+                  "start": 1116,
+                  "end": 1122
+                }
+              },
+              "loc": {
+                "start": 1116,
+                "end": 1123
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1098,
+              "end": 1123
+            }
+          }
+        ],
+        "loc": {
+          "start": 1062,
+          "end": 1125
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RemoveCompletedTodosPayload",
+          "loc": {
+            "start": 1132,
+            "end": 1159
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "deletedTodoIds",
+              "loc": {
+                "start": 1164,
+                "end": 1178
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "ListType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1181,
+                    "end": 1187
+                  }
+                },
+                "loc": {
+                  "start": 1181,
+                  "end": 1187
+                }
+              },
+              "loc": {
+                "start": 1180,
+                "end": 1188
+              }
+            },
+            "loc": {
+              "start": 1164,
+              "end": 1188
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 1191,
+                "end": 1197
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 1199,
+                  "end": 1203
+                }
+              },
+              "loc": {
+                "start": 1199,
+                "end": 1203
+              }
+            },
+            "loc": {
+              "start": 1191,
+              "end": 1203
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1206,
+                "end": 1222
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1224,
+                    "end": 1230
+                  }
+                },
+                "loc": {
+                  "start": 1224,
+                  "end": 1230
+                }
+              },
+              "loc": {
+                "start": 1224,
+                "end": 1231
+              }
+            },
+            "loc": {
+              "start": 1206,
+              "end": 1231
+            }
+          }
+        ],
+        "loc": {
+          "start": 1127,
+          "end": 1233
+        }
+      },
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RemoveTodoInput",
+          "loc": {
+            "start": 1241,
+            "end": 1256
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 1261,
+                "end": 1263
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 1265,
+                    "end": 1267
+                  }
+                },
+                "loc": {
+                  "start": 1265,
+                  "end": 1267
+                }
+              },
+              "loc": {
+                "start": 1265,
+                "end": 1268
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1261,
+              "end": 1268
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1271,
+                "end": 1287
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1289,
+                    "end": 1295
+                  }
+                },
+                "loc": {
+                  "start": 1289,
+                  "end": 1295
+                }
+              },
+              "loc": {
+                "start": 1289,
+                "end": 1296
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1271,
+              "end": 1296
+            }
+          }
+        ],
+        "loc": {
+          "start": 1235,
+          "end": 1298
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RemoveTodoPayload",
+          "loc": {
+            "start": 1305,
+            "end": 1322
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "deletedTodoId",
+              "loc": {
+                "start": 1327,
+                "end": 1340
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "ID",
+                "loc": {
+                  "start": 1342,
+                  "end": 1344
+                }
+              },
+              "loc": {
+                "start": 1342,
+                "end": 1344
+              }
+            },
+            "loc": {
+              "start": 1327,
+              "end": 1344
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 1347,
+                "end": 1353
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 1355,
+                  "end": 1359
+                }
+              },
+              "loc": {
+                "start": 1355,
+                "end": 1359
+              }
+            },
+            "loc": {
+              "start": 1347,
+              "end": 1359
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1362,
+                "end": 1378
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1380,
+                    "end": 1386
+                  }
+                },
+                "loc": {
+                  "start": 1380,
+                  "end": 1386
+                }
+              },
+              "loc": {
+                "start": 1380,
+                "end": 1387
+              }
+            },
+            "loc": {
+              "start": 1362,
+              "end": 1387
+            }
+          }
+        ],
+        "loc": {
+          "start": 1300,
+          "end": 1389
+        }
+      },
+      {
+        "kind": "InputObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RenameTodoInput",
+          "loc": {
+            "start": 1397,
+            "end": 1412
+          }
+        },
+        "fields": [
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 1417,
+                "end": 1419
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 1421,
+                    "end": 1423
+                  }
+                },
+                "loc": {
+                  "start": 1421,
+                  "end": 1423
+                }
+              },
+              "loc": {
+                "start": 1421,
+                "end": 1424
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1417,
+              "end": 1424
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "text",
+              "loc": {
+                "start": 1427,
+                "end": 1431
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1433,
+                    "end": 1439
+                  }
+                },
+                "loc": {
+                  "start": 1433,
+                  "end": 1439
+                }
+              },
+              "loc": {
+                "start": 1433,
+                "end": 1440
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1427,
+              "end": 1440
+            }
+          },
+          {
+            "kind": "InputValueDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1443,
+                "end": 1459
+              }
+            },
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1461,
+                    "end": 1467
+                  }
+                },
+                "loc": {
+                  "start": 1461,
+                  "end": 1467
+                }
+              },
+              "loc": {
+                "start": 1461,
+                "end": 1468
+              }
+            },
+            "defaultValue": null,
+            "loc": {
+              "start": 1443,
+              "end": 1468
+            }
+          }
+        ],
+        "loc": {
+          "start": 1391,
+          "end": 1470
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "RenameTodoPayload",
+          "loc": {
+            "start": 1477,
+            "end": 1494
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "todo",
+              "loc": {
+                "start": 1499,
+                "end": 1503
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Todo",
+                "loc": {
+                  "start": 1505,
+                  "end": 1509
+                }
+              },
+              "loc": {
+                "start": 1505,
+                "end": 1509
+              }
+            },
+            "loc": {
+              "start": 1499,
+              "end": 1509
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "clientMutationId",
+              "loc": {
+                "start": 1512,
+                "end": 1528
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1530,
+                    "end": 1536
+                  }
+                },
+                "loc": {
+                  "start": 1530,
+                  "end": 1536
+                }
+              },
+              "loc": {
+                "start": 1530,
+                "end": 1537
+              }
+            },
+            "loc": {
+              "start": 1512,
+              "end": 1537
+            }
+          }
+        ],
+        "loc": {
+          "start": 1472,
+          "end": 1539
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "Root",
+          "loc": {
+            "start": 1546,
+            "end": 1550
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "viewer",
+              "loc": {
+                "start": 1555,
+                "end": 1561
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "User",
+                "loc": {
+                  "start": 1563,
+                  "end": 1567
+                }
+              },
+              "loc": {
+                "start": 1563,
+                "end": 1567
+              }
+            },
+            "loc": {
+              "start": 1555,
+              "end": 1567
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "node",
+              "loc": {
+                "start": 1570,
+                "end": 1574
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "id",
+                  "loc": {
+                    "start": 1575,
+                    "end": 1577
+                  }
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "ID",
+                      "loc": {
+                        "start": 1579,
+                        "end": 1581
+                      }
+                    },
+                    "loc": {
+                      "start": 1579,
+                      "end": 1581
+                    }
+                  },
+                  "loc": {
+                    "start": 1579,
+                    "end": 1582
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 1575,
+                  "end": 1582
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Node",
+                "loc": {
+                  "start": 1585,
+                  "end": 1589
+                }
+              },
+              "loc": {
+                "start": 1585,
+                "end": 1589
+              }
+            },
+            "loc": {
+              "start": 1570,
+              "end": 1589
+            }
+          }
+        ],
+        "loc": {
+          "start": 1541,
+          "end": 1591
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "Todo",
+          "loc": {
+            "start": 1598,
+            "end": 1602
+          }
+        },
+        "interfaces": [
+          {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "Node",
+              "loc": {
+                "start": 1614,
+                "end": 1618
+              }
+            },
+            "loc": {
+              "start": 1614,
+              "end": 1618
+            }
+          }
+        ],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 1623,
+                "end": 1625
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 1627,
+                    "end": 1629
+                  }
+                },
+                "loc": {
+                  "start": 1627,
+                  "end": 1629
+                }
+              },
+              "loc": {
+                "start": 1627,
+                "end": 1630
+              }
+            },
+            "loc": {
+              "start": 1623,
+              "end": 1630
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "text",
+              "loc": {
+                "start": 1633,
+                "end": 1637
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "String",
+                "loc": {
+                  "start": 1639,
+                  "end": 1645
+                }
+              },
+              "loc": {
+                "start": 1639,
+                "end": 1645
+              }
+            },
+            "loc": {
+              "start": 1633,
+              "end": 1645
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "complete",
+              "loc": {
+                "start": 1648,
+                "end": 1656
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Boolean",
+                "loc": {
+                  "start": 1658,
+                  "end": 1665
+                }
+              },
+              "loc": {
+                "start": 1658,
+                "end": 1665
+              }
+            },
+            "loc": {
+              "start": 1648,
+              "end": 1665
+            }
+          }
+        ],
+        "loc": {
+          "start": 1593,
+          "end": 1667
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "TodoConnection",
+          "loc": {
+            "start": 1674,
+            "end": 1688
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "pageInfo",
+              "loc": {
+                "start": 1693,
+                "end": 1701
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "PageInfo",
+                  "loc": {
+                    "start": 1703,
+                    "end": 1711
+                  }
+                },
+                "loc": {
+                  "start": 1703,
+                  "end": 1711
+                }
+              },
+              "loc": {
+                "start": 1703,
+                "end": 1712
+              }
+            },
+            "loc": {
+              "start": 1693,
+              "end": 1712
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "edges",
+              "loc": {
+                "start": 1715,
+                "end": 1720
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "ListType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "TodoEdge",
+                  "loc": {
+                    "start": 1723,
+                    "end": 1731
+                  }
+                },
+                "loc": {
+                  "start": 1723,
+                  "end": 1731
+                }
+              },
+              "loc": {
+                "start": 1722,
+                "end": 1732
+              }
+            },
+            "loc": {
+              "start": 1715,
+              "end": 1732
+            }
+          }
+        ],
+        "loc": {
+          "start": 1669,
+          "end": 1734
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "TodoEdge",
+          "loc": {
+            "start": 1741,
+            "end": 1749
+          }
+        },
+        "interfaces": [],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "node",
+              "loc": {
+                "start": 1754,
+                "end": 1758
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Todo",
+                "loc": {
+                  "start": 1760,
+                  "end": 1764
+                }
+              },
+              "loc": {
+                "start": 1760,
+                "end": 1764
+              }
+            },
+            "loc": {
+              "start": 1754,
+              "end": 1764
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "cursor",
+              "loc": {
+                "start": 1767,
+                "end": 1773
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "String",
+                  "loc": {
+                    "start": 1775,
+                    "end": 1781
+                  }
+                },
+                "loc": {
+                  "start": 1775,
+                  "end": 1781
+                }
+              },
+              "loc": {
+                "start": 1775,
+                "end": 1782
+              }
+            },
+            "loc": {
+              "start": 1767,
+              "end": 1782
+            }
+          }
+        ],
+        "loc": {
+          "start": 1736,
+          "end": 1784
+        }
+      },
+      {
+        "kind": "ObjectTypeDefinition",
+        "name": {
+          "kind": "Name",
+          "value": "User",
+          "loc": {
+            "start": 1791,
+            "end": 1795
+          }
+        },
+        "interfaces": [
+          {
+            "kind": "NamedType",
+            "name": {
+              "kind": "Name",
+              "value": "Node",
+              "loc": {
+                "start": 1807,
+                "end": 1811
+              }
+            },
+            "loc": {
+              "start": 1807,
+              "end": 1811
+            }
+          }
+        ],
+        "fields": [
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "id",
+              "loc": {
+                "start": 1816,
+                "end": 1818
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NonNullType",
+              "type": {
+                "kind": "NamedType",
+                "name": {
+                  "kind": "Name",
+                  "value": "ID",
+                  "loc": {
+                    "start": 1820,
+                    "end": 1822
+                  }
+                },
+                "loc": {
+                  "start": 1820,
+                  "end": 1822
+                }
+              },
+              "loc": {
+                "start": 1820,
+                "end": 1823
+              }
+            },
+            "loc": {
+              "start": 1816,
+              "end": 1823
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "todos",
+              "loc": {
+                "start": 1826,
+                "end": 1831
+              }
+            },
+            "arguments": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "status",
+                  "loc": {
+                    "start": 1832,
+                    "end": 1838
+                  }
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String",
+                    "loc": {
+                      "start": 1840,
+                      "end": 1846
+                    }
+                  },
+                  "loc": {
+                    "start": 1840,
+                    "end": 1846
+                  }
+                },
+                "defaultValue": {
+                  "kind": "StringValue",
+                  "value": "any",
+                  "loc": {
+                    "start": 1849,
+                    "end": 1854
+                  }
+                },
+                "loc": {
+                  "start": 1832,
+                  "end": 1854
+                }
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "before",
+                  "loc": {
+                    "start": 1856,
+                    "end": 1862
+                  }
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String",
+                    "loc": {
+                      "start": 1864,
+                      "end": 1870
+                    }
+                  },
+                  "loc": {
+                    "start": 1864,
+                    "end": 1870
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 1856,
+                  "end": 1870
+                }
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "after",
+                  "loc": {
+                    "start": 1872,
+                    "end": 1877
+                  }
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String",
+                    "loc": {
+                      "start": 1879,
+                      "end": 1885
+                    }
+                  },
+                  "loc": {
+                    "start": 1879,
+                    "end": 1885
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 1872,
+                  "end": 1885
+                }
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "first",
+                  "loc": {
+                    "start": 1887,
+                    "end": 1892
+                  }
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int",
+                    "loc": {
+                      "start": 1894,
+                      "end": 1897
+                    }
+                  },
+                  "loc": {
+                    "start": 1894,
+                    "end": 1897
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 1887,
+                  "end": 1897
+                }
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "last",
+                  "loc": {
+                    "start": 1899,
+                    "end": 1903
+                  }
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int",
+                    "loc": {
+                      "start": 1905,
+                      "end": 1908
+                    }
+                  },
+                  "loc": {
+                    "start": 1905,
+                    "end": 1908
+                  }
+                },
+                "defaultValue": null,
+                "loc": {
+                  "start": 1899,
+                  "end": 1908
+                }
+              }
+            ],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "TodoConnection",
+                "loc": {
+                  "start": 1911,
+                  "end": 1925
+                }
+              },
+              "loc": {
+                "start": 1911,
+                "end": 1925
+              }
+            },
+            "loc": {
+              "start": 1826,
+              "end": 1925
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "totalCount",
+              "loc": {
+                "start": 1928,
+                "end": 1938
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Int",
+                "loc": {
+                  "start": 1940,
+                  "end": 1943
+                }
+              },
+              "loc": {
+                "start": 1940,
+                "end": 1943
+              }
+            },
+            "loc": {
+              "start": 1928,
+              "end": 1943
+            }
+          },
+          {
+            "kind": "FieldDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "completedCount",
+              "loc": {
+                "start": 1946,
+                "end": 1960
+              }
+            },
+            "arguments": [],
+            "type": {
+              "kind": "NamedType",
+              "name": {
+                "kind": "Name",
+                "value": "Int",
+                "loc": {
+                  "start": 1962,
+                  "end": 1965
+                }
+              },
+              "loc": {
+                "start": 1962,
+                "end": 1965
+              }
+            },
+            "loc": {
+              "start": 1946,
+              "end": 1965
+            }
+          }
+        ],
+        "loc": {
+          "start": 1786,
+          "end": 1967
+        }
+      }
+    ],
+    "loc": {
+      "start": 0,
+      "end": 1968
+    }
+  }
+}

@@ -174,3 +174,14 @@ describe('getSchema with TodoApp project dir set', function(){
             .expect(200, done);
     })
 });
+
+describe('getSchemaTokensAndAST', function(){
+    it('responds with expected tokens', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getSchemaTokensAndAST', buffer: getTodoAppSchemaText})
+            .expect(require('./data/projects/todoapp/getSchemaTokensAndAST.json'))
+            .expect(200, done);
+    })
+});
