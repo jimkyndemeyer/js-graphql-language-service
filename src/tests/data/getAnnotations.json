@@ -53,7 +53,7 @@
       }
     },
     {
-      "message": "Cannot query field \"foo\" on \"Mutation\".",
+      "message": "Cannot query field \"foo\" on type \"Mutation\".",
       "severity": "error",
       "type": "validation",
       "from": {
@@ -66,7 +66,7 @@
       }
     },
     {
-      "message": "Variable \"$input\" is never used.",
+      "message": "Variable \"$input\" is never used in operation \"MyMutation\".",
       "severity": "error",
       "type": "validation",
       "from": {
@@ -105,7 +105,7 @@
       }
     },
     {
-      "message": "Cannot query field \"hasArgs\" on \"Query\".",
+      "message": "Cannot query field \"hasArgs\" on type \"Query\".",
       "severity": "error",
       "type": "validation",
       "from": {
@@ -131,7 +131,7 @@
       }
     },
     {
-      "message": "Cannot query field \"test\" on \"Query\".",
+      "message": "Cannot query field \"test\" on type \"Query\".",
       "severity": "error",
       "type": "validation",
       "from": {

@@ -1,6 +1,6 @@
 {
   "name": "js-graphql-language-service",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "contributors": [
     "Jim Kynde Meyer <jimkyndemeyer@gmail.com>"
@@ -23,10 +23,10 @@
   "dependencies": {
     "body-parser": "^1.13.3",
     "codemirror": "^5.9.0",
-    "codemirror-graphql": "^0.2.1",
+    "codemirror-graphql": "^0.2.2",
     "express": "~4.13.1",
     "filewatcher": "^3.0.0",
-    "graphql": "^0.4.14",
+    "graphql": "^0.4.16",
     "hashmap": "^2.0.4",
     "mock-browser": "^0.91.34",
     "stackjs": "^0.1.0",
