@@ -1,3 +1,9 @@
+## 1.1.2 (2016-06-09)
+
+Fixes:
+
+- Increased maximum size of JSON schema from 100kb to 32mb (#3)
+
 ## 1.1.1 (2016-02-03)
 
 Changes:

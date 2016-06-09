@@ -94,7 +94,7 @@ project.onSchemaChanged({
 
 // setup express endpoint for the language service and register the 'application/graphql' mime-type
 const app = express();
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '32mb'}));
 app.use(bodyParser.text({type: 'application/graphql' }));
 
 app.all('/js-graphql-language-service', function (req, res) {
