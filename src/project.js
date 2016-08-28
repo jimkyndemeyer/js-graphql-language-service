@@ -23,6 +23,12 @@ const project = {
 
     setProjectDir : function(projectDir) {
 
+        if(this.projectDir === projectDir) {
+            return;
+        }
+
+        console.log("Setting Project Dir '"+projectDir+"'");
+
         this.projectDir = projectDir;
         this.projectFile = path.join(projectDir, configFileName);
         this.schemaFile = null;

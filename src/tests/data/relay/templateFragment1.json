@@ -117,17 +117,9 @@
       "kind": "Field"
     },
     {
-      "text": "                              ",
-      "type": "ws",
-      "start": 61,
-      "end": 91,
-      "scope": 1,
-      "kind": "Field"
-    },
-    {
-      "text": ",",
+      "text": "                              ,",
       "type": "punctuation",
-      "start": 91,
+      "start": 61,
       "end": 92,
       "scope": 1,
       "kind": "Field"
@@ -155,17 +147,9 @@
       "kind": "Field"
     },
     {
-      "text": "                             ",
-      "type": "ws",
-      "start": 111,
-      "end": 140,
-      "scope": 1,
-      "kind": "Field"
-    },
-    {
-      "text": ",",
+      "text": "                             ,",
       "type": "punctuation",
-      "start": 140,
+      "start": 111,
       "end": 141,
       "scope": 1,
       "kind": "Field"

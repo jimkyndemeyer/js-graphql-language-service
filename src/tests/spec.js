@@ -148,6 +148,28 @@ describe('getTokens relay template fragments #2', function(){
     })
 });
 
+describe('getTokens relay template fragments #3', function(){
+    it('responds with expected tokens', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getTokens', buffer: "\n            fragment on Todo @relay(plural: true) {\n                id,\n                ${Todo.getFragment('todo')},\n            }\n        ", relay: true})
+            .expect(require('./data/relay/templateFragment3.json'))
+            .expect(200, done);
+    })
+});
+
+describe('getTokens relay comment before fragment', function(){
+    it('responds with expected tokens', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getTokens', buffer: "\n#            fragment on Ship {\n                id @include(if: true)\n                name\n            }\n        ", relay: true})
+            .expect(require('./data/relay/commentBeforeFragment.json'))
+            .expect(200, done);
+    })
+});
+
 
 // ---- TodoApp project ----
 
@@ -175,13 +197,13 @@ describe('getSchema with TodoApp project dir set', function(){
     })
 });
 
-describe('getSchemaTokensAndAST', function(){
+describe('getTokens for schema buffer', function(){
     it('responds with expected tokens', function(done){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getSchemaTokensAndAST', buffer: getTodoAppSchemaText})
-            .expect(require('./data/projects/todoapp/getSchemaTokensAndAST.json'))
+            .send({ command: 'getTokens', buffer: getTodoAppSchemaText})
+            .expect(require('./data/projects/todoapp/getSchemaTokens.json'))
             .expect(200, done);
     })
 });

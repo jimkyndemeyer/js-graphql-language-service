@@ -1,6 +1,6 @@
 {
   "name": "js-graphql-language-service",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "private": true,
   "contributors": [
     "Jim Kynde Meyer <jimkyndemeyer@gmail.com>"
@@ -21,19 +21,19 @@
     "bundle-to-intellij-plugin": "browserify --node --ignore-missing --entry bin/server.js --outfile ./../js-graphql-intellij-plugin/resources/META-INF/dist/js-graphql-language-service.dist.js"
   },
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "codemirror": "^5.9.0",
-    "codemirror-graphql": "^0.2.2",
-    "express": "~4.13.1",
-    "filewatcher": "^3.0.0",
-    "graphql": "^0.4.16",
-    "hashmap": "^2.0.4",
-    "mock-browser": "^0.91.34",
+    "body-parser": "^1.15.2",
+    "codemirror": "^5.18.2",
+    "codemirror-graphql": "^0.5.4",
+    "express": "~4.14.0",
+    "filewatcher": "^3.0.1",
+    "graphql": "^0.7.0",
+    "hashmap": "^2.0.6",
+    "mock-browser": "^0.92.12",
     "stackjs": "^0.1.0",
-    "then-request": "^2.1.1"
+    "then-request": "^2.2.0"
   },
   "devDependencies": {
-    "mocha": "^2.3.4",
-    "supertest": "^1.1.0"
+    "mocha": "^3.0.2",
+    "supertest": "^2.0.0"
   }
 }

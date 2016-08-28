@@ -1,0 +1,170 @@
+{
+  "tokens": [
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 0,
+      "end": 1
+    },
+    {
+      "text": "#            fragment on Ship {",
+      "type": "comment",
+      "start": 1,
+      "end": 32,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 32,
+      "end": 33
+    },
+    {
+      "text": "                ",
+      "type": "ws",
+      "start": 33,
+      "end": 49,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "id",
+      "type": "invalidchar",
+      "start": 49,
+      "end": 51,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 51,
+      "end": 52,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "@",
+      "type": "invalidchar",
+      "start": 52,
+      "end": 53,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "include",
+      "type": "invalidchar",
+      "start": 53,
+      "end": 60,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "(",
+      "type": "invalidchar",
+      "start": 60,
+      "end": 61,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "if",
+      "type": "invalidchar",
+      "start": 61,
+      "end": 63,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": ":",
+      "type": "invalidchar",
+      "start": 63,
+      "end": 64,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 64,
+      "end": 65,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "true",
+      "type": "invalidchar",
+      "start": 65,
+      "end": 69,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": ")",
+      "type": "invalidchar",
+      "start": 69,
+      "end": 70,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 70,
+      "end": 71
+    },
+    {
+      "text": "                ",
+      "type": "ws",
+      "start": 71,
+      "end": 87,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "name",
+      "type": "invalidchar",
+      "start": 87,
+      "end": 91,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 91,
+      "end": 92
+    },
+    {
+      "text": "            ",
+      "type": "ws",
+      "start": 92,
+      "end": 104,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "}",
+      "type": "invalidchar",
+      "start": 104,
+      "end": 105,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 105,
+      "end": 106
+    },
+    {
+      "text": "        ",
+      "type": "ws",
+      "start": 106,
+      "end": 114,
+      "scope": 1,
+      "kind": "Document"
+    }
+  ]
+}

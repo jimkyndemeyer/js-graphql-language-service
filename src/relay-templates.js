@@ -74,6 +74,17 @@ module.exports = {
     _transformToGraphQL : function(relayContext) {
         let baseOffset = 0;
         let transformedBuffer = relayContext.templatedTextToParse.replace(/(fragment[\s]+)(on)/g, (match, p1, p2, offset) => {
+            // make sure we don't transform after '#' comments
+            for(let i = offset - 1; i >= 0; i--) {
+                const char = relayContext.templatedTextToParse.charCodeAt(i);
+                if(char == newLine) {
+                    // new line so no comment on this one
+                    break;
+                } else if(char == comment) {
+                    // we're after a comment, so leave the match as is
+                    return p1 + p2;
+                }
+            }
             relayContext.shifts.push({pos: baseOffset + offset + p1.length, length: fragmentNamePlaceHolderReplaceLength});
             baseOffset += fragmentNamePlaceHolderReplaceLength;
             return p1 + fragmentNamePlaceHolder + ' ' + p2;
@@ -250,6 +261,7 @@ module.exports = {
                 let shiftDelta = 0;
                 let shiftPos = hasShifts ? shifts[0].pos : null;
 
+                let lastAddedToken = null;
                 for(let t = 0; t < responseData.tokens.length; t++) {
 
                     let token = responseData.tokens[t];
@@ -301,7 +313,23 @@ module.exports = {
                     }
 
                     if(token) {
+                        if(lastAddedToken && lastAddedToken.end < token.start) {
+                            // there's a gap in the tokens caused by commas being included in whitespace
+                            // so we need to add the missing token
+                            const gapText = relayContext.textToParse.substring(lastAddedToken.end, token.start);
+                            const gapType = gapText.indexOf(',') != -1 ? 'punctuation' : 'ws';
+                            const gap = {
+                                start: lastAddedToken.end,
+                                end: token.start,
+                                text: gapText,
+                                type: gapType,
+                                scope: lastAddedToken.scope,
+                                kind: lastAddedToken.kind
+                            };
+                            tokensForOriginalBuffer.push(gap);
+                        }
                         tokensForOriginalBuffer.push(token);
+                        lastAddedToken = token;
                     }
 
                 }

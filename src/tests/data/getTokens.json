@@ -2785,17 +2785,9 @@
       "kind": "StringValue"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1476,
-      "end": 1477,
-      "scope": 2,
-      "kind": "Arguments"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1477,
       "end": 1478,
       "scope": 2,
       "kind": "Arguments"
@@ -3209,25 +3201,9 @@
       "end": 1652
     },
     {
-      "text": "%",
+      "text": "%invalid%",
       "type": "invalidchar",
       "start": 1652,
-      "end": 1653,
-      "scope": 0,
-      "kind": "Document"
-    },
-    {
-      "text": "invalid",
-      "type": "invalidchar",
-      "start": 1653,
-      "end": 1660,
-      "scope": 0,
-      "kind": "Document"
-    },
-    {
-      "text": "%",
-      "type": "invalidchar",
-      "start": 1660,
       "end": 1661,
       "scope": 0,
       "kind": "Document"
@@ -3337,17 +3313,9 @@
       "kind": "NamedType"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1744,
-      "end": 1745,
-      "scope": 1,
-      "kind": "NamedType"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1745,
       "end": 1746,
       "scope": 1,
       "kind": "NamedType"
@@ -3713,17 +3681,9 @@
       "kind": "EnumValue"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1873,
-      "end": 1874,
-      "scope": 4,
-      "kind": "ListValue"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1874,
       "end": 1875,
       "scope": 4,
       "kind": "ListValue"
@@ -3737,17 +3697,9 @@
       "kind": "EnumValue"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1880,
-      "end": 1881,
-      "scope": 4,
-      "kind": "ListValue"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1881,
       "end": 1882,
       "scope": 4,
       "kind": "ListValue"
@@ -3869,17 +3821,9 @@
       "kind": "NumberValue"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1927,
-      "end": 1928,
-      "scope": 4,
-      "kind": "ListValue"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1928,
       "end": 1929,
       "scope": 4,
       "kind": "ListValue"
@@ -3893,17 +3837,9 @@
       "kind": "NumberValue"
     },
     {
-      "text": ",",
+      "text": ", ",
       "type": "punctuation",
       "start": 1935,
-      "end": 1936,
-      "scope": 4,
-      "kind": "ListValue"
-    },
-    {
-      "text": " ",
-      "type": "ws",
-      "start": 1936,
       "end": 1937,
       "scope": 4,
       "kind": "ListValue"

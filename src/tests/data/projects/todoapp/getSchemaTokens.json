@@ -1,0 +1,5318 @@
+{
+  "tokens": [
+    {
+      "text": "schema",
+      "type": "keyword",
+      "start": 0,
+      "end": 6,
+      "scope": 0,
+      "kind": "SchemaDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 6,
+      "end": 7,
+      "scope": 0,
+      "kind": "SchemaDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 7,
+      "end": 8,
+      "scope": 1,
+      "kind": "SchemaDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 8,
+      "end": 9
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 9,
+      "end": 11,
+      "scope": 1,
+      "kind": "SchemaDef"
+    },
+    {
+      "text": "query",
+      "type": "keyword",
+      "start": 11,
+      "end": 16,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 16,
+      "end": 17,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 17,
+      "end": 18,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": "Root",
+      "type": "atom",
+      "start": 18,
+      "end": 22,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 22,
+      "end": 23
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 23,
+      "end": 25,
+      "scope": 1,
+      "kind": "SchemaDef"
+    },
+    {
+      "text": "mutation",
+      "type": "keyword",
+      "start": 25,
+      "end": 33,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 33,
+      "end": 34,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 34,
+      "end": 35,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": "Mutation",
+      "type": "atom",
+      "start": 35,
+      "end": 43,
+      "scope": 1,
+      "kind": "OperationTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 43,
+      "end": 44
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 44,
+      "end": 45,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 45,
+      "end": 46
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 46,
+      "end": 47
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 47,
+      "end": 52,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 52,
+      "end": 53,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "AddTodoInput",
+      "type": "def",
+      "start": 53,
+      "end": 65,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 65,
+      "end": 66,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 66,
+      "end": 67,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 67,
+      "end": 68
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 68,
+      "end": 70,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "text",
+      "type": "attribute",
+      "start": 70,
+      "end": 74,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 74,
+      "end": 75,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 75,
+      "end": 76,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 76,
+      "end": 82,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 82,
+      "end": 83,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 83,
+      "end": 84
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 84,
+      "end": 86,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 86,
+      "end": 102,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 102,
+      "end": 103,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 103,
+      "end": 104,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 104,
+      "end": 110,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 110,
+      "end": 111,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 111,
+      "end": 112
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 112,
+      "end": 113,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 113,
+      "end": 114
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 114,
+      "end": 115
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 115,
+      "end": 119,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 119,
+      "end": 120,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "AddTodoPayload",
+      "type": "def",
+      "start": 120,
+      "end": 134,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 134,
+      "end": 135,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 135,
+      "end": 136,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 136,
+      "end": 137
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 137,
+      "end": 139,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "todoEdge",
+      "type": "property",
+      "start": 139,
+      "end": 147,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 147,
+      "end": 148,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 148,
+      "end": 149,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "TodoEdge",
+      "type": "atom",
+      "start": 149,
+      "end": 157,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 157,
+      "end": 158
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 158,
+      "end": 160,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 160,
+      "end": 166,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 166,
+      "end": 167,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 167,
+      "end": 168,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 168,
+      "end": 172,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 172,
+      "end": 173
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 173,
+      "end": 175,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 175,
+      "end": 191,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 191,
+      "end": 192,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 192,
+      "end": 193,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 193,
+      "end": 199,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 199,
+      "end": 200,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 200,
+      "end": 201
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 201,
+      "end": 202,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 202,
+      "end": 203
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 203,
+      "end": 204
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 204,
+      "end": 209,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 209,
+      "end": 210,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "ChangeTodoStatusInput",
+      "type": "def",
+      "start": 210,
+      "end": 231,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 231,
+      "end": 232,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 232,
+      "end": 233,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 233,
+      "end": 234
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 234,
+      "end": 236,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "complete",
+      "type": "attribute",
+      "start": 236,
+      "end": 244,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 244,
+      "end": 245,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 245,
+      "end": 246,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 246,
+      "end": 253,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 253,
+      "end": 254,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 254,
+      "end": 255
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 255,
+      "end": 257,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "id",
+      "type": "attribute",
+      "start": 257,
+      "end": 259,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 259,
+      "end": 260,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 260,
+      "end": 261,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 261,
+      "end": 263,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 263,
+      "end": 264,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 264,
+      "end": 265
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 265,
+      "end": 267,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 267,
+      "end": 283,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 283,
+      "end": 284,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 284,
+      "end": 285,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 285,
+      "end": 291,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 291,
+      "end": 292,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 292,
+      "end": 293
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 293,
+      "end": 294,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 294,
+      "end": 295
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 295,
+      "end": 296
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 296,
+      "end": 300,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 300,
+      "end": 301,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "ChangeTodoStatusPayload",
+      "type": "def",
+      "start": 301,
+      "end": 324,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 324,
+      "end": 325,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 325,
+      "end": 326,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 326,
+      "end": 327
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 327,
+      "end": 329,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "todo",
+      "type": "property",
+      "start": 329,
+      "end": 333,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 333,
+      "end": 334,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 334,
+      "end": 335,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 335,
+      "end": 339,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 339,
+      "end": 340
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 340,
+      "end": 342,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 342,
+      "end": 348,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 348,
+      "end": 349,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 349,
+      "end": 350,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 350,
+      "end": 354,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 354,
+      "end": 355
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 355,
+      "end": 357,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 357,
+      "end": 373,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 373,
+      "end": 374,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 374,
+      "end": 375,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 375,
+      "end": 381,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 381,
+      "end": 382,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 382,
+      "end": 383
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 383,
+      "end": 384,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 384,
+      "end": 385
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 385,
+      "end": 386
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 386,
+      "end": 391,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 391,
+      "end": 392,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "MarkAllTodosInput",
+      "type": "def",
+      "start": 392,
+      "end": 409,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 409,
+      "end": 410,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 410,
+      "end": 411,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 411,
+      "end": 412
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 412,
+      "end": 414,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "complete",
+      "type": "attribute",
+      "start": 414,
+      "end": 422,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 422,
+      "end": 423,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 423,
+      "end": 424,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 424,
+      "end": 431,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 431,
+      "end": 432,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 432,
+      "end": 433
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 433,
+      "end": 435,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 435,
+      "end": 451,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 451,
+      "end": 452,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 452,
+      "end": 453,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 453,
+      "end": 459,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 459,
+      "end": 460,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 460,
+      "end": 461
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 461,
+      "end": 462,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 462,
+      "end": 463
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 463,
+      "end": 464
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 464,
+      "end": 468,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 468,
+      "end": 469,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "MarkAllTodosPayload",
+      "type": "def",
+      "start": 469,
+      "end": 488,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 488,
+      "end": 489,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 489,
+      "end": 490,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 490,
+      "end": 491
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 491,
+      "end": 493,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "changedTodos",
+      "type": "property",
+      "start": 493,
+      "end": 505,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 505,
+      "end": 506,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 506,
+      "end": 507,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 507,
+      "end": 508,
+      "scope": 2,
+      "kind": "ListType"
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 508,
+      "end": 512,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 512,
+      "end": 513,
+      "scope": 1,
+      "kind": "ListType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 513,
+      "end": 514
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 514,
+      "end": 516,
+      "scope": 1,
+      "kind": "ListType"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 516,
+      "end": 522,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 522,
+      "end": 523,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 523,
+      "end": 524,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 524,
+      "end": 528,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 528,
+      "end": 529
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 529,
+      "end": 531,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 531,
+      "end": 547,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 547,
+      "end": 548,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 548,
+      "end": 549,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 549,
+      "end": 555,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 555,
+      "end": 556,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 556,
+      "end": 557
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 557,
+      "end": 558,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 558,
+      "end": 559
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 559,
+      "end": 560
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 560,
+      "end": 564,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 564,
+      "end": 565,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "Mutation",
+      "type": "def",
+      "start": 565,
+      "end": 573,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 573,
+      "end": 574,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 574,
+      "end": 575,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 575,
+      "end": 576
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 576,
+      "end": 578,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "addTodo",
+      "type": "property",
+      "start": 578,
+      "end": 585,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 585,
+      "end": 586,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 586,
+      "end": 591,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 591,
+      "end": 592,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 592,
+      "end": 593,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "AddTodoInput",
+      "type": "atom",
+      "start": 593,
+      "end": 605,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 605,
+      "end": 606,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 606,
+      "end": 607,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 607,
+      "end": 608,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 608,
+      "end": 609,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "AddTodoPayload",
+      "type": "atom",
+      "start": 609,
+      "end": 623,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 623,
+      "end": 624
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 624,
+      "end": 626,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "changeTodoStatus",
+      "type": "property",
+      "start": 626,
+      "end": 642,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 642,
+      "end": 643,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 643,
+      "end": 648,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 648,
+      "end": 649,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 649,
+      "end": 650,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "ChangeTodoStatusInput",
+      "type": "atom",
+      "start": 650,
+      "end": 671,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 671,
+      "end": 672,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 672,
+      "end": 673,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 673,
+      "end": 674,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 674,
+      "end": 675,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "ChangeTodoStatusPayload",
+      "type": "atom",
+      "start": 675,
+      "end": 698,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 698,
+      "end": 699
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 699,
+      "end": 701,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "markAllTodos",
+      "type": "property",
+      "start": 701,
+      "end": 713,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 713,
+      "end": 714,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 714,
+      "end": 719,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 719,
+      "end": 720,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 720,
+      "end": 721,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "MarkAllTodosInput",
+      "type": "atom",
+      "start": 721,
+      "end": 738,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 738,
+      "end": 739,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 739,
+      "end": 740,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 740,
+      "end": 741,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 741,
+      "end": 742,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "MarkAllTodosPayload",
+      "type": "atom",
+      "start": 742,
+      "end": 761,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 761,
+      "end": 762
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 762,
+      "end": 764,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "removeCompletedTodos",
+      "type": "property",
+      "start": 764,
+      "end": 784,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 784,
+      "end": 785,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 785,
+      "end": 790,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 790,
+      "end": 791,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 791,
+      "end": 792,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "RemoveCompletedTodosInput",
+      "type": "atom",
+      "start": 792,
+      "end": 817,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 817,
+      "end": 818,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 818,
+      "end": 819,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 819,
+      "end": 820,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 820,
+      "end": 821,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "RemoveCompletedTodosPayload",
+      "type": "atom",
+      "start": 821,
+      "end": 848,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 848,
+      "end": 849
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 849,
+      "end": 851,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "removeTodo",
+      "type": "property",
+      "start": 851,
+      "end": 861,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 861,
+      "end": 862,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 862,
+      "end": 867,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 867,
+      "end": 868,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 868,
+      "end": 869,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "RemoveTodoInput",
+      "type": "atom",
+      "start": 869,
+      "end": 884,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 884,
+      "end": 885,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 885,
+      "end": 886,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 886,
+      "end": 887,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 887,
+      "end": 888,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "RemoveTodoPayload",
+      "type": "atom",
+      "start": 888,
+      "end": 905,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 905,
+      "end": 906
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 906,
+      "end": 908,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "renameTodo",
+      "type": "property",
+      "start": 908,
+      "end": 918,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 918,
+      "end": 919,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "input",
+      "type": "attribute",
+      "start": 919,
+      "end": 924,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 924,
+      "end": 925,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 925,
+      "end": 926,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "RenameTodoInput",
+      "type": "atom",
+      "start": 926,
+      "end": 941,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 941,
+      "end": 942,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 942,
+      "end": 943,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 943,
+      "end": 944,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 944,
+      "end": 945,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "RenameTodoPayload",
+      "type": "atom",
+      "start": 945,
+      "end": 962,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 962,
+      "end": 963
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 963,
+      "end": 964,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 964,
+      "end": 965
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 965,
+      "end": 966
+    },
+    {
+      "text": "# An object with an ID",
+      "type": "comment",
+      "start": 966,
+      "end": 988,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 988,
+      "end": 989
+    },
+    {
+      "text": "interface",
+      "type": "keyword",
+      "start": 989,
+      "end": 998,
+      "scope": 0,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 998,
+      "end": 999,
+      "scope": 0,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "Node",
+      "type": "def",
+      "start": 999,
+      "end": 1003,
+      "scope": 0,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1003,
+      "end": 1004,
+      "scope": 0,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1004,
+      "end": 1005,
+      "scope": 1,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1005,
+      "end": 1006
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1006,
+      "end": 1008,
+      "scope": 1,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "# The id of the object.",
+      "type": "comment",
+      "start": 1008,
+      "end": 1031,
+      "scope": 1,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1031,
+      "end": 1032
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1032,
+      "end": 1034,
+      "scope": 1,
+      "kind": "InterfaceDef"
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 1034,
+      "end": 1036,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1036,
+      "end": 1037,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1037,
+      "end": 1038,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1038,
+      "end": 1040,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1040,
+      "end": 1041,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1041,
+      "end": 1042
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1042,
+      "end": 1043,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1043,
+      "end": 1044
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1044,
+      "end": 1045
+    },
+    {
+      "text": "# Information about pagination in a connection.",
+      "type": "comment",
+      "start": 1045,
+      "end": 1092,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1092,
+      "end": 1093
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1093,
+      "end": 1097,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1097,
+      "end": 1098,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "PageInfo",
+      "type": "def",
+      "start": 1098,
+      "end": 1106,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1106,
+      "end": 1107,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1107,
+      "end": 1108,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1108,
+      "end": 1109
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1109,
+      "end": 1111,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "# When paginating forwards, are there more items?",
+      "type": "comment",
+      "start": 1111,
+      "end": 1160,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1160,
+      "end": 1161
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1161,
+      "end": 1163,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "hasNextPage",
+      "type": "property",
+      "start": 1163,
+      "end": 1174,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1174,
+      "end": 1175,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1175,
+      "end": 1176,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 1176,
+      "end": 1183,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1183,
+      "end": 1184,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1184,
+      "end": 1185
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1185,
+      "end": 1186
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1186,
+      "end": 1188,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "# When paginating backwards, are there more items?",
+      "type": "comment",
+      "start": 1188,
+      "end": 1238,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1238,
+      "end": 1239
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1239,
+      "end": 1241,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "hasPreviousPage",
+      "type": "property",
+      "start": 1241,
+      "end": 1256,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1256,
+      "end": 1257,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1257,
+      "end": 1258,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 1258,
+      "end": 1265,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1265,
+      "end": 1266,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1266,
+      "end": 1267
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1267,
+      "end": 1268
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1268,
+      "end": 1270,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "# When paginating backwards, the cursor to continue.",
+      "type": "comment",
+      "start": 1270,
+      "end": 1322,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1322,
+      "end": 1323
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1323,
+      "end": 1325,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "startCursor",
+      "type": "property",
+      "start": 1325,
+      "end": 1336,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1336,
+      "end": 1337,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1337,
+      "end": 1338,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1338,
+      "end": 1344,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1344,
+      "end": 1345
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1345,
+      "end": 1346
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1346,
+      "end": 1348,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "# When paginating forwards, the cursor to continue.",
+      "type": "comment",
+      "start": 1348,
+      "end": 1399,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1399,
+      "end": 1400
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1400,
+      "end": 1402,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "endCursor",
+      "type": "property",
+      "start": 1402,
+      "end": 1411,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1411,
+      "end": 1412,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1412,
+      "end": 1413,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1413,
+      "end": 1419,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1419,
+      "end": 1420
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1420,
+      "end": 1421,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1421,
+      "end": 1422
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1422,
+      "end": 1423
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1423,
+      "end": 1428,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1428,
+      "end": 1429,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "RemoveCompletedTodosInput",
+      "type": "def",
+      "start": 1429,
+      "end": 1454,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1454,
+      "end": 1455,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1455,
+      "end": 1456,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1456,
+      "end": 1457
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1457,
+      "end": 1459,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 1459,
+      "end": 1475,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1475,
+      "end": 1476,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1476,
+      "end": 1477,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1477,
+      "end": 1483,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1483,
+      "end": 1484,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1484,
+      "end": 1485
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1485,
+      "end": 1486,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1486,
+      "end": 1487
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1487,
+      "end": 1488
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1488,
+      "end": 1492,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1492,
+      "end": 1493,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "RemoveCompletedTodosPayload",
+      "type": "def",
+      "start": 1493,
+      "end": 1520,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1520,
+      "end": 1521,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1521,
+      "end": 1522,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1522,
+      "end": 1523
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1523,
+      "end": 1525,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "deletedTodoIds",
+      "type": "property",
+      "start": 1525,
+      "end": 1539,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1539,
+      "end": 1540,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1540,
+      "end": 1541,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 1541,
+      "end": 1542,
+      "scope": 2,
+      "kind": "ListType"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1542,
+      "end": 1548,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 1548,
+      "end": 1549,
+      "scope": 1,
+      "kind": "ListType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1549,
+      "end": 1550
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1550,
+      "end": 1552,
+      "scope": 1,
+      "kind": "ListType"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1552,
+      "end": 1558,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1558,
+      "end": 1559,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1559,
+      "end": 1560,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1560,
+      "end": 1564,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1564,
+      "end": 1565
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1565,
+      "end": 1567,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1567,
+      "end": 1583,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1583,
+      "end": 1584,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1584,
+      "end": 1585,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1585,
+      "end": 1591,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1591,
+      "end": 1592,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1592,
+      "end": 1593
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1593,
+      "end": 1594,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1594,
+      "end": 1595
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1595,
+      "end": 1596
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1596,
+      "end": 1601,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1601,
+      "end": 1602,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "RemoveTodoInput",
+      "type": "def",
+      "start": 1602,
+      "end": 1617,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1617,
+      "end": 1618,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1618,
+      "end": 1619,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1619,
+      "end": 1620
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1620,
+      "end": 1622,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "id",
+      "type": "attribute",
+      "start": 1622,
+      "end": 1624,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1624,
+      "end": 1625,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1625,
+      "end": 1626,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1626,
+      "end": 1628,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1628,
+      "end": 1629,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1629,
+      "end": 1630
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1630,
+      "end": 1632,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 1632,
+      "end": 1648,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1648,
+      "end": 1649,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1649,
+      "end": 1650,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1650,
+      "end": 1656,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1656,
+      "end": 1657,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1657,
+      "end": 1658
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1658,
+      "end": 1659,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1659,
+      "end": 1660
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1660,
+      "end": 1661
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1661,
+      "end": 1665,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1665,
+      "end": 1666,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "RemoveTodoPayload",
+      "type": "def",
+      "start": 1666,
+      "end": 1683,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1683,
+      "end": 1684,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1684,
+      "end": 1685,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1685,
+      "end": 1686
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1686,
+      "end": 1688,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "deletedTodoId",
+      "type": "property",
+      "start": 1688,
+      "end": 1701,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1701,
+      "end": 1702,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1702,
+      "end": 1703,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1703,
+      "end": 1705,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1705,
+      "end": 1706
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1706,
+      "end": 1708,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1708,
+      "end": 1714,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1714,
+      "end": 1715,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1715,
+      "end": 1716,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1716,
+      "end": 1720,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1720,
+      "end": 1721
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1721,
+      "end": 1723,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1723,
+      "end": 1739,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1739,
+      "end": 1740,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1740,
+      "end": 1741,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1741,
+      "end": 1747,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1747,
+      "end": 1748,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1748,
+      "end": 1749
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1749,
+      "end": 1750,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1750,
+      "end": 1751
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1751,
+      "end": 1752
+    },
+    {
+      "text": "input",
+      "type": "keyword",
+      "start": 1752,
+      "end": 1757,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1757,
+      "end": 1758,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "RenameTodoInput",
+      "type": "def",
+      "start": 1758,
+      "end": 1773,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1773,
+      "end": 1774,
+      "scope": 0,
+      "kind": "InputDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1774,
+      "end": 1775,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1775,
+      "end": 1776
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1776,
+      "end": 1778,
+      "scope": 1,
+      "kind": "InputDef"
+    },
+    {
+      "text": "id",
+      "type": "attribute",
+      "start": 1778,
+      "end": 1780,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1780,
+      "end": 1781,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1781,
+      "end": 1782,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 1782,
+      "end": 1784,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1784,
+      "end": 1785,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1785,
+      "end": 1786
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1786,
+      "end": 1788,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "text",
+      "type": "attribute",
+      "start": 1788,
+      "end": 1792,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1792,
+      "end": 1793,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1793,
+      "end": 1794,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1794,
+      "end": 1800,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1800,
+      "end": 1801,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1801,
+      "end": 1802
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1802,
+      "end": 1804,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "attribute",
+      "start": 1804,
+      "end": 1820,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1820,
+      "end": 1821,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1821,
+      "end": 1822,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1822,
+      "end": 1828,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1828,
+      "end": 1829,
+      "scope": 1,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1829,
+      "end": 1830
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1830,
+      "end": 1831,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1831,
+      "end": 1832
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1832,
+      "end": 1833
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1833,
+      "end": 1837,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1837,
+      "end": 1838,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "RenameTodoPayload",
+      "type": "def",
+      "start": 1838,
+      "end": 1855,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1855,
+      "end": 1856,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1856,
+      "end": 1857,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1857,
+      "end": 1858
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1858,
+      "end": 1860,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "todo",
+      "type": "property",
+      "start": 1860,
+      "end": 1864,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1864,
+      "end": 1865,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1865,
+      "end": 1866,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 1866,
+      "end": 1870,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1870,
+      "end": 1871
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1871,
+      "end": 1873,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "clientMutationId",
+      "type": "property",
+      "start": 1873,
+      "end": 1889,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1889,
+      "end": 1890,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1890,
+      "end": 1891,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 1891,
+      "end": 1897,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 1897,
+      "end": 1898,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1898,
+      "end": 1899
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 1899,
+      "end": 1900,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1900,
+      "end": 1901
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1901,
+      "end": 1902
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 1902,
+      "end": 1906,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1906,
+      "end": 1907,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "Root",
+      "type": "def",
+      "start": 1907,
+      "end": 1911,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1911,
+      "end": 1912,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 1912,
+      "end": 1913,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1913,
+      "end": 1914
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1914,
+      "end": 1916,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "viewer",
+      "type": "property",
+      "start": 1916,
+      "end": 1922,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 1922,
+      "end": 1923,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1923,
+      "end": 1924,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "User",
+      "type": "atom",
+      "start": 1924,
+      "end": 1928,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1928,
+      "end": 1929
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1929,
+      "end": 1930
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1930,
+      "end": 1932,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "# Fetches an object given its ID",
+      "type": "comment",
+      "start": 1932,
+      "end": 1964,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1964,
+      "end": 1965
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 1965,
+      "end": 1967,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "node",
+      "type": "property",
+      "start": 1967,
+      "end": 1971,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 1971,
+      "end": 1972,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1972,
+      "end": 1973
+    },
+    {
+      "text": "    ",
+      "type": "ws",
+      "start": 1973,
+      "end": 1977,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "# The ID of an object",
+      "type": "comment",
+      "start": 1977,
+      "end": 1998,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 1998,
+      "end": 1999
+    },
+    {
+      "text": "    ",
+      "type": "ws",
+      "start": 1999,
+      "end": 2003,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "id",
+      "type": "attribute",
+      "start": 2003,
+      "end": 2005,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2005,
+      "end": 2006,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2006,
+      "end": 2007,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 2007,
+      "end": 2009,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 2009,
+      "end": 2010,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2010,
+      "end": 2011
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2011,
+      "end": 2013,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 2013,
+      "end": 2014,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2014,
+      "end": 2015,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2015,
+      "end": 2016,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 2016,
+      "end": 2020,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2020,
+      "end": 2021
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 2021,
+      "end": 2022,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2022,
+      "end": 2023
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2023,
+      "end": 2024
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 2024,
+      "end": 2028,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2028,
+      "end": 2029,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "Todo",
+      "type": "def",
+      "start": 2029,
+      "end": 2033,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2033,
+      "end": 2034,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "implements",
+      "type": "keyword",
+      "start": 2034,
+      "end": 2044,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2044,
+      "end": 2045,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 2045,
+      "end": 2049,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2049,
+      "end": 2050,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 2050,
+      "end": 2051,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2051,
+      "end": 2052
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2052,
+      "end": 2054,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "# The ID of an object",
+      "type": "comment",
+      "start": 2054,
+      "end": 2075,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2075,
+      "end": 2076
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2076,
+      "end": 2078,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 2078,
+      "end": 2080,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2080,
+      "end": 2081,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2081,
+      "end": 2082,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 2082,
+      "end": 2084,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 2084,
+      "end": 2085,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2085,
+      "end": 2086
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2086,
+      "end": 2088,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "text",
+      "type": "property",
+      "start": 2088,
+      "end": 2092,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2092,
+      "end": 2093,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2093,
+      "end": 2094,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 2094,
+      "end": 2100,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2100,
+      "end": 2101
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2101,
+      "end": 2103,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "complete",
+      "type": "property",
+      "start": 2103,
+      "end": 2111,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2111,
+      "end": 2112,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2112,
+      "end": 2113,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Boolean",
+      "type": "atom",
+      "start": 2113,
+      "end": 2120,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2120,
+      "end": 2121
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 2121,
+      "end": 2122,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2122,
+      "end": 2123
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2123,
+      "end": 2124
+    },
+    {
+      "text": "# A connection to a list of items.",
+      "type": "comment",
+      "start": 2124,
+      "end": 2158,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2158,
+      "end": 2159
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 2159,
+      "end": 2163,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2163,
+      "end": 2164,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "TodoConnection",
+      "type": "def",
+      "start": 2164,
+      "end": 2178,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2178,
+      "end": 2179,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 2179,
+      "end": 2180,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2180,
+      "end": 2181
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2181,
+      "end": 2183,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "# Information to aid in pagination.",
+      "type": "comment",
+      "start": 2183,
+      "end": 2218,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2218,
+      "end": 2219
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2219,
+      "end": 2221,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "pageInfo",
+      "type": "property",
+      "start": 2221,
+      "end": 2229,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2229,
+      "end": 2230,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2230,
+      "end": 2231,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "PageInfo",
+      "type": "atom",
+      "start": 2231,
+      "end": 2239,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 2239,
+      "end": 2240,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2240,
+      "end": 2241
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2241,
+      "end": 2242
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2242,
+      "end": 2244,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "# Information to aid in pagination.",
+      "type": "comment",
+      "start": 2244,
+      "end": 2279,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2279,
+      "end": 2280
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2280,
+      "end": 2282,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "edges",
+      "type": "property",
+      "start": 2282,
+      "end": 2287,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2287,
+      "end": 2288,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2288,
+      "end": 2289,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "[",
+      "type": "punctuation",
+      "start": 2289,
+      "end": 2290,
+      "scope": 2,
+      "kind": "ListType"
+    },
+    {
+      "text": "TodoEdge",
+      "type": "atom",
+      "start": 2290,
+      "end": 2298,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "]",
+      "type": "punctuation",
+      "start": 2298,
+      "end": 2299,
+      "scope": 1,
+      "kind": "ListType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2299,
+      "end": 2300
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 2300,
+      "end": 2301,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2301,
+      "end": 2302
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2302,
+      "end": 2303
+    },
+    {
+      "text": "# An edge in a connection.",
+      "type": "comment",
+      "start": 2303,
+      "end": 2329,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2329,
+      "end": 2330
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 2330,
+      "end": 2334,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2334,
+      "end": 2335,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "TodoEdge",
+      "type": "def",
+      "start": 2335,
+      "end": 2343,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2343,
+      "end": 2344,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 2344,
+      "end": 2345,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2345,
+      "end": 2346
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2346,
+      "end": 2348,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "# The item at the end of the edge",
+      "type": "comment",
+      "start": 2348,
+      "end": 2381,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2381,
+      "end": 2382
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2382,
+      "end": 2384,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "node",
+      "type": "property",
+      "start": 2384,
+      "end": 2388,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2388,
+      "end": 2389,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2389,
+      "end": 2390,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Todo",
+      "type": "atom",
+      "start": 2390,
+      "end": 2394,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2394,
+      "end": 2395
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2395,
+      "end": 2396
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2396,
+      "end": 2398,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "# A cursor for use in pagination",
+      "type": "comment",
+      "start": 2398,
+      "end": 2430,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2430,
+      "end": 2431
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2431,
+      "end": 2433,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "cursor",
+      "type": "property",
+      "start": 2433,
+      "end": 2439,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2439,
+      "end": 2440,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2440,
+      "end": 2441,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 2441,
+      "end": 2447,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 2447,
+      "end": 2448,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2448,
+      "end": 2449
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 2449,
+      "end": 2450,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2450,
+      "end": 2451
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2451,
+      "end": 2452
+    },
+    {
+      "text": "type",
+      "type": "keyword",
+      "start": 2452,
+      "end": 2456,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2456,
+      "end": 2457,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "User",
+      "type": "def",
+      "start": 2457,
+      "end": 2461,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2461,
+      "end": 2462,
+      "scope": 0,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "implements",
+      "type": "keyword",
+      "start": 2462,
+      "end": 2472,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2472,
+      "end": 2473,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": "Node",
+      "type": "atom",
+      "start": 2473,
+      "end": 2477,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2477,
+      "end": 2478,
+      "scope": 0,
+      "kind": "Implements"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 2478,
+      "end": 2479,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2479,
+      "end": 2480
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2480,
+      "end": 2482,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "# The ID of an object",
+      "type": "comment",
+      "start": 2482,
+      "end": 2503,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2503,
+      "end": 2504
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2504,
+      "end": 2506,
+      "scope": 1,
+      "kind": "ObjectTypeDef"
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 2506,
+      "end": 2508,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2508,
+      "end": 2509,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2509,
+      "end": 2510,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "ID",
+      "type": "atom",
+      "start": 2510,
+      "end": 2512,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "!",
+      "type": "punctuation",
+      "start": 2512,
+      "end": 2513,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2513,
+      "end": 2514
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2514,
+      "end": 2516,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "todos",
+      "type": "property",
+      "start": 2516,
+      "end": 2521,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 2521,
+      "end": 2522,
+      "scope": 2,
+      "kind": "ArgumentsDef"
+    },
+    {
+      "text": "status",
+      "type": "attribute",
+      "start": 2522,
+      "end": 2528,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2528,
+      "end": 2529,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2529,
+      "end": 2530,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 2530,
+      "end": 2536,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2536,
+      "end": 2537,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "=",
+      "type": "punctuation",
+      "start": 2537,
+      "end": 2538,
+      "scope": 2,
+      "kind": "DefaultValue"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2538,
+      "end": 2539,
+      "scope": 2,
+      "kind": "DefaultValue"
+    },
+    {
+      "text": "\"",
+      "type": "open_quote",
+      "start": 2539,
+      "end": 2540,
+      "scope": 2,
+      "kind": "StringValue"
+    },
+    {
+      "text": "any",
+      "type": "string",
+      "start": 2540,
+      "end": 2543,
+      "scope": 2,
+      "kind": "StringValue"
+    },
+    {
+      "text": "\"",
+      "type": "close_quote",
+      "start": 2543,
+      "end": 2544,
+      "scope": 2,
+      "kind": "StringValue"
+    },
+    {
+      "text": ", ",
+      "type": "punctuation",
+      "start": 2544,
+      "end": 2546,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "before",
+      "type": "attribute",
+      "start": 2546,
+      "end": 2552,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2552,
+      "end": 2553,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2553,
+      "end": 2554,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 2554,
+      "end": 2560,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "punctuation",
+      "start": 2560,
+      "end": 2562,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "after",
+      "type": "attribute",
+      "start": 2562,
+      "end": 2567,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2567,
+      "end": 2568,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2568,
+      "end": 2569,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "String",
+      "type": "atom",
+      "start": 2569,
+      "end": 2575,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "punctuation",
+      "start": 2575,
+      "end": 2577,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "first",
+      "type": "attribute",
+      "start": 2577,
+      "end": 2582,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2582,
+      "end": 2583,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2583,
+      "end": 2584,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 2584,
+      "end": 2587,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": ", ",
+      "type": "punctuation",
+      "start": 2587,
+      "end": 2589,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": "last",
+      "type": "attribute",
+      "start": 2589,
+      "end": 2593,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2593,
+      "end": 2594,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2594,
+      "end": 2595,
+      "scope": 2,
+      "kind": "InputValueDef"
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 2595,
+      "end": 2598,
+      "scope": 2,
+      "kind": "NamedType"
+    },
+    {
+      "text": ")",
+      "type": "punctuation",
+      "start": 2598,
+      "end": 2599,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2599,
+      "end": 2600,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2600,
+      "end": 2601,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "TodoConnection",
+      "type": "atom",
+      "start": 2601,
+      "end": 2615,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2615,
+      "end": 2616
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2616,
+      "end": 2618,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "totalCount",
+      "type": "property",
+      "start": 2618,
+      "end": 2628,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2628,
+      "end": 2629,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2629,
+      "end": 2630,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 2630,
+      "end": 2633,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2633,
+      "end": 2634
+    },
+    {
+      "text": "  ",
+      "type": "ws",
+      "start": 2634,
+      "end": 2636,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "completedCount",
+      "type": "property",
+      "start": 2636,
+      "end": 2650,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 2650,
+      "end": 2651,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 2651,
+      "end": 2652,
+      "scope": 1,
+      "kind": "FieldDef"
+    },
+    {
+      "text": "Int",
+      "type": "atom",
+      "start": 2652,
+      "end": 2655,
+      "scope": 1,
+      "kind": "NamedType"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2655,
+      "end": 2656
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 2656,
+      "end": 2657,
+      "scope": 0,
+      "kind": "Document"
+    },
+    {
+      "text": "\n",
+      "type": "ws",
+      "start": 2657,
+      "end": 2658
+    }
+  ]
+}

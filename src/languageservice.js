@@ -27,7 +27,8 @@ document.createRange = function () {
         startNode: null, start: null, end: null, endNode: null,
         setStart: function (node, start) { this.startNode = node; this.start = start; },
         setEnd: function (node, end) { this.endNode = node, this.end = end; },
-        getBoundingClientRect: function () { return null; }
+        getBoundingClientRect: function () { return null; },
+        getClientRects: function() { return []; }
     }
 };
 
@@ -55,9 +56,6 @@ let cmCurrentDocValue = null;
 // GraphQL requires
 const graphqlLanguage = require('graphql/language');
 const buildClientSchema = require('graphql/utilities/buildClientSchema').buildClientSchema;
-
-// Schema commands
-const getSchemaTokensAndAST = require('./schema').getSchemaTokensAndAST;
 
 // prepare schema
 const printSchema = require('graphql/utilities/schemaPrinter').printSchema;
@@ -128,7 +126,6 @@ app.all('/js-graphql-language-service', function (req, res) {
         res.send(JSON.stringify(fieldDoc));
         return;
     } else if(requestData.command == 'setProjectDir') {
-        console.log("Setting Project Dir '"+requestData.projectDir+"'");
         project.setProjectDir(requestData.projectDir);
         res.header('Content-Type', 'application/json');
         res.send({projectDir:requestData.projectDir});
@@ -188,8 +185,6 @@ app.all('/js-graphql-language-service', function (req, res) {
         responseData = getAnnotations(cm, textToParse);
     } else if(requestData.command == 'getAST') {
         responseData = getAST(textToParse);
-    } else if(requestData.command == 'getSchemaTokensAndAST') {
-        responseData = getSchemaTokensAndAST(textToParse);
     } else {
         responseData.error = 'Unknown command "'+requestData.command+'"';
     }
@@ -230,10 +225,32 @@ function getTokens(cm, textToParse) {
                 kind: state.kind
             };
 
-            if(tokenRet.type == 'ws' && tokenRet.text == ',') {
-                if(tokenRet.text == ',') {
-                    // preserve the commas
-                    tokenRet.type = 'punctuation';
+            if(tokenRet.type == 'ws' && tokenRet.text.trim() == ',') {
+                // preserve the commas
+                tokenRet.type = 'punctuation';
+            } else if(tokenRet.type == 'atom') {
+                // for schema language definitions we want the type name tokens to be a 'def'
+                let isSchemaTypeDef = false;
+                for(let t = tokens.length - 1; t >= 0; t--) {
+                    let prevToken = tokens[t];
+                    if(prevToken.type == 'keyword') {
+                        switch (prevToken.text) {
+                            case 'type':
+                            case 'interface':
+                            case 'enum':
+                            case 'input':
+                            case 'union':
+                            case 'scalar':
+                                isSchemaTypeDef = true;
+                                break;
+                        }
+                        break;
+                    } if(prevToken.type != 'ws' && prevToken.type != 'punctuation') {
+                        break;
+                    }
+                }
+                if(isSchemaTypeDef) {
+                    tokenRet.type = 'def';
                 }
             }
 
