@@ -207,3 +207,15 @@ describe('getTokens for schema buffer', function(){
             .expect(200, done);
     })
 });
+
+const getRelayAnnotationsGraphQL = fs.readFileSync(require.resolve('./data/projects/todoapp/getAnnotations.graphql'), 'utf-8');
+describe('Relay getAnnotations', function(){
+    it('responds with filtered annotations', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getAnnotations', buffer: getRelayAnnotationsGraphQL, relay: true})
+            .expect({ annotations: []})
+            .expect(200, done);
+    })
+});

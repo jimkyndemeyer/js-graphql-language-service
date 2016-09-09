@@ -25,7 +25,7 @@ const fragmentNamePlaceHolderReplaceLength = fragmentNamePlaceHolder.length + 1;
 const anonOperationNotAloneMessage = require('graphql/validation/rules/LoneAnonymousOperation').anonOperationNotAloneMessage();
 const unusedFragMessage = require('graphql/validation/rules/NoUnusedFragments').unusedFragMessage(fragmentNamePlaceHolder);
 const uniqueFragmentNames = require('graphql/validation/rules/UniqueFragmentNames').duplicateFragmentNameMessage(fragmentNamePlaceHolder);
-const scalarLeafs = require('graphql/validation/rules/ScalarLeafs').requiredSubselectionMessage(relayTemplatePlaceHolder, relayTemplatePlaceHolder);
+const scalarLeafs = require('graphql/validation/rules/ScalarLeafs').requiredSubselectionMessage(relayTemplatePlaceHolder, relayTemplatePlaceHolder).replace(' { ... }', '');
 const noUndefinedVariables  = require('graphql/validation/rules/NoUndefinedVariables').undefinedVarMessage(relayTemplatePlaceHolder);
 
 const relayValidationFilters = [

@@ -1,0 +1,27 @@
+# anonOperationNotAloneMessage
+{
+    viewer { id }
+}
+
+# unusedFragMessage
+fragment Unused on User {
+    id
+}
+
+# uniqueFragmentNames (see const fragmentNamePlaceHolder)
+fragment ____ on User {
+    id
+}
+fragment ____ on User {
+    id
+}
+
+# scalarLeafs
+mutation {addTodo}
+
+# noUndefinedVariables
+query Foo($id: ID!) {
+    node(id: $id) {
+        id
+    }
+}
