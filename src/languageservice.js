@@ -100,9 +100,22 @@ app.all('/js-graphql-language-service', function (req, res) {
     let raw = req.get('Content-Type') == 'application/graphql';
 
     // prepare request data
+    const command = req.body.command || req.query.command || 'getTokens';
+    let env = req.body.env || req.query.env;
+    if(!env) {
+        if(command == 'getTokens') {
+            // the intellij plugin lexer has no environment info,
+            // so ensure that getTokens supports '${var}', '...${fragment}', anonymous 'fragment on' etc.
+            env = 'relay';
+        } else {
+            // fallback
+            env = 'graphql';
+        }
+    }
     let requestData = {
-        command: req.body.command || req.query.command || 'getTokens',
-        relay: req.body.relay || req.query.relay == 'true',
+        command: command,
+        env: env,
+        useRelayTemplates: env == 'relay' || env == 'apollo' || env == 'lokka',
         projectDir: req.body.projectDir || req.query.projectDir,
         buffer: (raw ? req.body : req.body.buffer || req.query.buffer) || '',
         line: parseInt(req.body.line || req.query.line || '0', 10),
@@ -159,8 +172,8 @@ app.all('/js-graphql-language-service', function (req, res) {
     // -- Relay templates --
 
     let relayContext = null;
-    if(requestData.relay) {
-        relayContext = relayTemplates.createRelayContext(textToParse);
+    if(requestData.useRelayTemplates) {
+        relayContext = relayTemplates.createRelayContext(textToParse, env);
         textToParse = relayTemplates.transformBufferAndRequestData(requestData, relayContext);
     }
 
@@ -189,7 +202,7 @@ app.all('/js-graphql-language-service', function (req, res) {
         responseData.error = 'Unknown command "'+requestData.command+'"';
     }
 
-    if(requestData.relay && relayContext) {
+    if(requestData.useRelayTemplates && relayContext) {
         relayTemplates.transformResponseData(responseData, requestData.command, relayContext);
     }
 

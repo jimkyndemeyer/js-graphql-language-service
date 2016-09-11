@@ -1,0 +1,6 @@
+# apolloValidationFilters
+query {
+    node(id: "") {
+        ...allowFragmentInOtherFile
+    }
+}

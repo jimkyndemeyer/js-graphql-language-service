@@ -1,0 +1,6 @@
+# lokkaValidationFilters
+query {
+    node(id: $id) {
+        __ #placeholder field for fragment interpolation '...${var}' -> '   __    '
+    }
+}

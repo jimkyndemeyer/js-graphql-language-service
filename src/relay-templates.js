@@ -10,6 +10,7 @@ const HashMap = require('hashmap');
 
 const comment = '#'.charCodeAt(0);
 const ws = ' '.charCodeAt(0);
+const dot = '.'.charCodeAt(0);
 const newLine = '\n'.charCodeAt(0);
 const templateMark = '$'.charCodeAt(0);
 const templateLBrace = '{'.charCodeAt(0);
@@ -17,6 +18,8 @@ const templateRBrace = '}'.charCodeAt(0);
 
 const typeName = '__typename';
 const typeNameLength = typeName.length;
+const lokkaFragmentPlaceholderField = '__';
+const lokkaFragmentPlaceholderFieldLength = lokkaFragmentPlaceholderField.length;
 
 const relayTemplatePlaceHolder = '____';
 const fragmentNamePlaceHolder = '____';
@@ -38,16 +41,26 @@ const relayValidationFilters = [
     (msg) => msg.indexOf('"'+fragmentNamePlaceHolder+'"') == -1 // never show the placeholder errors (which should be caused by some other error)
 ];
 
+const apolloValidationFilters = [
+    (msg) => msg.indexOf('Unknown fragment') == -1
+];
+
+const lokkaValidationFilters = [
+    (msg) => msg.indexOf('Cannot query field "' + lokkaFragmentPlaceholderField + '"') == -1 // start of graphql/validation/rules/FieldsOnCorrectType
+];
+
 module.exports = {
 
     /**
      * Creates a relay context that tracks any transformation made to the incoming buffer and request data
      */
-    createRelayContext : function(textToParse) {
+    createRelayContext : function(textToParse, env) {
         return {
             textToParse: textToParse,
             shifts: [],
-            templateFromPosition : new HashMap()
+            templateFromPosition : new HashMap(),
+            wsEndReplacements: {},
+            env: env
         };
     },
 
@@ -118,9 +131,31 @@ module.exports = {
             if (c == templateMark) {
                 let next = templateBuffer[Math.min(i + 1, templateBuffer.length - 1)];
                 if (next == templateLBrace) {
-                    // found the start of a template expression, so replace it as '${...}' -> '__typename<remaining-white-space>' to make sure
-                    // we have an 'always' valid SelectionSet when the template is the only selected field, e.g. in Relay injections
+                    // found the start of a template expression, so replace it as '${...}' -> '<placeholder-field><remaining-white-space>' to make sure
+                    // we have an 'always' valid SelectionSet when the template is the only selected field, e.g. in Relay injections and Lokka
                     let templatePos = i;
+                    let isLokkaFragment = false;
+                    if(relayContext.env == 'lokka') {
+                        // for compatibility with Lokka fragments, transform '...$' to '   $'
+                        let lokkaDotReplacements = [];
+                        for (let lok = i - 1; lok >= 0; lok--) {
+                            if (templateBuffer[lok] == dot) {
+                                lokkaDotReplacements.push(lok);
+                            } else {
+                                break;
+                            }
+                            if (lok == i - 3) {
+                                // three '.'s in a row, replace them with ws
+                                lokkaDotReplacements.forEach(pos => templateBuffer[pos] = ws);
+                                relayContext.wsEndReplacements[i] = {
+                                    text: '...',
+                                    type: 'keyword'
+                                };
+                                isLokkaFragment = true;
+                                break;
+                            }
+                        }
+                    }
                     for (let t = i + 1; t < templateBuffer.length; t++) {
                         var isNewLine = (templateBuffer[t] == newLine);
                         if (isNewLine || templateBuffer[t] == templateRBrace) {
@@ -131,7 +166,7 @@ module.exports = {
                             }
                             // store the original token text for later application in getTokens
                             templateFromPosition.set(templatePos, relayContext.textToParse.substring(templatePos, i + 1));
-                            this._insertTypeNameWithPaddingOrComment(templateBuffer, templatePos, i);
+                            this._insertPlaceholderFieldWithPaddingOrComment(templateBuffer, templatePos, i, isLokkaFragment);
                             break;
                         }
                     }
@@ -147,21 +182,23 @@ module.exports = {
      * Makes sure we have at least one field selected in a SelectionSet, e.g. 'foo { ${Component.getFragment} }'.
      * If we can't fit the field inside the template expression, we change it to a temporary comment, ie. '${...}' -> '#{...}'
      */
-    _insertTypeNameWithPaddingOrComment : function(buffer, startPos, endPos) {
-        if(endPos - startPos < typeNameLength) {
+    _insertPlaceholderFieldWithPaddingOrComment : function(buffer, startPos, endPos, isLokkaFragment) {
+        const fieldLength = isLokkaFragment ? lokkaFragmentPlaceholderFieldLength : typeNameLength;
+        if(endPos - startPos < fieldLength) {
             // can't fit the field inside the template expression so use a comment for now (expecting the user to keep typing)
             buffer[startPos] = comment;
             return;
         }
-        if(startPos + typeNameLength >= buffer.length) {
+        if(startPos + fieldLength >= buffer.length) {
             // cant fit the field inside the remaining buffer
             buffer[startPos] = comment;
             return;
         }
         let t = 0;
+        const fieldName = isLokkaFragment ? lokkaFragmentPlaceholderField : typeName;
         for(let i = startPos; i < buffer.length; i++) {
-            buffer[i] = typeName.charCodeAt(t++);
-            if(t == typeNameLength) {
+            buffer[i] = fieldName.charCodeAt(t++);
+            if(t == fieldLength) {
                 // at end of typeName, so fill with ws to not upset token positions
                 let w = i + 1;
                 while(w < buffer.length && w <= endPos) {
@@ -330,6 +367,27 @@ module.exports = {
                         }
                         tokensForOriginalBuffer.push(token);
                         lastAddedToken = token;
+
+                        if(token.type == 'ws') {
+                            const replacement = relayContext.wsEndReplacements[token.end];
+                            if (replacement) {
+                                if(replacement.text.length == token.text.length) {
+                                    // keep the token and update text and type
+                                    token.text = replacement.text;
+                                    token.type = replacement.type;
+                                } else {
+                                    // split token and add the replacement after it
+                                    const replacementToken = Object.assign({}, token);
+                                    token.end = token.end - replacement.text.length;
+                                    token.text = token.text.substr(0, token.text.length - replacement.text.length);
+                                    replacementToken.text = replacement.text;
+                                    replacementToken.type = replacement.type;
+                                    replacementToken.start = token.end;
+                                    tokensForOriginalBuffer.push(replacementToken);
+                                    lastAddedToken = replacementToken;
+                                }
+                            }
+                        }
                     }
 
                 }
@@ -351,7 +409,7 @@ module.exports = {
                         }
                     }
                 }
-                responseData.annotations = this._filterAnnotations(responseData.annotations);
+                responseData.annotations = this._filterAnnotations(responseData.annotations, relayContext);
             }
         } else if(command == 'getHints') {
             // strip the '{' completion according to https://facebook.github.io/relay/docs/api-reference-relay-ql.html
@@ -370,12 +428,21 @@ module.exports = {
     },
 
     /**
-     * Filters annotations for injected Relay GraphQL document-fragment
+     * Filters annotations for injected Relay GraphQL document-fragments and the specified environment
      */
-    _filterAnnotations : function(annotations) {
+    _filterAnnotations : function(annotations, relayContext) {
         let relayAnnotations = annotations.filter((annotation) =>
             relayValidationFilters.every((filter) => filter(annotation.message))
         );
+        if(relayContext.env === 'apollo') {
+            relayAnnotations = relayAnnotations.filter((annotation) =>
+                apolloValidationFilters.every((filter) => filter(annotation.message))
+            );
+        } else if(relayContext.env === 'lokka') {
+            relayAnnotations = relayAnnotations.filter((annotation) =>
+                lokkaValidationFilters.every((filter) => filter(annotation.message))
+            );
+        }
         return relayAnnotations;
     }
 };

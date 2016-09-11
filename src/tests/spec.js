@@ -130,7 +130,7 @@ describe('getTokens relay template fragments #1', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getTokens', buffer: templateFragment1GraphQL, relay: true})
+            .send({ command: 'getTokens', buffer: templateFragment1GraphQL, env: 'relay'})
             .expect(require('./data/relay/templateFragment1.json'))
             .expect(200, done);
     })
@@ -142,7 +142,7 @@ describe('getTokens relay template fragments #2', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getTokens', buffer: templateFragment2GraphQL, relay: true})
+            .send({ command: 'getTokens', buffer: templateFragment2GraphQL, env: 'relay'})
             .expect(require('./data/relay/templateFragment2.json'))
             .expect(200, done);
     })
@@ -153,7 +153,7 @@ describe('getTokens relay template fragments #3', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getTokens', buffer: "\n            fragment on Todo @relay(plural: true) {\n                id,\n                ${Todo.getFragment('todo')},\n            }\n        ", relay: true})
+            .send({ command: 'getTokens', buffer: "\n            fragment on Todo @relay(plural: true) {\n                id,\n                ${Todo.getFragment('todo')},\n            }\n        ", env: 'relay'})
             .expect(require('./data/relay/templateFragment3.json'))
             .expect(200, done);
     })
@@ -164,7 +164,7 @@ describe('getTokens relay comment before fragment', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getTokens', buffer: "\n#            fragment on Ship {\n                id @include(if: true)\n                name\n            }\n        ", relay: true})
+            .send({ command: 'getTokens', buffer: "\n#            fragment on Ship {\n                id @include(if: true)\n                name\n            }\n        ", env: 'relay'})
             .expect(require('./data/relay/commentBeforeFragment.json'))
             .expect(200, done);
     })
@@ -214,7 +214,31 @@ describe('Relay getAnnotations', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getAnnotations', buffer: getRelayAnnotationsGraphQL, relay: true})
+            .send({ command: 'getAnnotations', buffer: getRelayAnnotationsGraphQL, env: 'relay'})
+            .expect({ annotations: []})
+            .expect(200, done);
+    })
+});
+
+const getApolloAnnotationsGraphQL = fs.readFileSync(require.resolve('./data/projects/todoapp/getApolloAnnotations.graphql'), 'utf-8');
+describe('Apollo getAnnotations', function(){
+    it('responds with filtered annotations', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getAnnotations', buffer: getApolloAnnotationsGraphQL, env: 'apollo'})
+            .expect({ annotations: []})
+            .expect(200, done);
+    })
+});
+
+const getLokkaAnnotationsGraphQL = fs.readFileSync(require.resolve('./data/projects/todoapp/getLokkaAnnotations.graphql'), 'utf-8');
+describe('Lokka getAnnotations', function(){
+    it('responds with filtered annotations', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getAnnotations', buffer: getLokkaAnnotationsGraphQL, env: 'lokka'})
             .expect({ annotations: []})
             .expect(200, done);
     })

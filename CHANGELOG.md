@@ -1,3 +1,9 @@
+## 1.3.0 (2016-09-11)
+
+Features:
+
+- Support for gql apollo and lokka environments (#6)
+
 ## 1.2.1 (2016-09-09)
 
 Fixes:
@@ -28,7 +34,7 @@ Changes:
 
 Features:
 
-- Support for GraphQL Schema Language -- #1
+- Support for GraphQL Schema Language (#1)
 
 
 ## 1.0.0 (2015-12-13)
