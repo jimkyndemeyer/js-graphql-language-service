@@ -121,7 +121,7 @@ const project = {
                     try {
                         let schemaFile = path.isAbsolute(schemaConfig.file) ? schemaConfig.file : path.join(this.projectDir, schemaConfig.file);
                         let schema = this._loadJSON(schemaFile);
-                        if(schema && schema.data) {
+                        if(schema) {
                             this.schemaFile = schemaFile;
                             this._watch(schemaFile, true);
                             this._sendSchemaChanged(schema, schemaFile);
@@ -148,7 +148,7 @@ const project = {
                             if (schemaResponse.statusCode == 200) {
                                 let schemaBody = schemaResponse.getBody('utf-8');
                                 let schema = JSON.parse(schemaBody);
-                                if(schema && schema.data) {
+                                if(schema) {
                                     this.schemaUrl = schemaRequestConfig.url;
                                     this._sendSchemaChanged(schema, schemaRequestConfig.url);
                                 }

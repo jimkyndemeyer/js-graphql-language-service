@@ -1,3 +1,9 @@
+## 1.3.1 (2016-09-25)
+
+Features:
+
+- Support __schema root in schema.json (#7)
+
 ## 1.3.0 (2016-09-11)
 
 Features:

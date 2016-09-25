@@ -70,9 +70,10 @@ let schemaUrl = '';
 const project = require('./project');
 project.onSchemaChanged({
     onSchemaChanged: function(newSchema, url) {
-        if(newSchema && newSchema.data) {
+        const schemaRoot = getSchemaRoot(newSchema);
+        if(schemaRoot) {
             try {
-                schema = buildClientSchema(newSchema.data);
+                schema = buildClientSchema(schemaRoot);
                 schemaVersion++;
                 schemaUrl = url;
                 let schemaJson = JSON.stringify(newSchema);
@@ -84,11 +85,39 @@ project.onSchemaChanged({
                 console.error("Error creating client schema", e);
             }
         } else {
+            if(url) {
+                console.error('Unable to load schema from "'+url+'". Expected {data:{__schema:...}} or {__schema:...} from a schema introspection query. Got root keys: ' + getRootKeys(newSchema));
+            }
             schema = exampleSchema;
             schemaVersion++;
         }
     }
 });
+
+/**
+ * Gets the JSON object that parents the __schema introspection result
+ */
+function getSchemaRoot(newSchema) {
+    let root = null;
+    if(newSchema) {
+        if(newSchema.data && newSchema.data.__schema) {
+            // compatible with babel-relay-plugin
+            return newSchema.data;
+        }
+        if(newSchema.__schema) {
+            // compatible with graphene
+            return newSchema;
+        }
+    }
+    return root;
+}
+
+function getRootKeys(newSchema) {
+    if(newSchema) {
+        return Object.keys(newSchema);
+    }
+    return '[]';
+}
 
 // setup express endpoint for the language service and register the 'application/graphql' mime-type
 const app = express();
