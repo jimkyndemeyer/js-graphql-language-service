@@ -156,9 +156,23 @@ module.exports = {
                             }
                         }
                     }
+
+                    let openBraces = 0;
                     for (let t = i + 1; t < templateBuffer.length; t++) {
-                        var isNewLine = (templateBuffer[t] == newLine);
-                        if (isNewLine || templateBuffer[t] == templateRBrace) {
+                        const isOpenBrace = (templateBuffer[t] == templateLBrace);
+                        if(isOpenBrace) {
+                            openBraces++;
+                            continue;
+                        }
+                        const isClosingBrace = (templateBuffer[t] == templateRBrace);
+                        if(isClosingBrace) {
+                            openBraces--;
+                            if(openBraces > 0) {
+                                continue;
+                            }
+                        }
+                        const isNewLine = (templateBuffer[t] == newLine);
+                        if (isNewLine || isClosingBrace) {
                             // we're at the closing brace or new line
                             i = t;
                             if(isNewLine) {

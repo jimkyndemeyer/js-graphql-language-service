@@ -1,3 +1,9 @@
+## 1.3.2 (2016-10-30)
+
+Fixes:
+
+- Object literal for variables in getFragment closes Relay.QL template expression (#9)
+
 ## 1.3.1 (2016-09-25)
 
 Features:

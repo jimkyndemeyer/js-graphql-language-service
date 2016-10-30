@@ -159,6 +159,17 @@ describe('getTokens relay template fragments #3', function(){
     })
 });
 
+describe('getTokens relay template fragments #4', function(){
+    it('responds with expected tokens', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getTokens', buffer: "\n            fragment on Todo @relay(plural: true) {\n                id,\n                ${Todo.getFragment('todo', {foo: 'bar'})},\n            }\n        ", env: 'relay'})
+            .expect(require('./data/relay/templateFragment4.json'))
+            .expect(200, done);
+    })
+});
+
 describe('getTokens relay comment before fragment', function(){
     it('responds with expected tokens', function(done){
         request(app)
