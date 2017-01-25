@@ -46,7 +46,7 @@
       "start": 16,
       "end": 20,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -114,7 +114,7 @@
       "start": 51,
       "end": 57,
       "scope": 1,
-      "kind": "Field"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -136,7 +136,7 @@
       "start": 66,
       "end": 71,
       "scope": 1,
-      "kind": "Field"
+      "kind": "Comment"
     },
     {
       "text": "\n",

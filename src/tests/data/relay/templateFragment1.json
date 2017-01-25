@@ -46,7 +46,7 @@
       "start": 16,
       "end": 20,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",

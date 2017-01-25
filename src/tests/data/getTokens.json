@@ -6,7 +6,7 @@
       "start": 0,
       "end": 50,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -766,7 +766,7 @@
       "start": 464,
       "end": 470,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -1676,7 +1676,7 @@
       "start": 967,
       "end": 979,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -1918,7 +1918,7 @@
       "start": 1071,
       "end": 1077,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -2336,7 +2336,7 @@
       "start": 1286,
       "end": 1328,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2632,7 +2632,7 @@
       "start": 1441,
       "end": 1442,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": " ",
@@ -2640,7 +2640,7 @@
       "start": 1442,
       "end": 1443,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": "{",
@@ -2830,7 +2830,7 @@
       "start": 1490,
       "end": 1491,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": " ",
@@ -2838,7 +2838,7 @@
       "start": 1491,
       "end": 1492,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": "{",
@@ -2960,7 +2960,7 @@
       "start": 1523,
       "end": 1529,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -2998,7 +2998,7 @@
       "start": 1536,
       "end": 1582,
       "scope": 1,
-      "kind": "SelectionSet"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -3172,7 +3172,7 @@
       "start": 1639,
       "end": 1648,
       "scope": 1,
-      "kind": "SelectionSet"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -3206,7 +3206,7 @@
       "start": 1652,
       "end": 1661,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": "\n",
@@ -3226,7 +3226,7 @@
       "start": 1663,
       "end": 1711,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -3318,7 +3318,7 @@
       "start": 1744,
       "end": 1746,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "$",
@@ -3366,7 +3366,7 @@
       "start": 1761,
       "end": 1762,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "=",
@@ -3524,7 +3524,7 @@
       "start": 1814,
       "end": 1815,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": "\n",
@@ -3538,7 +3538,7 @@
       "start": 1816,
       "end": 1820,
       "scope": 1,
-      "kind": "Field"
+      "kind": "AliasedField"
     },
     {
       "text": "...",
@@ -3578,7 +3578,7 @@
       "start": 1827,
       "end": 1831,
       "scope": 1,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",

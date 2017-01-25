@@ -414,7 +414,7 @@
       "start": 158,
       "end": 160,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "viewer",
@@ -460,7 +460,7 @@
       "start": 173,
       "end": 175,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -854,7 +854,7 @@
       "start": 340,
       "end": 342,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "viewer",
@@ -900,7 +900,7 @@
       "start": 355,
       "end": 357,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -1302,7 +1302,7 @@
       "start": 529,
       "end": 531,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -1524,7 +1524,7 @@
       "start": 624,
       "end": 626,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "changeTodoStatus",
@@ -1626,7 +1626,7 @@
       "start": 699,
       "end": 701,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "markAllTodos",
@@ -1728,7 +1728,7 @@
       "start": 762,
       "end": 764,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "removeCompletedTodos",
@@ -1830,7 +1830,7 @@
       "start": 849,
       "end": 851,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "removeTodo",
@@ -1932,7 +1932,7 @@
       "start": 906,
       "end": 908,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "renameTodo",
@@ -2054,7 +2054,7 @@
       "start": 966,
       "end": 988,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2122,7 +2122,7 @@
       "start": 1008,
       "end": 1031,
       "scope": 1,
-      "kind": "InterfaceDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2210,7 +2210,7 @@
       "start": 1045,
       "end": 1092,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2278,7 +2278,7 @@
       "start": 1111,
       "end": 1160,
       "scope": 1,
-      "kind": "ObjectTypeDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2360,7 +2360,7 @@
       "start": 1188,
       "end": 1238,
       "scope": 1,
-      "kind": "FieldDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2442,7 +2442,7 @@
       "start": 1270,
       "end": 1322,
       "scope": 1,
-      "kind": "FieldDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2508,7 +2508,7 @@
       "start": 1346,
       "end": 1348,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "# When paginating forwards, the cursor to continue.",
@@ -2516,7 +2516,7 @@
       "start": 1348,
       "end": 1399,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -2530,7 +2530,7 @@
       "start": 1400,
       "end": 1402,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "endCursor",
@@ -2870,7 +2870,7 @@
       "start": 1565,
       "end": 1567,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -3210,7 +3210,7 @@
       "start": 1706,
       "end": 1708,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "viewer",
@@ -3256,7 +3256,7 @@
       "start": 1721,
       "end": 1723,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -3650,7 +3650,7 @@
       "start": 1871,
       "end": 1873,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "clientMutationId",
@@ -3822,7 +3822,7 @@
       "start": 1930,
       "end": 1932,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "# Fetches an object given its ID",
@@ -3830,7 +3830,7 @@
       "start": 1932,
       "end": 1964,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -3844,7 +3844,7 @@
       "start": 1965,
       "end": 1967,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "node",
@@ -3882,7 +3882,7 @@
       "start": 1977,
       "end": 1998,
       "scope": 2,
-      "kind": "ArgumentsDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4064,7 +4064,7 @@
       "start": 2045,
       "end": 2049,
       "scope": 0,
-      "kind": "Implements"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -4102,7 +4102,7 @@
       "start": 2054,
       "end": 2075,
       "scope": 1,
-      "kind": "ObjectTypeDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4216,7 +4216,7 @@
       "start": 2101,
       "end": 2103,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "complete",
@@ -4282,7 +4282,7 @@
       "start": 2124,
       "end": 2158,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4350,7 +4350,7 @@
       "start": 2183,
       "end": 2218,
       "scope": 1,
-      "kind": "ObjectTypeDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4432,7 +4432,7 @@
       "start": 2244,
       "end": 2279,
       "scope": 1,
-      "kind": "FieldDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4528,7 +4528,7 @@
       "start": 2303,
       "end": 2329,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4596,7 +4596,7 @@
       "start": 2348,
       "end": 2381,
       "scope": 1,
-      "kind": "ObjectTypeDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4662,7 +4662,7 @@
       "start": 2396,
       "end": 2398,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "# A cursor for use in pagination",
@@ -4670,7 +4670,7 @@
       "start": 2398,
       "end": 2430,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4684,7 +4684,7 @@
       "start": 2431,
       "end": 2433,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "cursor",
@@ -4806,7 +4806,7 @@
       "start": 2473,
       "end": 2477,
       "scope": 0,
-      "kind": "Implements"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -4844,7 +4844,7 @@
       "start": 2482,
       "end": 2503,
       "scope": 1,
-      "kind": "ObjectTypeDef"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -4968,7 +4968,7 @@
       "start": 2536,
       "end": 2537,
       "scope": 2,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "=",
@@ -5056,7 +5056,7 @@
       "start": 2560,
       "end": 2562,
       "scope": 2,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "after",
@@ -5096,7 +5096,7 @@
       "start": 2575,
       "end": 2577,
       "scope": 2,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "first",
@@ -5136,7 +5136,7 @@
       "start": 2587,
       "end": 2589,
       "scope": 2,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "last",
@@ -5214,7 +5214,7 @@
       "start": 2616,
       "end": 2618,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "totalCount",
@@ -5260,7 +5260,7 @@
       "start": 2634,
       "end": 2636,
       "scope": 1,
-      "kind": "NamedType"
+      "kind": "NonNullType"
     },
     {
       "text": "completedCount",

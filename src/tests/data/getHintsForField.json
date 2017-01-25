@@ -4,30 +4,35 @@
       "text": "types",
       "type": "[__Type!]!",
       "description": "A list of all types supported by this server.",
+      "isDeprecated": false,
       "relay": false
     },
     {
       "text": "queryType",
       "type": "__Type!",
       "description": "The type that query operations will be rooted at.",
+      "isDeprecated": false,
       "relay": false
     },
     {
       "text": "mutationType",
       "type": "__Type",
       "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
+      "isDeprecated": false,
       "relay": false
     },
     {
       "text": "subscriptionType",
       "type": "__Type",
       "description": "If this server support subscription, the type that subscription operations will be rooted at.",
+      "isDeprecated": false,
       "relay": false
     },
     {
       "text": "directives",
       "type": "[__Directive!]!",
       "description": "A list of all directives supported by this server.",
+      "isDeprecated": false,
       "relay": false
     }
   ],

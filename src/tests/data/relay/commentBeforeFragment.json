@@ -12,7 +12,7 @@
       "start": 1,
       "end": 32,
       "scope": 0,
-      "kind": "Document"
+      "kind": "Comment"
     },
     {
       "text": "\n",
@@ -33,15 +33,15 @@
       "type": "invalidchar",
       "start": 49,
       "end": 51,
-      "scope": 1,
-      "kind": "Document"
+      "scope": 0,
+      "kind": "Invalid"
     },
     {
       "text": " ",
       "type": "ws",
       "start": 51,
       "end": 52,
-      "scope": 1,
+      "scope": 0,
       "kind": "Document"
     },
     {
@@ -49,16 +49,16 @@
       "type": "invalidchar",
       "start": 52,
       "end": 53,
-      "scope": 1,
-      "kind": "Document"
+      "scope": 0,
+      "kind": "Invalid"
     },
     {
       "text": "include",
       "type": "invalidchar",
       "start": 53,
       "end": 60,
-      "scope": 1,
-      "kind": "Document"
+      "scope": 0,
+      "kind": "Invalid"
     },
     {
       "text": "(",
@@ -66,7 +66,7 @@
       "start": 60,
       "end": 61,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": "if",
@@ -74,7 +74,7 @@
       "start": 61,
       "end": 63,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": ":",
@@ -82,7 +82,7 @@
       "start": 63,
       "end": 64,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": " ",
@@ -98,7 +98,7 @@
       "start": 65,
       "end": 69,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": ")",
@@ -106,7 +106,7 @@
       "start": 69,
       "end": 70,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": "\n",
@@ -128,7 +128,7 @@
       "start": 87,
       "end": 91,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": "\n",
@@ -150,7 +150,7 @@
       "start": 104,
       "end": 105,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Invalid"
     },
     {
       "text": "\n",

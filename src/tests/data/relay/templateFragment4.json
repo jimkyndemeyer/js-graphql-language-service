@@ -52,7 +52,7 @@
       "start": 25,
       "end": 29,
       "scope": 0,
-      "kind": "TypeCondition"
+      "kind": "NamedType"
     },
     {
       "text": " ",
@@ -195,10 +195,10 @@
       "kind": "Field"
     },
     {
-      "text": ",",
-      "type": "punctuation",
       "start": 130,
       "end": 131,
+      "text": ",",
+      "type": "punctuation",
       "scope": 1,
       "kind": "Field"
     },

@@ -316,10 +316,10 @@
                         "alias": null,
                         "name": {
                           "kind": "Name",
-                          "value": "onField",
+                          "value": "locations",
                           "loc": {
                             "start": 390,
-                            "end": 397
+                            "end": 399
                           }
                         },
                         "arguments": [],
@@ -327,78 +327,40 @@
                         "selectionSet": null,
                         "loc": {
                           "start": 390,
-                          "end": 397
-                        }
-                      },
-                      {
-                        "kind": "Field",
-                        "alias": null,
-                        "name": {
-                          "kind": "Name",
-                          "value": "onFragment",
-                          "loc": {
-                            "start": 411,
-                            "end": 421
-                          }
-                        },
-                        "arguments": [],
-                        "directives": [],
-                        "selectionSet": null,
-                        "loc": {
-                          "start": 411,
-                          "end": 421
-                        }
-                      },
-                      {
-                        "kind": "Field",
-                        "alias": null,
-                        "name": {
-                          "kind": "Name",
-                          "value": "onField",
-                          "loc": {
-                            "start": 435,
-                            "end": 442
-                          }
-                        },
-                        "arguments": [],
-                        "directives": [],
-                        "selectionSet": null,
-                        "loc": {
-                          "start": 435,
-                          "end": 442
+                          "end": 399
                         }
                       }
                     ],
                     "loc": {
                       "start": 266,
-                      "end": 453
+                      "end": 410
                     }
                   },
                   "loc": {
                     "start": 255,
-                    "end": 453
+                    "end": 410
                   }
                 }
               ],
               "loc": {
                 "start": 97,
-                "end": 460
+                "end": 417
               }
             },
             "loc": {
               "start": 88,
-              "end": 460
+              "end": 417
             }
           }
         ],
         "loc": {
           "start": 79,
-          "end": 463
+          "end": 420
         }
       },
       "loc": {
         "start": 54,
-        "end": 463
+        "end": 420
       }
     },
     {
@@ -407,8 +369,8 @@
         "kind": "Name",
         "value": "FullType",
         "loc": {
-          "start": 476,
-          "end": 484
+          "start": 433,
+          "end": 441
         }
       },
       "typeCondition": {
@@ -417,13 +379,13 @@
           "kind": "Name",
           "value": "__Type",
           "loc": {
-            "start": 488,
-            "end": 494
+            "start": 445,
+            "end": 451
           }
         },
         "loc": {
-          "start": 488,
-          "end": 494
+          "start": 445,
+          "end": 451
         }
       },
       "directives": [],
@@ -437,16 +399,16 @@
               "kind": "Name",
               "value": "kind",
               "loc": {
-                "start": 502,
-                "end": 506
+                "start": 459,
+                "end": 463
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 502,
-              "end": 506
+              "start": 459,
+              "end": 463
             }
           },
           {
@@ -456,16 +418,16 @@
               "kind": "Name",
               "value": "name",
               "loc": {
-                "start": 512,
-                "end": 516
+                "start": 469,
+                "end": 473
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 512,
-              "end": 516
+              "start": 469,
+              "end": 473
             }
           },
           {
@@ -475,16 +437,16 @@
               "kind": "Name",
               "value": "description",
               "loc": {
-                "start": 522,
-                "end": 533
+                "start": 479,
+                "end": 490
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 522,
-              "end": 533
+              "start": 479,
+              "end": 490
             }
           },
           {
@@ -494,8 +456,8 @@
               "kind": "Name",
               "value": "fields",
               "loc": {
-                "start": 539,
-                "end": 545
+                "start": 496,
+                "end": 502
               }
             },
             "arguments": [],
@@ -510,16 +472,16 @@
                     "kind": "Name",
                     "value": "name",
                     "loc": {
-                      "start": 557,
-                      "end": 561
+                      "start": 514,
+                      "end": 518
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 557,
-                    "end": 561
+                    "start": 514,
+                    "end": 518
                   }
                 },
                 {
@@ -529,16 +491,16 @@
                     "kind": "Name",
                     "value": "description",
                     "loc": {
-                      "start": 571,
-                      "end": 582
+                      "start": 528,
+                      "end": 539
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 571,
-                    "end": 582
+                    "start": 528,
+                    "end": 539
                   }
                 },
                 {
@@ -548,8 +510,8 @@
                     "kind": "Name",
                     "value": "args",
                     "loc": {
-                      "start": 592,
-                      "end": 596
+                      "start": 549,
+                      "end": 553
                     }
                   },
                   "arguments": [],
@@ -563,25 +525,25 @@
                           "kind": "Name",
                           "value": "InputValue",
                           "loc": {
-                            "start": 615,
-                            "end": 625
+                            "start": 572,
+                            "end": 582
                           }
                         },
                         "directives": [],
                         "loc": {
-                          "start": 612,
-                          "end": 625
+                          "start": 569,
+                          "end": 582
                         }
                       }
                     ],
                     "loc": {
-                      "start": 597,
-                      "end": 636
+                      "start": 554,
+                      "end": 593
                     }
                   },
                   "loc": {
-                    "start": 592,
-                    "end": 636
+                    "start": 549,
+                    "end": 593
                   }
                 },
                 {
@@ -591,8 +553,8 @@
                     "kind": "Name",
                     "value": "type",
                     "loc": {
-                      "start": 646,
-                      "end": 650
+                      "start": 603,
+                      "end": 607
                     }
                   },
                   "arguments": [],
@@ -606,25 +568,25 @@
                           "kind": "Name",
                           "value": "TypeRef",
                           "loc": {
-                            "start": 669,
-                            "end": 676
+                            "start": 626,
+                            "end": 633
                           }
                         },
                         "directives": [],
                         "loc": {
-                          "start": 666,
-                          "end": 676
+                          "start": 623,
+                          "end": 633
                         }
                       }
                     ],
                     "loc": {
-                      "start": 651,
-                      "end": 687
+                      "start": 608,
+                      "end": 644
                     }
                   },
                   "loc": {
-                    "start": 646,
-                    "end": 687
+                    "start": 603,
+                    "end": 644
                   }
                 },
                 {
@@ -634,16 +596,16 @@
                     "kind": "Name",
                     "value": "isDeprecated",
                     "loc": {
-                      "start": 697,
-                      "end": 709
+                      "start": 654,
+                      "end": 666
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 697,
-                    "end": 709
+                    "start": 654,
+                    "end": 666
                   }
                 },
                 {
@@ -653,27 +615,27 @@
                     "kind": "Name",
                     "value": "deprecationReason",
                     "loc": {
-                      "start": 719,
-                      "end": 736
+                      "start": 676,
+                      "end": 693
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 719,
-                    "end": 736
+                    "start": 676,
+                    "end": 693
                   }
                 }
               ],
               "loc": {
-                "start": 546,
-                "end": 743
+                "start": 503,
+                "end": 700
               }
             },
             "loc": {
-              "start": 539,
-              "end": 743
+              "start": 496,
+              "end": 700
             }
           },
           {
@@ -683,8 +645,8 @@
               "kind": "Name",
               "value": "inputFields",
               "loc": {
-                "start": 749,
-                "end": 760
+                "start": 706,
+                "end": 717
               }
             },
             "arguments": [],
@@ -698,25 +660,25 @@
                     "kind": "Name",
                     "value": "InputValue",
                     "loc": {
-                      "start": 775,
-                      "end": 785
+                      "start": 732,
+                      "end": 742
                     }
                   },
                   "directives": [],
                   "loc": {
-                    "start": 772,
-                    "end": 785
+                    "start": 729,
+                    "end": 742
                   }
                 }
               ],
               "loc": {
-                "start": 761,
-                "end": 792
+                "start": 718,
+                "end": 749
               }
             },
             "loc": {
-              "start": 749,
-              "end": 792
+              "start": 706,
+              "end": 749
             }
           },
           {
@@ -726,8 +688,8 @@
               "kind": "Name",
               "value": "interfaces",
               "loc": {
-                "start": 798,
-                "end": 808
+                "start": 755,
+                "end": 765
               }
             },
             "arguments": [],
@@ -741,25 +703,25 @@
                     "kind": "Name",
                     "value": "TypeRef",
                     "loc": {
-                      "start": 823,
-                      "end": 830
+                      "start": 780,
+                      "end": 787
                     }
                   },
                   "directives": [],
                   "loc": {
-                    "start": 820,
-                    "end": 830
+                    "start": 777,
+                    "end": 787
                   }
                 }
               ],
               "loc": {
-                "start": 809,
-                "end": 837
+                "start": 766,
+                "end": 794
               }
             },
             "loc": {
-              "start": 798,
-              "end": 837
+              "start": 755,
+              "end": 794
             }
           },
           {
@@ -769,8 +731,8 @@
               "kind": "Name",
               "value": "enumValues",
               "loc": {
-                "start": 843,
-                "end": 853
+                "start": 800,
+                "end": 810
               }
             },
             "arguments": [],
@@ -785,16 +747,16 @@
                     "kind": "Name",
                     "value": "name",
                     "loc": {
-                      "start": 865,
-                      "end": 869
+                      "start": 822,
+                      "end": 826
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 865,
-                    "end": 869
+                    "start": 822,
+                    "end": 826
                   }
                 },
                 {
@@ -804,16 +766,16 @@
                     "kind": "Name",
                     "value": "description",
                     "loc": {
-                      "start": 879,
-                      "end": 890
+                      "start": 836,
+                      "end": 847
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 879,
-                    "end": 890
+                    "start": 836,
+                    "end": 847
                   }
                 },
                 {
@@ -823,16 +785,16 @@
                     "kind": "Name",
                     "value": "isDeprecated",
                     "loc": {
-                      "start": 900,
-                      "end": 912
+                      "start": 857,
+                      "end": 869
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 900,
-                    "end": 912
+                    "start": 857,
+                    "end": 869
                   }
                 },
                 {
@@ -842,27 +804,27 @@
                     "kind": "Name",
                     "value": "deprecationReason",
                     "loc": {
-                      "start": 922,
-                      "end": 939
+                      "start": 879,
+                      "end": 896
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 922,
-                    "end": 939
+                    "start": 879,
+                    "end": 896
                   }
                 }
               ],
               "loc": {
-                "start": 854,
-                "end": 946
+                "start": 811,
+                "end": 903
               }
             },
             "loc": {
-              "start": 843,
-              "end": 946
+              "start": 800,
+              "end": 903
             }
           },
           {
@@ -872,8 +834,8 @@
               "kind": "Name",
               "value": "possibleTypes",
               "loc": {
-                "start": 952,
-                "end": 965
+                "start": 909,
+                "end": 922
               }
             },
             "arguments": [],
@@ -887,36 +849,36 @@
                     "kind": "Name",
                     "value": "TypeRef",
                     "loc": {
-                      "start": 980,
-                      "end": 987
+                      "start": 937,
+                      "end": 944
                     }
                   },
                   "directives": [],
                   "loc": {
-                    "start": 977,
-                    "end": 987
+                    "start": 934,
+                    "end": 944
                   }
                 }
               ],
               "loc": {
-                "start": 966,
-                "end": 994
+                "start": 923,
+                "end": 951
               }
             },
             "loc": {
-              "start": 952,
-              "end": 994
+              "start": 909,
+              "end": 951
             }
           }
         ],
         "loc": {
-          "start": 495,
-          "end": 997
+          "start": 452,
+          "end": 954
         }
       },
       "loc": {
-        "start": 467,
-        "end": 997
+        "start": 424,
+        "end": 954
       }
     },
     {
@@ -925,8 +887,8 @@
         "kind": "Name",
         "value": "InputValue",
         "loc": {
-          "start": 1010,
-          "end": 1020
+          "start": 967,
+          "end": 977
         }
       },
       "typeCondition": {
@@ -935,13 +897,13 @@
           "kind": "Name",
           "value": "__InputValue",
           "loc": {
-            "start": 1024,
-            "end": 1036
+            "start": 981,
+            "end": 993
           }
         },
         "loc": {
-          "start": 1024,
-          "end": 1036
+          "start": 981,
+          "end": 993
         }
       },
       "directives": [],
@@ -955,16 +917,16 @@
               "kind": "Name",
               "value": "name",
               "loc": {
-                "start": 1044,
-                "end": 1048
+                "start": 1001,
+                "end": 1005
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1044,
-              "end": 1048
+              "start": 1001,
+              "end": 1005
             }
           },
           {
@@ -974,16 +936,16 @@
               "kind": "Name",
               "value": "description",
               "loc": {
-                "start": 1054,
-                "end": 1065
+                "start": 1011,
+                "end": 1022
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1054,
-              "end": 1065
+              "start": 1011,
+              "end": 1022
             }
           },
           {
@@ -993,8 +955,8 @@
               "kind": "Name",
               "value": "type",
               "loc": {
-                "start": 1071,
-                "end": 1075
+                "start": 1028,
+                "end": 1032
               }
             },
             "arguments": [],
@@ -1008,25 +970,25 @@
                     "kind": "Name",
                     "value": "TypeRef",
                     "loc": {
-                      "start": 1081,
-                      "end": 1088
+                      "start": 1038,
+                      "end": 1045
                     }
                   },
                   "directives": [],
                   "loc": {
-                    "start": 1078,
-                    "end": 1088
+                    "start": 1035,
+                    "end": 1045
                   }
                 }
               ],
               "loc": {
-                "start": 1076,
-                "end": 1090
+                "start": 1033,
+                "end": 1047
               }
             },
             "loc": {
-              "start": 1071,
-              "end": 1090
+              "start": 1028,
+              "end": 1047
             }
           },
           {
@@ -1036,27 +998,27 @@
               "kind": "Name",
               "value": "defaultValue",
               "loc": {
-                "start": 1096,
-                "end": 1108
+                "start": 1053,
+                "end": 1065
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1096,
-              "end": 1108
+              "start": 1053,
+              "end": 1065
             }
           }
         ],
         "loc": {
-          "start": 1037,
-          "end": 1111
+          "start": 994,
+          "end": 1068
         }
       },
       "loc": {
-        "start": 1001,
-        "end": 1111
+        "start": 958,
+        "end": 1068
       }
     },
     {
@@ -1065,8 +1027,8 @@
         "kind": "Name",
         "value": "TypeRef",
         "loc": {
-          "start": 1124,
-          "end": 1131
+          "start": 1081,
+          "end": 1088
         }
       },
       "typeCondition": {
@@ -1075,13 +1037,13 @@
           "kind": "Name",
           "value": "__Type",
           "loc": {
-            "start": 1135,
-            "end": 1141
+            "start": 1092,
+            "end": 1098
           }
         },
         "loc": {
-          "start": 1135,
-          "end": 1141
+          "start": 1092,
+          "end": 1098
         }
       },
       "directives": [],
@@ -1095,16 +1057,16 @@
               "kind": "Name",
               "value": "kind",
               "loc": {
-                "start": 1149,
-                "end": 1153
+                "start": 1106,
+                "end": 1110
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1149,
-              "end": 1153
+              "start": 1106,
+              "end": 1110
             }
           },
           {
@@ -1114,16 +1076,16 @@
               "kind": "Name",
               "value": "name",
               "loc": {
-                "start": 1159,
-                "end": 1163
+                "start": 1116,
+                "end": 1120
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1159,
-              "end": 1163
+              "start": 1116,
+              "end": 1120
             }
           },
           {
@@ -1133,8 +1095,8 @@
               "kind": "Name",
               "value": "ofType",
               "loc": {
-                "start": 1169,
-                "end": 1175
+                "start": 1126,
+                "end": 1132
               }
             },
             "arguments": [],
@@ -1149,16 +1111,16 @@
                     "kind": "Name",
                     "value": "kind",
                     "loc": {
-                      "start": 1187,
-                      "end": 1191
+                      "start": 1144,
+                      "end": 1148
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 1187,
-                    "end": 1191
+                    "start": 1144,
+                    "end": 1148
                   }
                 },
                 {
@@ -1168,16 +1130,16 @@
                     "kind": "Name",
                     "value": "name",
                     "loc": {
-                      "start": 1201,
-                      "end": 1205
+                      "start": 1158,
+                      "end": 1162
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 1201,
-                    "end": 1205
+                    "start": 1158,
+                    "end": 1162
                   }
                 },
                 {
@@ -1187,8 +1149,8 @@
                     "kind": "Name",
                     "value": "ofType",
                     "loc": {
-                      "start": 1215,
-                      "end": 1221
+                      "start": 1172,
+                      "end": 1178
                     }
                   },
                   "arguments": [],
@@ -1203,16 +1165,16 @@
                           "kind": "Name",
                           "value": "kind",
                           "loc": {
-                            "start": 1237,
-                            "end": 1241
+                            "start": 1194,
+                            "end": 1198
                           }
                         },
                         "arguments": [],
                         "directives": [],
                         "selectionSet": null,
                         "loc": {
-                          "start": 1237,
-                          "end": 1241
+                          "start": 1194,
+                          "end": 1198
                         }
                       },
                       {
@@ -1222,16 +1184,16 @@
                           "kind": "Name",
                           "value": "name",
                           "loc": {
-                            "start": 1255,
-                            "end": 1259
+                            "start": 1212,
+                            "end": 1216
                           }
                         },
                         "arguments": [],
                         "directives": [],
                         "selectionSet": null,
                         "loc": {
-                          "start": 1255,
-                          "end": 1259
+                          "start": 1212,
+                          "end": 1216
                         }
                       },
                       {
@@ -1241,8 +1203,8 @@
                           "kind": "Name",
                           "value": "ofType",
                           "loc": {
-                            "start": 1273,
-                            "end": 1279
+                            "start": 1230,
+                            "end": 1236
                           }
                         },
                         "arguments": [],
@@ -1257,16 +1219,16 @@
                                 "kind": "Name",
                                 "value": "kind",
                                 "loc": {
-                                  "start": 1299,
-                                  "end": 1303
+                                  "start": 1256,
+                                  "end": 1260
                                 }
                               },
                               "arguments": [],
                               "directives": [],
                               "selectionSet": null,
                               "loc": {
-                                "start": 1299,
-                                "end": 1303
+                                "start": 1256,
+                                "end": 1260
                               }
                             },
                             {
@@ -1276,60 +1238,60 @@
                                 "kind": "Name",
                                 "value": "name",
                                 "loc": {
-                                  "start": 1321,
-                                  "end": 1325
+                                  "start": 1278,
+                                  "end": 1282
                                 }
                               },
                               "arguments": [],
                               "directives": [],
                               "selectionSet": null,
                               "loc": {
-                                "start": 1321,
-                                "end": 1325
+                                "start": 1278,
+                                "end": 1282
                               }
                             }
                           ],
                           "loc": {
-                            "start": 1280,
-                            "end": 1340
+                            "start": 1237,
+                            "end": 1297
                           }
                         },
                         "loc": {
-                          "start": 1273,
-                          "end": 1340
+                          "start": 1230,
+                          "end": 1297
                         }
                       }
                     ],
                     "loc": {
-                      "start": 1222,
-                      "end": 1351
+                      "start": 1179,
+                      "end": 1308
                     }
                   },
                   "loc": {
-                    "start": 1215,
-                    "end": 1351
+                    "start": 1172,
+                    "end": 1308
                   }
                 }
               ],
               "loc": {
-                "start": 1176,
-                "end": 1358
+                "start": 1133,
+                "end": 1315
               }
             },
             "loc": {
-              "start": 1169,
-              "end": 1358
+              "start": 1126,
+              "end": 1315
             }
           }
         ],
         "loc": {
-          "start": 1142,
-          "end": 1361
+          "start": 1099,
+          "end": 1318
         }
       },
       "loc": {
-        "start": 1115,
-        "end": 1361
+        "start": 1072,
+        "end": 1318
       }
     },
     {
@@ -1339,8 +1301,8 @@
         "kind": "Name",
         "value": "MyQuery",
         "loc": {
-          "start": 1421,
-          "end": 1428
+          "start": 1378,
+          "end": 1385
         }
       },
       "variableDefinitions": [],
@@ -1355,8 +1317,8 @@
               "kind": "Name",
               "value": "__schema",
               "loc": {
-                "start": 1436,
-                "end": 1444
+                "start": 1393,
+                "end": 1401
               }
             },
             "arguments": [],
@@ -1371,8 +1333,8 @@
                     "kind": "Name",
                     "value": "types",
                     "loc": {
-                      "start": 1456,
-                      "end": 1461
+                      "start": 1413,
+                      "end": 1418
                     }
                   },
                   "arguments": [],
@@ -1386,36 +1348,36 @@
                           "kind": "Name",
                           "value": "FullType",
                           "loc": {
-                            "start": 1480,
-                            "end": 1488
+                            "start": 1437,
+                            "end": 1445
                           }
                         },
                         "directives": [],
                         "loc": {
-                          "start": 1477,
-                          "end": 1488
+                          "start": 1434,
+                          "end": 1445
                         }
                       }
                     ],
                     "loc": {
-                      "start": 1462,
-                      "end": 1499
+                      "start": 1419,
+                      "end": 1456
                     }
                   },
                   "loc": {
-                    "start": 1456,
-                    "end": 1499
+                    "start": 1413,
+                    "end": 1456
                   }
                 }
               ],
               "loc": {
-                "start": 1445,
-                "end": 1506
+                "start": 1402,
+                "end": 1463
               }
             },
             "loc": {
-              "start": 1436,
-              "end": 1506
+              "start": 1393,
+              "end": 1463
             }
           },
           {
@@ -1424,16 +1386,16 @@
               "kind": "Name",
               "value": "first",
               "loc": {
-                "start": 1512,
-                "end": 1517
+                "start": 1469,
+                "end": 1474
               }
             },
             "name": {
               "kind": "Name",
               "value": "node",
               "loc": {
-                "start": 1519,
-                "end": 1523
+                "start": 1476,
+                "end": 1480
               }
             },
             "arguments": [
@@ -1443,21 +1405,21 @@
                   "kind": "Name",
                   "value": "id",
                   "loc": {
-                    "start": 1524,
-                    "end": 1526
+                    "start": 1481,
+                    "end": 1483
                   }
                 },
                 "value": {
                   "kind": "IntValue",
                   "value": "1234",
                   "loc": {
-                    "start": 1528,
-                    "end": 1532
+                    "start": 1485,
+                    "end": 1489
                   }
                 },
                 "loc": {
-                  "start": 1524,
-                  "end": 1532
+                  "start": 1481,
+                  "end": 1489
                 }
               }
             ],
@@ -1472,27 +1434,27 @@
                     "kind": "Name",
                     "value": "id",
                     "loc": {
-                      "start": 1536,
-                      "end": 1538
+                      "start": 1493,
+                      "end": 1495
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 1536,
-                    "end": 1538
+                    "start": 1493,
+                    "end": 1495
                   }
                 }
               ],
               "loc": {
-                "start": 1534,
-                "end": 1540
+                "start": 1491,
+                "end": 1497
               }
             },
             "loc": {
-              "start": 1512,
-              "end": 1540
+              "start": 1469,
+              "end": 1497
             }
           },
           {
@@ -1501,16 +1463,16 @@
               "kind": "Name",
               "value": "second",
               "loc": {
-                "start": 1546,
-                "end": 1552
+                "start": 1503,
+                "end": 1509
               }
             },
             "name": {
               "kind": "Name",
               "value": "node",
               "loc": {
-                "start": 1554,
-                "end": 1558
+                "start": 1511,
+                "end": 1515
               }
             },
             "arguments": [
@@ -1520,21 +1482,21 @@
                   "kind": "Name",
                   "value": "id",
                   "loc": {
-                    "start": 1559,
-                    "end": 1561
+                    "start": 1516,
+                    "end": 1518
                   }
                 },
                 "value": {
                   "kind": "StringValue",
                   "value": "foo",
                   "loc": {
-                    "start": 1563,
-                    "end": 1568
+                    "start": 1520,
+                    "end": 1525
                   }
                 },
                 "loc": {
-                  "start": 1559,
-                  "end": 1568
+                  "start": 1516,
+                  "end": 1525
                 }
               },
               {
@@ -1543,21 +1505,21 @@
                   "kind": "Name",
                   "value": "option",
                   "loc": {
-                    "start": 1570,
-                    "end": 1576
+                    "start": 1527,
+                    "end": 1533
                   }
                 },
                 "value": {
                   "kind": "BooleanValue",
                   "value": true,
                   "loc": {
-                    "start": 1578,
-                    "end": 1582
+                    "start": 1535,
+                    "end": 1539
                   }
                 },
                 "loc": {
-                  "start": 1570,
-                  "end": 1582
+                  "start": 1527,
+                  "end": 1539
                 }
               }
             ],
@@ -1572,38 +1534,38 @@
                     "kind": "Name",
                     "value": "id",
                     "loc": {
-                      "start": 1586,
-                      "end": 1588
+                      "start": 1543,
+                      "end": 1545
                     }
                   },
                   "arguments": [],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 1586,
-                    "end": 1588
+                    "start": 1543,
+                    "end": 1545
                   }
                 }
               ],
               "loc": {
-                "start": 1584,
-                "end": 1590
+                "start": 1541,
+                "end": 1547
               }
             },
             "loc": {
-              "start": 1546,
-              "end": 1590
+              "start": 1503,
+              "end": 1547
             }
           }
         ],
         "loc": {
-          "start": 1429,
-          "end": 1593
+          "start": 1386,
+          "end": 1550
         }
       },
       "loc": {
-        "start": 1415,
-        "end": 1593
+        "start": 1372,
+        "end": 1550
       }
     },
     {
@@ -1612,8 +1574,8 @@
         "kind": "Name",
         "value": "FullType",
         "loc": {
-          "start": 1606,
-          "end": 1614
+          "start": 1563,
+          "end": 1571
         }
       },
       "typeCondition": {
@@ -1622,13 +1584,13 @@
           "kind": "Name",
           "value": "__Type",
           "loc": {
-            "start": 1618,
-            "end": 1624
+            "start": 1575,
+            "end": 1581
           }
         },
         "loc": {
-          "start": 1618,
-          "end": 1624
+          "start": 1575,
+          "end": 1581
         }
       },
       "directives": [],
@@ -1642,27 +1604,27 @@
               "kind": "Name",
               "value": "name",
               "loc": {
-                "start": 1684,
-                "end": 1688
+                "start": 1641,
+                "end": 1645
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1684,
-              "end": 1688
+              "start": 1641,
+              "end": 1645
             }
           }
         ],
         "loc": {
-          "start": 1625,
-          "end": 1691
+          "start": 1582,
+          "end": 1648
         }
       },
       "loc": {
-        "start": 1597,
-        "end": 1691
+        "start": 1554,
+        "end": 1648
       }
     },
     {
@@ -1672,8 +1634,8 @@
         "kind": "Name",
         "value": "MyMutation",
         "loc": {
-          "start": 1704,
-          "end": 1714
+          "start": 1661,
+          "end": 1671
         }
       },
       "variableDefinitions": [
@@ -1685,13 +1647,13 @@
               "kind": "Name",
               "value": "input",
               "loc": {
-                "start": 1716,
-                "end": 1721
+                "start": 1673,
+                "end": 1678
               }
             },
             "loc": {
-              "start": 1715,
-              "end": 1721
+              "start": 1672,
+              "end": 1678
             }
           },
           "type": {
@@ -1702,24 +1664,24 @@
                 "kind": "Name",
                 "value": "MyInput",
                 "loc": {
-                  "start": 1723,
-                  "end": 1730
+                  "start": 1680,
+                  "end": 1687
                 }
               },
               "loc": {
-                "start": 1723,
-                "end": 1730
+                "start": 1680,
+                "end": 1687
               }
             },
             "loc": {
-              "start": 1723,
-              "end": 1731
+              "start": 1680,
+              "end": 1688
             }
           },
           "defaultValue": null,
           "loc": {
-            "start": 1715,
-            "end": 1731
+            "start": 1672,
+            "end": 1688
           }
         }
       ],
@@ -1734,27 +1696,27 @@
               "kind": "Name",
               "value": "foo",
               "loc": {
-                "start": 1740,
-                "end": 1743
+                "start": 1697,
+                "end": 1700
               }
             },
             "arguments": [],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1740,
-              "end": 1743
+              "start": 1697,
+              "end": 1700
             }
           }
         ],
         "loc": {
-          "start": 1733,
-          "end": 1746
+          "start": 1690,
+          "end": 1703
         }
       },
       "loc": {
-        "start": 1695,
-        "end": 1746
+        "start": 1652,
+        "end": 1703
       }
     },
     {
@@ -1764,8 +1726,8 @@
         "kind": "Name",
         "value": "queryName",
         "loc": {
-          "start": 1810,
-          "end": 1819
+          "start": 1767,
+          "end": 1776
         }
       },
       "variableDefinitions": [
@@ -1777,13 +1739,13 @@
               "kind": "Name",
               "value": "foo",
               "loc": {
-                "start": 1821,
-                "end": 1824
+                "start": 1778,
+                "end": 1781
               }
             },
             "loc": {
-              "start": 1820,
-              "end": 1824
+              "start": 1777,
+              "end": 1781
             }
           },
           "type": {
@@ -1792,19 +1754,19 @@
               "kind": "Name",
               "value": "TestInput",
               "loc": {
-                "start": 1826,
-                "end": 1835
+                "start": 1783,
+                "end": 1792
               }
             },
             "loc": {
-              "start": 1826,
-              "end": 1835
+              "start": 1783,
+              "end": 1792
             }
           },
           "defaultValue": null,
           "loc": {
-            "start": 1820,
-            "end": 1835
+            "start": 1777,
+            "end": 1792
           }
         },
         {
@@ -1815,13 +1777,13 @@
               "kind": "Name",
               "value": "site",
               "loc": {
-                "start": 1838,
-                "end": 1842
+                "start": 1795,
+                "end": 1799
               }
             },
             "loc": {
-              "start": 1837,
-              "end": 1842
+              "start": 1794,
+              "end": 1799
             }
           },
           "type": {
@@ -1830,26 +1792,26 @@
               "kind": "Name",
               "value": "TestEnum",
               "loc": {
-                "start": 1844,
-                "end": 1852
+                "start": 1801,
+                "end": 1809
               }
             },
             "loc": {
-              "start": 1844,
-              "end": 1852
+              "start": 1801,
+              "end": 1809
             }
           },
           "defaultValue": {
             "kind": "EnumValue",
             "value": "RED",
             "loc": {
-              "start": 1855,
-              "end": 1858
+              "start": 1812,
+              "end": 1815
             }
           },
           "loc": {
-            "start": 1837,
-            "end": 1858
+            "start": 1794,
+            "end": 1815
           }
         }
       ],
@@ -1863,16 +1825,16 @@
               "kind": "Name",
               "value": "testAlias",
               "loc": {
-                "start": 1867,
-                "end": 1876
+                "start": 1824,
+                "end": 1833
               }
             },
             "name": {
               "kind": "Name",
               "value": "hasArgs",
               "loc": {
-                "start": 1878,
-                "end": 1885
+                "start": 1835,
+                "end": 1842
               }
             },
             "arguments": [
@@ -1882,29 +1844,29 @@
                   "kind": "Name",
                   "value": "string",
                   "loc": {
-                    "start": 1886,
-                    "end": 1892
+                    "start": 1843,
+                    "end": 1849
                   }
                 },
                 "value": {
                   "kind": "StringValue",
                   "value": "testString",
                   "loc": {
-                    "start": 1894,
-                    "end": 1906
+                    "start": 1851,
+                    "end": 1863
                   }
                 },
                 "loc": {
-                  "start": 1886,
-                  "end": 1906
+                  "start": 1843,
+                  "end": 1863
                 }
               }
             ],
             "directives": [],
             "selectionSet": null,
             "loc": {
-              "start": 1867,
-              "end": 1907
+              "start": 1824,
+              "end": 1864
             }
           },
           {
@@ -1915,13 +1877,13 @@
                 "kind": "Name",
                 "value": "Test",
                 "loc": {
-                  "start": 1920,
-                  "end": 1924
+                  "start": 1877,
+                  "end": 1881
                 }
               },
               "loc": {
-                "start": 1920,
-                "end": 1924
+                "start": 1877,
+                "end": 1881
               }
             },
             "directives": [],
@@ -1935,8 +1897,8 @@
                     "kind": "Name",
                     "value": "hasArgs",
                     "loc": {
-                      "start": 1936,
-                      "end": 1943
+                      "start": 1893,
+                      "end": 1900
                     }
                   },
                   "arguments": [
@@ -1946,8 +1908,8 @@
                         "kind": "Name",
                         "value": "listEnum",
                         "loc": {
-                          "start": 1954,
-                          "end": 1962
+                          "start": 1911,
+                          "end": 1919
                         }
                       },
                       "value": {
@@ -1957,35 +1919,35 @@
                             "kind": "EnumValue",
                             "value": "RED",
                             "loc": {
-                              "start": 1965,
-                              "end": 1968
+                              "start": 1922,
+                              "end": 1925
                             }
                           },
                           {
                             "kind": "EnumValue",
                             "value": "GREEN",
                             "loc": {
-                              "start": 1970,
-                              "end": 1975
+                              "start": 1927,
+                              "end": 1932
                             }
                           },
                           {
                             "kind": "EnumValue",
                             "value": "BLUE",
                             "loc": {
-                              "start": 1977,
-                              "end": 1981
+                              "start": 1934,
+                              "end": 1938
                             }
                           }
                         ],
                         "loc": {
-                          "start": 1964,
-                          "end": 1982
+                          "start": 1921,
+                          "end": 1939
                         }
                       },
                       "loc": {
-                        "start": 1954,
-                        "end": 1982
+                        "start": 1911,
+                        "end": 1939
                       }
                     },
                     {
@@ -1994,21 +1956,21 @@
                         "kind": "Name",
                         "value": "int",
                         "loc": {
-                          "start": 1992,
-                          "end": 1995
+                          "start": 1949,
+                          "end": 1952
                         }
                       },
                       "value": {
                         "kind": "IntValue",
                         "value": "1",
                         "loc": {
-                          "start": 1997,
-                          "end": 1998
+                          "start": 1954,
+                          "end": 1955
                         }
                       },
                       "loc": {
-                        "start": 1992,
-                        "end": 1998
+                        "start": 1949,
+                        "end": 1955
                       }
                     },
                     {
@@ -2017,8 +1979,8 @@
                         "kind": "Name",
                         "value": "listFloat",
                         "loc": {
-                          "start": 2008,
-                          "end": 2017
+                          "start": 1965,
+                          "end": 1974
                         }
                       },
                       "value": {
@@ -2028,35 +1990,35 @@
                             "kind": "FloatValue",
                             "value": "1.23",
                             "loc": {
-                              "start": 2020,
-                              "end": 2024
+                              "start": 1977,
+                              "end": 1981
                             }
                           },
                           {
                             "kind": "FloatValue",
                             "value": "1.3e-1",
                             "loc": {
-                              "start": 2026,
-                              "end": 2032
+                              "start": 1983,
+                              "end": 1989
                             }
                           },
                           {
                             "kind": "FloatValue",
                             "value": "-1.35384e+3",
                             "loc": {
-                              "start": 2034,
-                              "end": 2045
+                              "start": 1991,
+                              "end": 2002
                             }
                           }
                         ],
                         "loc": {
-                          "start": 2019,
-                          "end": 2046
+                          "start": 1976,
+                          "end": 2003
                         }
                       },
                       "loc": {
-                        "start": 2008,
-                        "end": 2046
+                        "start": 1965,
+                        "end": 2003
                       }
                     },
                     {
@@ -2065,21 +2027,21 @@
                         "kind": "Name",
                         "value": "boolean",
                         "loc": {
-                          "start": 2056,
-                          "end": 2063
+                          "start": 2013,
+                          "end": 2020
                         }
                       },
                       "value": {
                         "kind": "BooleanValue",
                         "value": true,
                         "loc": {
-                          "start": 2065,
-                          "end": 2069
+                          "start": 2022,
+                          "end": 2026
                         }
                       },
                       "loc": {
-                        "start": 2056,
-                        "end": 2069
+                        "start": 2013,
+                        "end": 2026
                       }
                     },
                     {
@@ -2088,21 +2050,21 @@
                         "kind": "Name",
                         "value": "id",
                         "loc": {
-                          "start": 2079,
-                          "end": 2081
+                          "start": 2036,
+                          "end": 2038
                         }
                       },
                       "value": {
                         "kind": "IntValue",
                         "value": "123",
                         "loc": {
-                          "start": 2083,
-                          "end": 2086
+                          "start": 2040,
+                          "end": 2043
                         }
                       },
                       "loc": {
-                        "start": 2079,
-                        "end": 2086
+                        "start": 2036,
+                        "end": 2043
                       }
                     },
                     {
@@ -2111,8 +2073,8 @@
                         "kind": "Name",
                         "value": "object",
                         "loc": {
-                          "start": 2096,
-                          "end": 2102
+                          "start": 2053,
+                          "end": 2059
                         }
                       },
                       "value": {
@@ -2121,18 +2083,18 @@
                           "kind": "Name",
                           "value": "foo",
                           "loc": {
-                            "start": 2105,
-                            "end": 2108
+                            "start": 2062,
+                            "end": 2065
                           }
                         },
                         "loc": {
-                          "start": 2104,
-                          "end": 2108
+                          "start": 2061,
+                          "end": 2065
                         }
                       },
                       "loc": {
-                        "start": 2096,
-                        "end": 2108
+                        "start": 2053,
+                        "end": 2065
                       }
                     },
                     {
@@ -2141,8 +2103,8 @@
                         "kind": "Name",
                         "value": "enum",
                         "loc": {
-                          "start": 2118,
-                          "end": 2122
+                          "start": 2075,
+                          "end": 2079
                         }
                       },
                       "value": {
@@ -2151,37 +2113,37 @@
                           "kind": "Name",
                           "value": "site",
                           "loc": {
-                            "start": 2125,
-                            "end": 2129
+                            "start": 2082,
+                            "end": 2086
                           }
                         },
                         "loc": {
-                          "start": 2124,
-                          "end": 2129
+                          "start": 2081,
+                          "end": 2086
                         }
                       },
                       "loc": {
-                        "start": 2118,
-                        "end": 2129
+                        "start": 2075,
+                        "end": 2086
                       }
                     }
                   ],
                   "directives": [],
                   "selectionSet": null,
                   "loc": {
-                    "start": 1936,
-                    "end": 2140
+                    "start": 1893,
+                    "end": 2097
                   }
                 }
               ],
               "loc": {
-                "start": 1925,
-                "end": 2147
+                "start": 1882,
+                "end": 2104
               }
             },
             "loc": {
-              "start": 1913,
-              "end": 2147
+              "start": 1870,
+              "end": 2104
             }
           },
           {
@@ -2191,8 +2153,8 @@
               "kind": "Name",
               "value": "test",
               "loc": {
-                "start": 2153,
-                "end": 2157
+                "start": 2110,
+                "end": 2114
               }
             },
             "arguments": [],
@@ -2203,8 +2165,8 @@
                   "kind": "Name",
                   "value": "include",
                   "loc": {
-                    "start": 2159,
-                    "end": 2166
+                    "start": 2116,
+                    "end": 2123
                   }
                 },
                 "arguments": [
@@ -2214,27 +2176,27 @@
                       "kind": "Name",
                       "value": "if",
                       "loc": {
-                        "start": 2167,
-                        "end": 2169
+                        "start": 2124,
+                        "end": 2126
                       }
                     },
                     "value": {
                       "kind": "BooleanValue",
                       "value": true,
                       "loc": {
-                        "start": 2171,
-                        "end": 2175
+                        "start": 2128,
+                        "end": 2132
                       }
                     },
                     "loc": {
-                      "start": 2167,
-                      "end": 2175
+                      "start": 2124,
+                      "end": 2132
                     }
                   }
                 ],
                 "loc": {
-                  "start": 2158,
-                  "end": 2176
+                  "start": 2115,
+                  "end": 2133
                 }
               }
             ],
@@ -2248,8 +2210,8 @@
                     "kind": "Name",
                     "value": "union",
                     "loc": {
-                      "start": 2188,
-                      "end": 2193
+                      "start": 2145,
+                      "end": 2150
                     }
                   },
                   "arguments": [],
@@ -2264,54 +2226,54 @@
                           "kind": "Name",
                           "value": "__typename",
                           "loc": {
-                            "start": 2209,
-                            "end": 2219
+                            "start": 2166,
+                            "end": 2176
                           }
                         },
                         "arguments": [],
                         "directives": [],
                         "selectionSet": null,
                         "loc": {
-                          "start": 2209,
-                          "end": 2219
+                          "start": 2166,
+                          "end": 2176
                         }
                       }
                     ],
                     "loc": {
-                      "start": 2194,
-                      "end": 2230
+                      "start": 2151,
+                      "end": 2187
                     }
                   },
                   "loc": {
-                    "start": 2188,
-                    "end": 2230
+                    "start": 2145,
+                    "end": 2187
                   }
                 }
               ],
               "loc": {
-                "start": 2177,
-                "end": 2237
+                "start": 2134,
+                "end": 2194
               }
             },
             "loc": {
-              "start": 2153,
-              "end": 2237
+              "start": 2110,
+              "end": 2194
             }
           }
         ],
         "loc": {
-          "start": 1860,
-          "end": 2240
+          "start": 1817,
+          "end": 2197
         }
       },
       "loc": {
-        "start": 1804,
-        "end": 2240
+        "start": 1761,
+        "end": 2197
       }
     }
   ],
   "loc": {
     "start": 0,
-    "end": 2240
+    "end": 2197
   }
 }

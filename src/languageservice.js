@@ -296,6 +296,16 @@ function getTokens(cm, textToParse) {
                 }
             }
 
+            // codemirror-graphql 0.5.7 swapped qualifier and property in https://github.com/graphql/codemirror-graphql/commit/8d6ce868146df28fc832346fbbc72b78246de52f
+            // but we want the actual properties to point to their declaration to enable "Go to declaration", "find usages" etc.
+            // so swap then back into "qualifier" ":" "property"
+            if(tokenRet.type == 'property' && tokenRet.kind =='AliasedField') {
+                tokenRet.type = 'qualifier';
+            } else if(tokenRet.type == 'qualifier' && tokenRet.kind =='AliasedField') {
+                tokenRet.type = 'property';
+                tokenRet.kind = 'Field';
+            }
+
             if(tokenRet.type == 'string') {
                 // we need separate tokens for the string contents and the surrounding quotes to auto-close quotes in intellij
                 let text = tokenRet.text;
