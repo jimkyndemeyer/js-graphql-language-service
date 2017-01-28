@@ -4,3 +4,9 @@ query {
         ...allowFragmentInOtherFile
     }
 }
+
+${Component.fragments.allowFragmentInOtherFile}
+
+fragment NotUsedInThisFile on Node {
+    id
+}

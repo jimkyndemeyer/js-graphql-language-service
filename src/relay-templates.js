@@ -117,13 +117,19 @@ module.exports = {
 
         let line = 0;
         let column = 0;
-
+        let braceScope = 0;
         for (let i = 0; i < templateBuffer.length; i++) {
             let c = templateBuffer[i];
             switch (c) {
                 case newLine:
                     line++;
                     column = 0;
+                    break;
+                case templateLBrace:
+                    braceScope++;
+                    break;
+                case templateRBrace:
+                    braceScope--;
                     break;
                 default:
                     column++;
@@ -180,7 +186,7 @@ module.exports = {
                             }
                             // store the original token text for later application in getTokens
                             templateFromPosition.set(templatePos, relayContext.textToParse.substring(templatePos, i + 1));
-                            this._insertPlaceholderFieldWithPaddingOrComment(templateBuffer, templatePos, i, isLokkaFragment);
+                            this._insertPlaceholderFieldWithPaddingOrComment(relayContext, braceScope, templateBuffer, templatePos, i, isLokkaFragment);
                             break;
                         }
                     }
@@ -196,8 +202,15 @@ module.exports = {
      * Makes sure we have at least one field selected in a SelectionSet, e.g. 'foo { ${Component.getFragment} }'.
      * If we can't fit the field inside the template expression, we change it to a temporary comment, ie. '${...}' -> '#{...}'
      */
-    _insertPlaceholderFieldWithPaddingOrComment : function(buffer, startPos, endPos, isLokkaFragment) {
+    _insertPlaceholderFieldWithPaddingOrComment : function(relayContext, braceScope, buffer, startPos, endPos, isLokkaFragment) {
         const fieldLength = isLokkaFragment ? lokkaFragmentPlaceholderFieldLength : typeNameLength;
+        if(relayContext.env == 'apollo' && braceScope === 0) {
+            // treat top level apollo fragments as whitespace
+            for(let i = startPos; i < buffer.length; i++) {
+                buffer[i] = ws;
+            }
+            return;
+        }
         if(endPos - startPos < fieldLength) {
             // can't fit the field inside the template expression so use a comment for now (expecting the user to keep typing)
             buffer[startPos] = comment;
