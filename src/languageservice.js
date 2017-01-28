@@ -56,6 +56,8 @@ let cmCurrentDocValue = null;
 // GraphQL requires
 const graphqlLanguage = require('graphql/language');
 const buildClientSchema = require('graphql/utilities/buildClientSchema').buildClientSchema;
+const GraphQLInterfaceType = require('graphql/type').GraphQLInterfaceType;
+const GraphQLUnionType = require('graphql/type').GraphQLUnionType;
 
 // prepare schema
 const printSchema = require('graphql/utilities/schemaPrinter').printSchema;
@@ -443,7 +445,12 @@ function getTypeDocumentation(typeName) {
         for (let f in fields) {
             fieldsList.push(fields[f]);
         }
-        let implementations = type.getPossibleTypes ? type.getPossibleTypes() : [];
+        let implementations = null;
+        if(type instanceof GraphQLInterfaceType || type instanceof GraphQLUnionType) {
+            implementations = schema.getPossibleTypes(type) || [];
+        } else {
+            implementations = [];
+        }
 
         ret = {
             type: type.toString(),
