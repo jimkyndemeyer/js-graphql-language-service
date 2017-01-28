@@ -26,7 +26,7 @@
     "codemirror-graphql": "^0.6.2",
     "express": "~4.14.0",
     "filewatcher": "^3.0.1",
-    "graphql": "^0.9.0",
+    "graphql": "^0.9.1",
     "hashmap": "^2.0.6",
     "mock-browser": "^0.92.12",
     "stackjs": "^0.1.0",
