@@ -1,3 +1,14 @@
+## 1.4.0 (2017-01-29)
+
+Features:
+
+- Upgraded to `graphql 0.9.1` and `codemirror-graphql 0.6.2` (#10, #12, #14)
+- Add support for top level Apollo fragment template placeholders (#13)
+
+Fixes:
+
+- Only use comment for placeholder if no significant tokens follow on the same line (#15)
+
 ## 1.3.2 (2016-10-30)
 
 Fixes:
