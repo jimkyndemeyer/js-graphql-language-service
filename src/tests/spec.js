@@ -181,6 +181,17 @@ describe('getTokens relay comment before fragment', function(){
     })
 });
 
+describe('getTokens multiple place holders per line', function(){
+    it('responds with valid token ranges', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getTokens', buffer: "{ nodes(first: ${10}, foo: ${100}) { id } }", env: 'relay'})
+            .expect(require('./data/relay/multiplePlaceholdersPerLine.json'))
+            .expect(200, done);
+    })
+});
+
 
 // ---- TodoApp project ----
 

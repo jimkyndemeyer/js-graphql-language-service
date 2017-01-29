@@ -11,7 +11,10 @@ const HashMap = require('hashmap');
 const comment = '#'.charCodeAt(0);
 const ws = ' '.charCodeAt(0);
 const dot = '.'.charCodeAt(0);
+const comma = ','.charCodeAt(0);
 const newLine = '\n'.charCodeAt(0);
+const returnLine = '\r'.charCodeAt(0);
+const tab = '\t'.charCodeAt(0);
 const templateMark = '$'.charCodeAt(0);
 const templateLBrace = '{'.charCodeAt(0);
 const templateRBrace = '}'.charCodeAt(0);
@@ -184,9 +187,10 @@ module.exports = {
                             if(isNewLine) {
                                 i--; //backtrack to not include the new-line into the template
                             }
-                            // store the original token text for later application in getTokens
-                            templateFromPosition.set(templatePos, relayContext.textToParse.substring(templatePos, i + 1));
-                            this._insertPlaceholderFieldWithPaddingOrComment(relayContext, braceScope, templateBuffer, templatePos, i, isLokkaFragment);
+                            if(this._insertPlaceholderFieldWithPaddingOrComment(relayContext, braceScope, templateBuffer, templatePos, i, isLokkaFragment)) {
+                                // store the original token text for later application in getTokens
+                                templateFromPosition.set(templatePos, relayContext.textToParse.substring(templatePos, i + 1));
+                            }
                             break;
                         }
                     }
@@ -201,6 +205,7 @@ module.exports = {
     /**
      * Makes sure we have at least one field selected in a SelectionSet, e.g. 'foo { ${Component.getFragment} }'.
      * If we can't fit the field inside the template expression, we change it to a temporary comment, ie. '${...}' -> '#{...}'
+     * @return false if no replacement was possible, true otherwise
      */
     _insertPlaceholderFieldWithPaddingOrComment : function(relayContext, braceScope, buffer, startPos, endPos, isLokkaFragment) {
         const fieldLength = isLokkaFragment ? lokkaFragmentPlaceholderFieldLength : typeNameLength;
@@ -209,17 +214,47 @@ module.exports = {
             for(let i = startPos; i < buffer.length; i++) {
                 buffer[i] = ws;
             }
-            return;
+            return true;
         }
+        const allowComment = () => {
+            // the line comment is only a solution if it doesn't remove other tokens on that line, so check if that's the case
+            if(endPos == buffer.length) {
+                return true;
+            }
+            // look for a return or newline without encountering tokens that mustn't be commented out
+            for(let i = endPos + 1; i < buffer.length; i++) {
+                switch (buffer[i]) {
+                    case comment:
+                    case ws:
+                    case tab:
+                    case comma:
+                        continue;
+                    case newLine:
+                    case returnLine:
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+            return false;
+        };
         if(endPos - startPos < fieldLength) {
             // can't fit the field inside the template expression so use a comment for now (expecting the user to keep typing)
-            buffer[startPos] = comment;
-            return;
+            if(allowComment()) {
+                buffer[startPos] = comment;
+                return true;
+            } else {
+                return false;
+            }
         }
         if(startPos + fieldLength >= buffer.length) {
             // cant fit the field inside the remaining buffer
-            buffer[startPos] = comment;
-            return;
+            if(allowComment()) {
+                buffer[startPos] = comment;
+                return true;
+            } else {
+                return false;
+            }
         }
         let t = 0;
         const fieldName = isLokkaFragment ? lokkaFragmentPlaceholderField : typeName;
@@ -235,6 +270,7 @@ module.exports = {
                 break;
             }
         }
+        return true;
     },
 
     /**

@@ -1,0 +1,228 @@
+{
+  "tokens": [
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 0,
+      "end": 1,
+      "scope": 1,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 1,
+      "end": 2,
+      "scope": 1,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "nodes",
+      "type": "property",
+      "start": 2,
+      "end": 7,
+      "scope": 1,
+      "kind": "Field"
+    },
+    {
+      "text": "(",
+      "type": "punctuation",
+      "start": 7,
+      "end": 8,
+      "scope": 2,
+      "kind": "Arguments"
+    },
+    {
+      "text": "first",
+      "type": "attribute",
+      "start": 8,
+      "end": 13,
+      "scope": 2,
+      "kind": "Argument"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 13,
+      "end": 14,
+      "scope": 2,
+      "kind": "Argument"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 14,
+      "end": 15,
+      "scope": 2,
+      "kind": "Argument"
+    },
+    {
+      "text": "$",
+      "type": "variable",
+      "start": 15,
+      "end": 16,
+      "scope": 2,
+      "kind": "Variable"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 16,
+      "end": 17,
+      "scope": 3,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "10",
+      "type": "invalidchar",
+      "start": 17,
+      "end": 19,
+      "scope": 3,
+      "kind": "Invalid"
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 19,
+      "end": 20,
+      "scope": 2,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": ", ",
+      "type": "punctuation",
+      "start": 20,
+      "end": 22,
+      "scope": 2,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "foo",
+      "type": "qualifier",
+      "start": 22,
+      "end": 25,
+      "scope": 2,
+      "kind": "AliasedField"
+    },
+    {
+      "text": ":",
+      "type": "punctuation",
+      "start": 25,
+      "end": 26,
+      "scope": 2,
+      "kind": "AliasedField"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 26,
+      "end": 27,
+      "scope": 2,
+      "kind": "AliasedField"
+    },
+    {
+      "text": "$",
+      "type": "invalidchar",
+      "start": 27,
+      "end": 28,
+      "scope": 2,
+      "kind": "Invalid"
+    },
+    {
+      "text": "{",
+      "type": "invalidchar",
+      "start": 28,
+      "end": 29,
+      "scope": 2,
+      "kind": "Invalid"
+    },
+    {
+      "text": "100",
+      "type": "invalidchar",
+      "start": 29,
+      "end": 32,
+      "scope": 2,
+      "kind": "Invalid"
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 32,
+      "end": 33,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": ")",
+      "type": "invalidchar",
+      "start": 33,
+      "end": 34,
+      "scope": 1,
+      "kind": "Invalid"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 34,
+      "end": 35,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "{",
+      "type": "punctuation",
+      "start": 35,
+      "end": 36,
+      "scope": 2,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 36,
+      "end": 37,
+      "scope": 2,
+      "kind": "SelectionSet"
+    },
+    {
+      "text": "id",
+      "type": "property",
+      "start": 37,
+      "end": 39,
+      "scope": 2,
+      "kind": "Field"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 39,
+      "end": 40,
+      "scope": 2,
+      "kind": "Field"
+    },
+    {
+      "text": "}",
+      "type": "punctuation",
+      "start": 40,
+      "end": 41,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": " ",
+      "type": "ws",
+      "start": 41,
+      "end": 42,
+      "scope": 1,
+      "kind": "Document"
+    },
+    {
+      "text": "}",
+      "type": "invalidchar",
+      "start": 42,
+      "end": 43,
+      "scope": 1,
+      "kind": "Invalid"
+    }
+  ]
+}
