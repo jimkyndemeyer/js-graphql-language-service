@@ -12,6 +12,7 @@ const filewatcher = require('filewatcher');
 const request = require('then-request');
 const configFileName = 'graphql.config.json';
 const introspectionQuery = require('graphql/utilities/introspectionQuery').introspectionQuery;
+const graphql = require('graphql');
 const project = {
 
     projectDir: null,
@@ -87,6 +88,22 @@ const project = {
         this.schemaChangedCallbacks.push(callback);
     },
 
+    _loadGraphQL: function(schemaFile, onSchemaLoaded) {
+        try {
+            const schemaString = fs.readFileSync(schemaFile, 'utf8');
+            if(schemaString) {
+                const schema = graphql.buildSchema(schemaString);
+                graphql.graphql(schema, introspectionQuery).then(result => {
+                    onSchemaLoaded(result);
+                }).catch(function(e) {
+                    console.error('Unable to get schema.json from introspection query', e);
+                });
+            }
+        } catch(e) {
+            console.error('Unable to load GraphQL schema from "'+schemaFile+'":', e.message);
+        }
+    },
+
     _loadJSON : function(fileName) {
         try {
             var jsonString = fs.readFileSync(fileName, 'utf8');
@@ -119,14 +136,22 @@ const project = {
                 let schemaConfig = config.schema;
                 if(schemaConfig.file) {
                     try {
-                        let schemaFile = path.isAbsolute(schemaConfig.file) ? schemaConfig.file : path.join(this.projectDir, schemaConfig.file);
-                        let schema = this._loadJSON(schemaFile);
-                        if(schema) {
-                            this.schemaFile = schemaFile;
-                            this._watch(schemaFile, true);
-                            this._sendSchemaChanged(schema, schemaFile);
-                            return;
+                        const schemaFile = path.isAbsolute(schemaConfig.file) ? schemaConfig.file : path.join(this.projectDir, schemaConfig.file);
+                        const schemaExt = path.extname(schemaFile);
+                        const isGraphQL = (schemaExt === '.graphql' || schemaExt === '.graphqls');
+                        const onSchemaLoaded = function(schema) {
+                            if(schema) {
+                                this.schemaFile = schemaFile;
+                                this._watch(schemaFile, true);
+                                this._sendSchemaChanged(schema, schemaFile);
+                            }
+                        }.bind(this);
+                        if(isGraphQL) {
+                            this._loadGraphQL(schemaFile, onSchemaLoaded);
+                        } else {
+                            onSchemaLoaded(this._loadJSON(schemaFile));
                         }
+                        return;
                     } catch(e) {
                         console.error("Couldn't load schema", e);
                     }

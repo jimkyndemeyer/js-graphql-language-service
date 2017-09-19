@@ -265,3 +265,29 @@ describe('Lokka getAnnotations', function(){
             .expect(200, done);
     })
 });
+
+// ---- TodoApp Relay Modern project ----
+
+const todoAppModernProjectDir = path.join(__dirname, './data/projects/todoapp-modern/');
+describe('setting projectDir to Todo App modern', function(){
+    it('responds with the watched project directory', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'setProjectDir', projectDir: todoAppModernProjectDir})
+            .expect(JSON.stringify({projectDir: todoAppModernProjectDir }))
+            .expect(200, done);
+    })
+});
+
+const getTodoAppModernSchemaText = fs.readFileSync(require.resolve('./data/projects/todoapp-modern/todoAppModernExpectedSchema.txt'), 'utf-8');
+describe('getSchema with TodoApp modern project dir set', function(){
+    it('responds with the TodoApp schema', function(done){
+        request(app)
+            .post(url)
+            .set('Content-Type', 'application/json')
+            .send({ command: 'getSchema'})
+            .expect(getTodoAppModernSchemaText)
+            .expect(200, done);
+    })
+});
