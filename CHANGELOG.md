@@ -1,3 +1,10 @@
+## 1.5.0 (2017-09-20)
+
+Features:
+
+- Support for loading the schema from .graphql file (Relay Modern projects) (#16)
+
+
 ## 1.4.0 (2017-01-29)
 
 Features:
