@@ -57,36 +57,12 @@
       "kind": "Argument"
     },
     {
-      "text": "$",
+      "text": "${10}",
       "type": "variable",
       "start": 15,
-      "end": 16,
-      "scope": 2,
-      "kind": "Variable"
-    },
-    {
-      "text": "{",
-      "type": "punctuation",
-      "start": 16,
-      "end": 17,
-      "scope": 3,
-      "kind": "SelectionSet"
-    },
-    {
-      "text": "10",
-      "type": "invalidchar",
-      "start": 17,
-      "end": 19,
-      "scope": 3,
-      "kind": "Invalid"
-    },
-    {
-      "text": "}",
-      "type": "punctuation",
-      "start": 19,
       "end": 20,
       "scope": 2,
-      "kind": "SelectionSet"
+      "kind": "Variable"
     },
     {
       "text": ", ",
@@ -94,15 +70,15 @@
       "start": 20,
       "end": 22,
       "scope": 2,
-      "kind": "SelectionSet"
+      "kind": "Arguments"
     },
     {
       "text": "foo",
-      "type": "qualifier",
+      "type": "attribute",
       "start": 22,
       "end": 25,
       "scope": 2,
-      "kind": "AliasedField"
+      "kind": "Argument"
     },
     {
       "text": ":",
@@ -110,7 +86,7 @@
       "start": 25,
       "end": 26,
       "scope": 2,
-      "kind": "AliasedField"
+      "kind": "Argument"
     },
     {
       "text": " ",
@@ -118,47 +94,23 @@
       "start": 26,
       "end": 27,
       "scope": 2,
-      "kind": "AliasedField"
+      "kind": "Argument"
     },
     {
-      "text": "$",
-      "type": "invalidchar",
+      "text": "${100}",
+      "type": "variable",
       "start": 27,
-      "end": 28,
-      "scope": 2,
-      "kind": "Invalid"
-    },
-    {
-      "text": "{",
-      "type": "invalidchar",
-      "start": 28,
-      "end": 29,
-      "scope": 2,
-      "kind": "Invalid"
-    },
-    {
-      "text": "100",
-      "type": "invalidchar",
-      "start": 29,
-      "end": 32,
-      "scope": 2,
-      "kind": "Invalid"
-    },
-    {
-      "text": "}",
-      "type": "punctuation",
-      "start": 32,
       "end": 33,
-      "scope": 1,
-      "kind": "Document"
+      "scope": 2,
+      "kind": "Variable"
     },
     {
       "text": ")",
-      "type": "invalidchar",
+      "type": "punctuation",
       "start": 33,
       "end": 34,
       "scope": 1,
-      "kind": "Invalid"
+      "kind": "Field"
     },
     {
       "text": " ",
@@ -166,7 +118,7 @@
       "start": 34,
       "end": 35,
       "scope": 1,
-      "kind": "Document"
+      "kind": "Field"
     },
     {
       "text": "{",
@@ -206,7 +158,7 @@
       "start": 40,
       "end": 41,
       "scope": 1,
-      "kind": "Document"
+      "kind": "SelectionSet"
     },
     {
       "text": " ",
@@ -214,15 +166,15 @@
       "start": 41,
       "end": 42,
       "scope": 1,
-      "kind": "Document"
+      "kind": "SelectionSet"
     },
     {
       "text": "}",
-      "type": "invalidchar",
+      "type": "punctuation",
       "start": 42,
       "end": 43,
-      "scope": 1,
-      "kind": "Invalid"
+      "scope": 0,
+      "kind": "Document"
     }
   ]
 }

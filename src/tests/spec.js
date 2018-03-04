@@ -186,7 +186,7 @@ describe('getTokens multiple place holders per line', function(){
         request(app)
             .post(url)
             .set('Content-Type', 'application/json')
-            .send({ command: 'getTokens', buffer: "{ nodes(first: ${10}, foo: ${100}) { id } }", env: 'relay'})
+            .send({ command: 'getTokens', buffer: "{ nodes(first: ${10}, foo: ${100}) { id } }", env: 'graphql-template'})
             .expect(require('./data/relay/multiplePlaceholdersPerLine.json'))
             .expect(200, done);
     })

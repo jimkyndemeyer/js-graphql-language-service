@@ -18,6 +18,9 @@ const tab = '\t'.charCodeAt(0);
 const templateMark = '$'.charCodeAt(0);
 const templateLBrace = '{'.charCodeAt(0);
 const templateRBrace = '}'.charCodeAt(0);
+const leftParen = '('.charCodeAt(0);
+const rightParen = ')'.charCodeAt(0);
+const underscore = '_'.charCodeAt(0);
 
 const typeName = '__typename';
 const typeNameLength = typeName.length;
@@ -50,6 +53,10 @@ const apolloValidationFilters = [
 
 const lokkaValidationFilters = [
     (msg) => msg.indexOf('Cannot query field "' + lokkaFragmentPlaceholderField + '"') == -1 // start of graphql/validation/rules/FieldsOnCorrectType
+];
+
+const graphqlTemplateFilters = [
+    (msg) => msg.indexOf('Variable ') === -1 && msg.indexOf('$__') === -1
 ];
 
 module.exports = {
@@ -121,18 +128,38 @@ module.exports = {
         let line = 0;
         let column = 0;
         let braceScope = 0;
+        let fieldArgumentScope = 0;
+        let insideComment = false;
         for (let i = 0; i < templateBuffer.length; i++) {
             let c = templateBuffer[i];
             switch (c) {
                 case newLine:
                     line++;
                     column = 0;
+                    insideComment = false;
                     break;
                 case templateLBrace:
-                    braceScope++;
+                    if(!insideComment) {
+                        braceScope++;
+                    }
                     break;
                 case templateRBrace:
-                    braceScope--;
+                    if(!insideComment) {
+                        braceScope--;
+                    }
+                    break;
+                case leftParen:
+                    if(!insideComment) {
+                        fieldArgumentScope++;
+                    }
+                    break;
+                case rightParen:
+                    if(!insideComment) {
+                        fieldArgumentScope--;
+                    }
+                    break;
+                case comment:
+                    insideComment = true;
                     break;
                 default:
                     column++;
@@ -187,7 +214,7 @@ module.exports = {
                             if(isNewLine) {
                                 i--; //backtrack to not include the new-line into the template
                             }
-                            if(this._insertPlaceholderFieldWithPaddingOrComment(relayContext, braceScope, templateBuffer, templatePos, i, isLokkaFragment)) {
+                            if(this._insertPlaceholderFieldWithPaddingOrComment(relayContext, braceScope, fieldArgumentScope, templateBuffer, templatePos, i, isLokkaFragment)) {
                                 // store the original token text for later application in getTokens
                                 templateFromPosition.set(templatePos, relayContext.textToParse.substring(templatePos, i + 1));
                             }
@@ -207,12 +234,25 @@ module.exports = {
      * If we can't fit the field inside the template expression, we change it to a temporary comment, ie. '${...}' -> '#{...}'
      * @return false if no replacement was possible, true otherwise
      */
-    _insertPlaceholderFieldWithPaddingOrComment : function(relayContext, braceScope, buffer, startPos, endPos, isLokkaFragment) {
+    _insertPlaceholderFieldWithPaddingOrComment : function(relayContext, braceScope, fieldArgumentScope, buffer, startPos, endPos, isLokkaFragment) {
         const fieldLength = isLokkaFragment ? lokkaFragmentPlaceholderFieldLength : typeNameLength;
         if(relayContext.env == 'apollo' && braceScope === 0) {
             // treat top level apollo fragments as whitespace
-            for(let i = startPos; i < buffer.length; i++) {
+            for(let i = startPos; i <= endPos; i++) {
                 buffer[i] = ws;
+            }
+            return true;
+        }
+        if(fieldArgumentScope === 1 && relayContext.env == 'graphql-template') {
+            // template field argument, so insert a placeholder variable, e.g. todos(first: ${v => v.count}) becomes todos(first: $______________)
+            let char = 0;
+            for(let i = startPos; i <= endPos; i++) {
+                if(char === 0) {
+                    buffer[i] = templateMark;
+                } else {
+                    buffer[i] = underscore;
+                }
+                char++;
             }
             return true;
         }
@@ -404,8 +444,10 @@ module.exports = {
                                     t++; // and skip it
                                 }
                             }
+                            if(token.type !== 'variable') {
+                                token.type = 'template-fragment';
+                            }
                             token.text = template;
-                            token.type = 'template-fragment';
                             if (token.text.length != token.end - token.start) {
                                 console.error('Template replacement produced invalid token text range', token);
                             }
@@ -504,6 +546,10 @@ module.exports = {
         } else if(relayContext.env === 'lokka') {
             relayAnnotations = relayAnnotations.filter((annotation) =>
                 lokkaValidationFilters.every((filter) => filter(annotation.message))
+            );
+        } else if(relayContext.env === 'graphql-template') {
+            relayAnnotations = relayAnnotations.filter((annotation) =>
+                graphqlTemplateFilters.every((filter) => filter(annotation.message))
             );
         }
         return relayAnnotations;

@@ -32,6 +32,7 @@ The API is based on POSTing JSON commands. The following commands are supported:
 Supported environments using the `env` parameter:
 
 - `graphql`: For GraphQL file buffers. No templating is processed, and all error annotations are returned.
+- `graphql-template`: For use with `graphql` tagged templates that contain placeholders, e.g. for variables. Annotations are filtered to allow placeholder use cases.
 - `relay`: For use with `Relay.QL` tagged Relay templates, e.g. as injections in a JavaScript and TypeScript buffer. Annotations are filtered to allow Relay use cases.
 - `apollo`: For use with `gql` tagged Apollo Client templates, e.g. as injections in a JavaScript and TypeScript buffer. Annotations are filtered to allow Apollo use cases.
 - `lokka`: For use with `gql` tagged Lokka Client templates, e.g. as injections in a JavaScript and TypeScript buffer. Annotations are filtered to allow Lokka use cases.

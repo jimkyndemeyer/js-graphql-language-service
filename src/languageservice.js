@@ -146,7 +146,7 @@ app.all('/js-graphql-language-service', function (req, res) {
     let requestData = {
         command: command,
         env: env,
-        useRelayTemplates: env == 'relay' || env == 'apollo' || env == 'lokka',
+        useRelayTemplates: env == 'relay' || env == 'apollo' || env == 'lokka' || env == 'graphql-template',
         projectDir: req.body.projectDir || req.query.projectDir,
         buffer: (raw ? req.body : req.body.buffer || req.query.buffer) || '',
         line: parseInt(req.body.line || req.query.line || '0', 10),
