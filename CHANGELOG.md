@@ -1,3 +1,9 @@
+## 1.5.1 (2018-03-04)
+
+Features:
+
+- Support for strongly typed variable placeholders in GraphQL tagged templates (#19)
+
 ## 1.5.0 (2017-09-20)
 
 Features:
