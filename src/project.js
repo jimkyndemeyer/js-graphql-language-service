@@ -90,7 +90,7 @@ const project = {
 
     _loadGraphQL: function(schemaFile, onSchemaLoaded) {
         try {
-            const schemaString = fs.readFileSync(schemaFile, 'utf8');
+            const schemaString = fs.readFileSync(schemaFile, 'utf8').trim();
             if(schemaString) {
                 const schema = graphql.buildSchema(schemaString);
                 graphql.graphql(schema, introspectionQuery).then(result => {
@@ -106,7 +106,7 @@ const project = {
 
     _loadJSON : function(fileName) {
         try {
-            var jsonString = fs.readFileSync(fileName, 'utf8');
+            var jsonString = fs.readFileSync(fileName, 'utf8').trim();
             if(jsonString) {
                 return JSON.parse(jsonString);
             }
