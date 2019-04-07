@@ -2,9 +2,13 @@
 
 # JS GraphQL Language Service
 
+**This repo is no longer maintained. It was made obsolete by the release of js-graphql-intellij-plugin 2.0**
+
 A Node.js powered language service that provides a GraphQL language API on top of [codemirror-graphql](https://github.com/graphql/codemirror-graphql) and [graphql-js](https://github.com/graphql/graphql-js).
 
-It provides various GraphQL language features in [js-graphql-intellij-plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin) for IntelliJ IDEA and WebStorm, including:
+It provided various GraphQL language features in [js-graphql-intellij-plugin](https://github.com/jimkyndemeyer/js-graphql-intellij-plugin) 1.x for IntelliJ IDEA and WebStorm, but was replaced with a Java-based native implementaton in 2.0.
+
+Features:
  
 - Schema-aware completion and error highlighting
 - Syntax highlighting
